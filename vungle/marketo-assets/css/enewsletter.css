@@ -41,15 +41,7 @@ a:hover {
 	text-decoration: none;
 }
 
-hr {
-	border-top: 2px solid #bfbfbf;
-	
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 0;
-	margin: 20px -14px;
-	
-}
+hr { border-top: 2px solid #c1c1c1; }
 
 .btn-default {
 	color: #fff;
@@ -141,6 +133,14 @@ div.arrow-left {
 	right: -18px;
 }
 
+article.big {
+	font-size: 1.5em;
+}
+
+article.big h3 {
+	font-size: 2em;
+}
+
 article.small .ribbon {
 	position: absolute;
 	}
@@ -156,10 +156,23 @@ article.small {
 	color: #318ed5;
 }
 
+.news-links {
+	background: #fff;
+	background: #fff url('../img/news-link.png') top left repeat-y;
+padding: 10px;
+font-size: 1.5em;
+background-size:40px auto;
+}
+
+.news-links a {
+	margin-left: 40px;
+}
+
 footer {
 	color: #fff;
 	background-image: linear-gradient(
 		#1a60a7,
+		#318ed5,
 		#318ed5,
 		#318ed5,
 		#1a60a7
