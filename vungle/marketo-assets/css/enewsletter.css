@@ -1,24 +1,34 @@
 body {
-	background: url('bg.jpg') no-repeat;
+	background: url('../img/bg.jpg') top left no-repeat;
 	background-color: #e2e2e2;
+	
+	
 	
 	-o-background-size:100% auto;
 	-webkit-background-size:100% auto;
 	-moz-background-size:100% auto;
 	background-size:100% auto;
 	
+	
 	color: #595959;
 	}
+
+.banner{ margin-top: 3em;}
 
 .vungle-logo {
 	width: 110px;
 }
 
-h1 {
+.heading {
+	margin-top: 60px;
+	margin-bottom: 28px;
+}
+
+h1, h3 {
 	font-family: 'Arvo', serif;
 }
 
-p {
+p, h2 {
 
 	font-family: 'Open Sans', sans-serif;
 }
@@ -30,3 +40,217 @@ a:hover {
 	color: #222;
 	text-decoration: none;
 }
+
+hr {
+	border-top: 2px solid #bfbfbf;
+	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	margin: 20px -14px;
+	
+}
+
+.btn-default {
+	color: #fff;
+	background-color: #3591cc;
+	background-image: linear-gradient(#3591cc, #3591cc);
+	border-color: rgba(0,0,0,0);
+	text-shadow: none;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:visited {
+	color: #fff;
+	background-color: #2a74a4;
+	background-image: linear-gradient(#3591cc, #2a74a4);
+	border-color: rgba(0,0,0,0);
+}
+
+div.arrow-right {
+	width: 0;
+	height: 0;
+	border-bottom: 24px solid transparent;   /* left arrow slant */
+	border-top: 24px solid transparent;  /* right arrow slant */
+	border-left: 24px solid #fff; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+}
+div.arrow-left {
+	width: 0;
+	height: 0;
+	border-bottom: 24px solid transparent;
+	border-top: 24px solid transparent;
+	border-right: 24px solid #fff;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	right: 14px;
+}
+
+.ribbon {
+	font-size: 20px;
+	position: relative;
+	
+	background-image: 
+		linear-gradient(
+			to right,
+			#3790d6,
+			#52adf3,
+			#3790d6
+		);
+	
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1em 2em;
+	margin: 2em -1.65em;
+	
+	display: inline-block;
+}
+.ribbon:before {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -18px;
+	width: 0;
+	height: 0;
+	border-left: 18px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 18px solid #1e5885;
+	font-size: 0;
+	line-height: 0;
+	left: 0px;
+}
+
+.ribbon:after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-right: 18px solid transparent;
+	border-left: 0px solid transparent;
+	border-top: 62px solid #3790d6;
+	font-size: 0;
+	line-height: 0;
+	right: -18px;
+}
+
+article.small .ribbon {
+	position: absolute;
+	}
+
+
+article.small {
+	background: white;
+	margin: 0 0 15px -15px;
+	padding: 7px 15px;
+	}
+	
+.date {
+	color: #318ed5;
+}
+
+footer {
+	color: #fff;
+	background-image: linear-gradient(
+		#1a60a7,
+		#318ed5,
+		#318ed5,
+		#1a60a7
+	);
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #ccc;
+	color: rgba(255,255,255,0.75);
+
+	
+}
+
+.blue {
+	color: #318ed5 !important; 
+}
+
+.social {margin-top: 20px;}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+ 
+ 
+ 
+ 
+	/*==========  Mobile First Method  ==========*/
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+ 
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){
+ 
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+ 
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+		
+		.heading{
+			margin-top: 100px;
+		}
+	}
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+ 
+	}
+ 
+ 
+ 
+	/*==========  Non-Mobile First Method  ==========*/
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px){
+ 
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+		body {
+		background-size:1000px auto;
+		}
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+ 
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px){
+		body {
+		background-size:700px auto;
+		}
+		.banner{ margin-top: 2em;}
+		
+	}
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px){
+ 
+	}
