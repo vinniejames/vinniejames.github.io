@@ -133,20 +133,20 @@ div.arrow-left {
 	right: -18px;
 }
 
-article.big {
+.article.big {
 	font-size: 1.5em;
 }
 
-article.big h3 {
+.article.big h3 {
 	font-size: 2em;
 }
 
-article.small .ribbon {
+.article.small .ribbon {
 	position: absolute;
 	}
 
 
-article.small {
+.article.small {
 	background: white;
 	margin: 0 0 15px -15px;
 	padding: 7px 15px;
@@ -168,7 +168,7 @@ background-size:40px auto;
 	margin-left: 40px;
 }
 
-footer {
+.footer {
 	color: #fff;
 	background-image: linear-gradient(
 		#1a60a7,
@@ -179,11 +179,11 @@ footer {
 	);
 }
 
-footer a {
+.footer a {
 	color: #fff;
 }
 
-footer a:hover {
+.footer a:hover {
 	color: #ccc;
 	color: rgba(255,255,255,0.75);
 
