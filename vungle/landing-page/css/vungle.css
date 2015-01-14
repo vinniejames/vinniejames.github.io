@@ -1,0 +1,235 @@
+h1, h2 {
+	font-family: 'Arvo', serif;
+	/*font-weight: 200;*/
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h1 span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 36px;;
+}
+
+h2 { 
+	color: #3a91c9;
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+
+
+.bg-header {
+	/*background-image: url('../img/background.jpg');
+	background-position: cover;*/
+	color:white;
+	
+	 background: url('../img/background.jpg') no-repeat center center fixed; 
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+.header {
+	margin-top: 10px;
+}
+
+.logo {
+	width: 100px;
+	height:auto;
+}
+
+
+cite {
+	color: white;
+}
+blockquote footer:before, blockquote small:before, blockquote .small:before {
+content: '\2014 \00A0';
+color: white;
+}
+
+.bottom {
+	margin-top: 20px;
+}
+
+
+.img-book{
+	/*margin-bottom: -255px;
+	margin-top: -200px;*/
+	margin-bottom: -320px;
+	margin-top: -135px;
+}
+
+
+.img-tablet {
+	margin-bottom: 0;
+}
+
+.info {
+	margin-top: 63px;
+}
+
+.caret {
+display: inline-block;
+width: 0;
+height: 0;
+margin-left: 2px;
+vertical-align: middle;
+border-top: 16px solid;
+border-right: 16px solid transparent;
+border-left: 16px solid transparent;
+}
+
+blockquote {border-left: none;}
+
+
+.visuallyhidden, label, .mktoAsterix { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+input, select {
+	width: 180% !important;
+}
+
+
+.mktoForm .mktoButtonWrap.mktoMinimal .mktoButton {
+background: #3591cc !important;
+border: 1px solid #3591cc !important;
+border-radius: 6px;
+-webkit-box-shadow: none  !important;
+box-shadow: none !important;
+color: #fff  !important;
+font: normal 18px/1 "open sans", helvetica, arial, sans-serif  !important;
+padding: 8px 0 9px;
+text-align: center;
+text-shadow:none !important;
+
+width: 300px !important;
+}
+
+/* #mktoForm_1070 {width: 100% !important;} */
+
+.mktoOffset {display: none !important;}
+
+.mktoGutter {
+	display: none !important;
+}
+
+
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+padding: 10px 10px !important;
+border-radius: 6px;
+ border: 1px solid #ccc;
+}
+
+.mktoButtonWrap {
+	margin-left: 0 !important;
+}
+
+
+select {
+   background: transparent;
+   width: 280% !important;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 1px solid #ccc;
+   border-radius: 0 !important;
+   height: 34px;
+   }
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+	    
+	 
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+	    
+		
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+	    
+			
+			h2, .h2 {
+			font-size: 21px;
+			}
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		
+		
+		/*.img-book{
+		margin-bottom: 0;
+		margin-top: -200px;
+		}*/
+		.img-book{
+		display:none;
+		}
+		
+		.info {margin-top: 0;}
+		
+		
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+		
+		
+		h1 {font-size: 30px;}
+		
+		.img-book{
+		display:none;
+		}
+	
+		
+	}
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
