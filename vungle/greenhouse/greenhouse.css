@@ -1,0 +1,28 @@
+body{
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
+}
+#logo {display:none;}
+a {
+	color: #2f90ce;
+	color: rgba(47,144,206,1);
+}
+a:hover, a:active, a:visited {
+	color: #2f90ce;
+	color: rgba(47,144,206,0.75);
+}
+
+.button {
+	background-color: #2060d8;
+	background-color: #2060d8;
+	background-image: #2060d8;
+	
+	transition: background-color 300ms ease-out;
+}
+.button:hover {
+	background-color: #1d56c2;
+	background-color: #1d56c2;
+	background-image: #1d56c2;
+}
