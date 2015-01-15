@@ -15,13 +15,13 @@ a:hover, a:active, a:visited {
 .button {
 	background-color: #2060d8;
 	background-color: #2060d8;
-	background-image: #2060d8;
-	-webkit-linear-gradient(top, #2060d8, #2060d8)
+	background-image: -webkit-linear-gradient(top, #2060d8, #2060d8);
+	
 	transition: background-color 300ms ease-out;
 }
 .button:hover {
 	background-color: #1d56c2;
 	background-color: #1d56c2;
-	background-image: #1d56c2;
-	-webkit-linear-gradient(top, #2060d8, #2060d8);
+	background-image: -webkit-linear-gradient(top, #2060d8, #2060d8);
+	
 }
