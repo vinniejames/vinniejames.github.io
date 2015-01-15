@@ -9,7 +9,7 @@ a {
 	color: #2060d8;
 }
 a:hover, a:active, a:visited {
-	color: #3e72d2;
+	color: #1d56c2;
 }
 
 .button {
@@ -22,6 +22,6 @@ a:hover, a:active, a:visited {
 .button:hover {
 	background-color: #1d56c2;
 	background-color: #1d56c2;
-	background-image: -webkit-linear-gradient(top, #2060d8, #2060d8);
+	background-image: -webkit-linear-gradient(top, #1d56c2, #1d56c2);
 	
 }
