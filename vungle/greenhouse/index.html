@@ -7,15 +7,29 @@
 	
 		
 		
-		<!-- Request sent via a script tag -->
-<script src="https://status.github.com/api/status.json?callback=apiStatus"></script>
-<!-- Data received as an execution of the predefined function. -->
-<script> 
-	$(function(){
-		function apiStatus(data) { console.log(data.status); }
-	});
-	 </script>
 
+<!-- Request sent via a script tag -->
+	 
+	 <script type="text/javascript" src="https://api.greenhouse.io/v1/example/method/url?callback=greenGiant"></script>
+<!-- Data received as an execution of the predefined function. -->
+	 <script> 
+		//$(function(){
+		//	function greenGiant(data) { console.log(data.status); }
+		//});
+		
+		$.ajax({
+		    url: "https://api.greenhouse.io/v1/example/method/url?callback=greenGiant",
+		    type: "GET",
+		    dataType: 'jsonp',
+		    cache: true,
+		    success: function (data, status, error) {
+		      console.log('success', data);
+		    },
+		    error: function (data, status, error) {
+		      console.log('error', data, status, error);
+		    }
+		});
+	 </script>
 
 </body>
 </html>
