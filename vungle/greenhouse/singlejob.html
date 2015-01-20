@@ -26,48 +26,39 @@
 		var departments = greenuri+'departments'
 		
 		$.ajax({
-		    url: offices,
+		    url: jobs,
 		    type: "GET",
 		    dataType: 'jsonp',
 		    cache: true,
-		    content: true,
-		    holycow: 'cows',
+		    data: {content: true}, //loads job content into new object
 		    context: document.body,
 		    success: function (data, status, error) {
 		      console.log('success', data);
-		      
-			
-			
-			
-			
-			
-			
-			for (var i = 0; i < data.offices.length; i++) {	
-					console.log(
-					   data.offices[i].name
-				   )
-				 
-				   var vungleoffice = data.offices[i].name;
+
+				
+				// writes h1 a of all job listings
+				for (var i = 0; i < data.jobs.length; i++) {
+
 				   
+				   var jobstitle = data.jobs[i].title;
+				   //console.log(jobstitle);
+
+				   var jobsurl = data.jobs[i].absolute_url;
+				   //console.log(jobsurl);
 				   
+				   var jobslocation = data.jobs[i].location.name;
 				   
+				   var jobsid = data.jobs[i].id;
 				   
-				   
-				   $(function(){// appennds job into appropriate div
-				      
-				      
-				      $("#office").append('<h2><a href="" alt="">'+vungleoffice+'</a></h2><p></p>');
-				     
-				      
-			       });// end function
-				   
-				   
+		   
 				   
 				}// end for
-			
 				
+				
+				
+				//job descriptions
 			
-			
+	
 		      
 		    },
 		    error: function (data, status, error) {
@@ -77,7 +68,20 @@
 		
 	</script>
 	
-	<div id="office"></div>
+	<h1>SF Jobs</h1>
+	<div id="sanfrancisco"></div>
+	
+	<h1>Berlin</h1>
+	<div id="berlin"></div>
+	
+	<h1>Tokyo</h1>
+	<div id="tokyo"></div>
+	
+	<h1>Seoul</h1>
+	<div id="seoul"></div>
+	
+	<h1>London</h1>
+	<div id="london"></div>
 
 </body>
 </html>
