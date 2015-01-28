@@ -26,7 +26,7 @@
 		var departments = greenuri+'departments'
 		
 		$.ajax({
-		    url: jobs,
+		    url: departments,
 		    type: "GET",
 		    dataType: 'jsonp',
 		    cache: true,
@@ -49,9 +49,9 @@
 				   var jobslocation = data.jobs[i].location.name;
 				   
 				   var jobsid = data.jobs[i].id;
-				   
-		   
-				   
+				   console.log(jobsid)
+
+   
 				}// end for
 				
 				
@@ -68,20 +68,7 @@
 		
 	</script>
 	
-	<h1>SF Jobs</h1>
-	<div id="sanfrancisco"></div>
-	
-	<h1>Berlin</h1>
-	<div id="berlin"></div>
-	
-	<h1>Tokyo</h1>
-	<div id="tokyo"></div>
-	
-	<h1>Seoul</h1>
-	<div id="seoul"></div>
-	
-	<h1>London</h1>
-	<div id="london"></div>
+	<div id="jobdescription"></div>
 
 </body>
 </html>

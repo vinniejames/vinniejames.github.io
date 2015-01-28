@@ -87,7 +87,26 @@
 				  
 				   $(function(){// appennds job into appropriate div
 				      
-				      if (jobslocation === 'San Francisco') {
+				      switch (jobslocation) {
+					      case 'San Francisco':
+					      	$("#sanfrancisco").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
+					      	break;
+					      case 'Berlin':
+					      	$("#berlin").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
+					      	break;
+					      case 'Tokyo':
+					      	$("#tokyo").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
+					      	break;
+					      	case 'Seoul':
+					      	$("#seoul").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
+					      	break;
+					      	case 'London':
+					      	$("#london").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
+					      	break;
+				      }
+				      
+				      
+				    /*  if (jobslocation === 'San Francisco') {
 						   $("#sanfrancisco").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
 						}else if(jobslocation === 'Berlin') {
 							$("#berlin").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
@@ -98,7 +117,7 @@
 						}else if (jobslocation === 'London') {
 							$("#london").append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
 						}else {};
-				      
+				      */
 
 			       });
 				   

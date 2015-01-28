@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Greenhouse</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		<style type="text/css">
+		html, body {
+			background-color: #000;
+			color: #ccc;
+			}	
+		a {
+			color:#2f90ce;
+		}
+		.icon {
+			background: #ccc;
+			display: block;
+			margin: 10px;
+			padding: 20px;
+		}
+		</style>
+	</head>
+	
+<body>
+
+	
+	
+	<script>
+		var greenuri = 'https://api.greenhouse.io/v1/boards/vungle/embed/'
+		
+		var jobs = greenuri+'jobs';
+		var offices = greenuri+'offices';
+		var departments = greenuri+'departments';
+		
+		$.ajax({ // get offices object
+		    url: offices,
+		    type: "GET",
+		    dataType: 'jsonp',
+		    cache: true,
+		    data: {content: true}, //loads job content into new object
+		    context: document.body,
+		    success: function (data, status, error) {
+		      console.log('success', data);
+		      
+		     
+		      
+		      for (i = 0; i < data.offices.length; i++){
+			  	
+			  	 var id = data.offices[i].id;
+			      
+			      if (id != 0) { // if office has a name
+			      	var location = data.offices[i].name;
+			      	var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
+			      	//console.log(locationurl);
+			      	//console.log(location);
+			      	
+			      	$('#offices').append('<a href="'+locationurl+'"><li class="col-sm-4 location"><div class="icon">'+location+'</div></li></a>')
+			      	
+			      	//console.log(location);
+			      }
+		      }
+				
+				
+				
+		    },
+		    error: function (data, status, error) {
+		      console.log('error', data, status, error);
+		    }
+		});
+		
+	</script>
+	
+	<div class="container">
+			<ul id="offices" class="row list-inline text-center">
+				<!-- from greenhuse api -->
+			</ul><!-- /row -->
+	</div><!-- /container -->
+	
+	
+
+</body>
+</html>
