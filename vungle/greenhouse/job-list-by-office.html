@@ -74,8 +74,10 @@
 				   var jobstitle = data.jobs[i].title;
 				   //console.log(jobstitle);
 
-				   var jobsurl = data.jobs[i].absolute_url;
+				   /// DONT NEED, ABSURL POINTS TO GREENHOUSE var jobsurl = data.jobs[i].absolute_url;
 				   //console.log(jobsurl);
+				   var vungleurl = 'singlejob.html?id=';
+				   var jobsurl = vungleurl+data.jobs[i].id;
 				   
 				   var jobslocation = data.jobs[i].location.name;
 				   

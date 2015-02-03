@@ -57,7 +57,48 @@
 			      	//console.log(locationurl);
 			      	//console.log(location);
 			      	
-			      	$('#offices').append('<a href="'+locationurl+'"><li class="col-sm-4 location"><div class="icon">'+location+'</div></li></a>')
+			      	$('#offices').append('<a href="'+locationurl+'"><li class="col-xs-2 location"><div class="icon">'+location+'</div></li></a>')
+			      	
+			      	
+			      }
+			      
+				  		
+		      }
+				
+				console.log(data.offices);
+				
+		    },
+		    error: function (data, status, error) {
+		      console.log('error', data, status, error);
+		    }
+		});
+		
+		
+		
+		
+		$.ajax({ // get dept object
+		    url: departments,
+		    type: "GET",
+		    dataType: 'jsonp',
+		    cache: true,
+		    data: {content: true}, //loads job content into new object
+		    context: document.body,
+		    success: function (data, status, error) {
+		      console.log('success', data);
+		      
+		     
+		      
+		      for (i = 0; i < data.departments.length; i++){
+			  	
+			  	 var id = data.departments[i].id;
+			      
+			      if (id != 0) { // if office has a name
+			      	var location = data.departments[i].name;
+			      	var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
+			      	//console.log(locationurl);
+			      	//console.log(location);
+			      	
+			      	$('#departments').append('<a href="'+locationurl+'"><li class="col-xs-4 location"><div class="icon">'+location+'</div></li></a>')
 			      	
 			      	//console.log(location);
 			      }
@@ -75,6 +116,10 @@
 	
 	<div class="container">
 			<ul id="offices" class="row list-inline text-center">
+				<!-- from greenhuse api -->
+			</ul><!-- /row -->
+			<hr />
+			<ul id="departments" class="row list-inline text-center">
 				<!-- from greenhuse api -->
 			</ul><!-- /row -->
 	</div><!-- /container -->

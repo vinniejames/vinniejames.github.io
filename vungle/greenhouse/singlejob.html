@@ -19,46 +19,68 @@
 	
 	
 	<script>
+		
+		// pulls id from query string parameter using regEx
+		/*
+		function getParameterByName(name){
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]"+name+"=([^&#]*)"),
+				results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));	
+		};
+		
+		var jobid = getParameterByName('id');
+		
+		console.log(jobid);
+		*/
+		
+		// Grabs query string
+		function getQueryVariable(variable)
+		{
+		       var query = window.location.search.substring(1);
+		       var vars = query.split("&");
+		       for (var i=0;i<vars.length;i++) {
+		               var pair = vars[i].split("=");
+		               if(pair[0] == variable){return pair[1];}
+		       }
+		       return(false);
+		       
+		}
+		var jobid = getQueryVariable('id');
+		
+		
+		console.log(jobid);
+		
+		
+		
+		
 		var greenuri = 'https://api.greenhouse.io/v1/boards/vungle/embed/'
 		
 		var jobs = greenuri+'jobs';
 		var offices = greenuri+'offices';
-		var departments = greenuri+'departments'
+		var departments = greenuri+'departments';
+		var singlejob = greenuri+'job'+'?id='+jobid;
 		
 		$.ajax({
-		    url: departments,
+		    url: singlejob,
 		    type: "GET",
 		    dataType: 'jsonp',
 		    cache: true,
-		    data: {content: true}, //loads job content into new object
+		    data: {content: true, questions: true}, //loads job content & questions into new objectS
 		    context: document.body,
 		    success: function (data, status, error) {
 		      console.log('success', data);
-
-				
-				// writes h1 a of all job listings
-				for (var i = 0; i < data.jobs.length; i++) {
-
-				   
-				   var jobstitle = data.jobs[i].title;
-				   //console.log(jobstitle);
-
-				   var jobsurl = data.jobs[i].absolute_url;
-				   //console.log(jobsurl);
-				   
-				   var jobslocation = data.jobs[i].location.name;
-				   
-				   var jobsid = data.jobs[i].id;
-				   console.log(jobsid)
-
-   
-				}// end for
-				
-				
-				
-				//job descriptions
-			
-	
+			  
+			  var el = document.createElement('div');
+			  el.innerHTML = data.content;
+			  var childEl = el.childNodes[0].nodeValue;
+			 
+			 //console.log(childEl);
+			  
+			 $('#job').append(childEl);
+			 
+			 //kills inline styles from greenhouse
+			 $('*').removeAttr('style');
 		      
 		    },
 		    error: function (data, status, error) {
@@ -66,9 +88,17 @@
 		    }
 		});
 		
+		
+		
+		
+
+		
 	</script>
 	
-	<div id="jobdescription"></div>
+	<div id="job"></div>
+	
+	
+	
 
 </body>
 </html>
