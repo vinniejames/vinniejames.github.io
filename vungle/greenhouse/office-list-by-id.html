@@ -87,8 +87,9 @@
 					if (id != 0){
 						var location = byID[i].name;
 						var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
+						var locationquery = 'singleoffice.html?office='+locationurl;
 						
-						$('#offices').append('<a href="'+locationurl+'"><li class="col-xs-4 col-md-2 location"><div class="icon"><img class="img-responsive" src="img/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
+						$('#offices').append('<a href="'+locationquery+'"><li class="col-xs-4 col-md-2 location"><div class="icon"><img class="img-responsive" src="img/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
 						
 					};
 					

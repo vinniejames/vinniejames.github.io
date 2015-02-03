@@ -73,14 +73,28 @@
 		    success: function (data, status, error) {
 		      console.log('success', data);
 
-			  
-			  
-			  if (jobs query string === variable of string office) {
-				  for (i =0; i < oficelacationjobs.length; i++) {
-					  console.log(the jobs at this locaiton);
-				  };
-			  };
-			  
+			  for(i = 0; i < data.jobs.length; i++){
+				  var jobLocation = data.jobs[i].offices[0].name;
+				  var jobLocationUrl = jobLocation.toLowerCase().replace(/\s+/g, '');
+				  //console.log(jobLocation);
+				  
+				  if (queryid === jobLocationUrl) {
+					  console.log(data.jobs[i]);
+					  
+					  var jobstitle = data.jobs[i].title;
+					  var vungleurl = 'singlejob.html?id=';
+					  var jobsurl = vungleurl+data.jobs[i].id;
+					  var jobslocation = data.jobs[i].location.name;
+					  var jobsid = data.jobs[i].id;
+					  
+					  
+					  $('#office').append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
+					  
+				  }
+				  
+				  
+			  }
+
 
 
 		      
