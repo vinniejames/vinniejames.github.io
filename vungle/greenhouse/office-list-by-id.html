@@ -46,7 +46,7 @@
 		      console.log('success', data);
 		      
 		     
-		      
+		      /*
 		      for (i = 0; i < data.offices.length; i++){
 			  	
 			  	 var id = data.offices[i].id;
@@ -57,16 +57,47 @@
 			      	//console.log(locationurl);
 			      	//console.log(location);
 			      	
-			      	$('#offices').append('<a href="'+locationurl+'"><li class="col-xs-2 location"><div class="icon">'+location+'</div></li></a>')
+			      	//$('#offices').append('<a href="'+locationurl+'"><li class="col-xs-4 col-md-2 location"><div class="icon"><img class="img-responsive" src="img/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
 			      	
 			      	
 			      }
 			      
 				  		
 		      }
+		      */
 				
-				console.log(data.offices);
+
 				
+
+				
+				var theOffices = data.offices;
+				
+				var byID = theOffices.slice(0);
+				byID.sort(function(a,b){
+					return a.id - b.id;
+				});
+				
+				
+				// console.log(byID[1]);
+				
+				for (i = 0; i < byID.length; i++) {
+					//console.log(byID[i].name);
+					var id = byID[i].id;
+					
+					if (id != 0){
+						var location = byID[i].name;
+						var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
+						
+						$('#offices').append('<a href="'+locationurl+'"><li class="col-xs-4 col-md-2 location"><div class="icon"><img class="img-responsive" src="img/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
+						
+					};
+					
+				};
+			
+					
+		
+
+	
 		    },
 		    error: function (data, status, error) {
 		      console.log('error', data, status, error);
@@ -93,12 +124,12 @@
 			  	 var id = data.departments[i].id;
 			      
 			      if (id != 0) { // if office has a name
-			      	var location = data.departments[i].name;
-			      	var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
+			      	var dept = data.departments[i].name;
+			      	var depturl = dept.toLowerCase().replace(/\s+/g, ''); //office name url for href
 			      	//console.log(locationurl);
 			      	//console.log(location);
 			      	
-			      	$('#departments').append('<a href="'+locationurl+'"><li class="col-xs-4 location"><div class="icon">'+location+'</div></li></a>')
+			      	$('#departments').append('<a href="'+depturl+'"><li style="min-height: 100px" class="col-xs-6 col-md-4 location"><div class="icon">'+dept+'</div></li></a>')
 			      	
 			      	//console.log(location);
 			      }
