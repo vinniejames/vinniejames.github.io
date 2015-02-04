@@ -71,56 +71,6 @@ h1,h2,h3,h4,h5,h6 {
   margin: -1px; padding: 0; border: 0; 
 }
 
-input, select {
-	width: 180% !important;
-}
-
-
-.mktoForm .mktoButtonWrap.mktoMinimal .mktoButton {
-background: #3591cc !important;
-border: 1px solid #3591cc !important;
-border-radius: 6px;
--webkit-box-shadow: none  !important;
-box-shadow: none !important;
-color: #fff  !important;
-font: normal 18px/1 "open sans", helvetica, arial, sans-serif  !important;
-padding: 8px 0 9px;
-text-align: center;
-text-shadow:none !important;
-
-width: 300px !important;
-}
-
-/* #mktoForm_1070 {width: 100% !important;} */
-
-.mktoOffset {display: none !important;}
-
-.mktoGutter {
-	display: none !important;
-}
-
-
-.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
-padding: 10px 10px !important;
-border-radius: 6px;
- border: 1px solid #ccc;
-}
-
-.mktoButtonWrap {
-	margin-left: 0 !important;
-}
-
-
-select {
-   background: transparent;
-   width: 280% !important;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 1px solid #ccc;
-   border-radius: 0 !important;
-   height: 34px;
-   }
 
 
 </style>
@@ -185,8 +135,54 @@ select {
 				
 				<h2>Set Up an Intro</h2>
 				
-				<form id="mktoForm_1082"></form>
-				<script>MktoForms2.loadForm("//app-ab04.marketo.com", "184-FKZ-935", 1082);</script>
+				
+				<form id="mktoForm_1082" novalidate="novalidate">
+					
+					
+						<label for="FirstName">First Name:</label>
+						<input id="FirstName" name="FirstName" maxlength="255" type="text" placeholder="First Name">
+						
+						<label for="LastName" class="">Last Name:</label>
+						<input id="LastName" name="LastName" maxlength="255" type="text" class="" placeholder="Last Name">
+					
+							
+							
+						<label for="Email" class="">Email Address:</label>
+						<input id="Email" name="Email" maxlength="255" type="email" placeholder="Email">
+							
+							
+						<label for="Company">Company Name:</label>
+						<input id="Company" name="Company" maxlength="255" type="text" placeholder="Company">
+			
+								
+						<label for="Type__c">Type:</label>
+							
+						<select id="Type__c" name="Type__c">
+							<option value="">Select...</option>
+							<option value="Advertising">Advertising</option>
+							<option value="Publishing">Publishing</option>
+							<option value="Tech Partner">Tech Partner</option>
+						</select>
+													
+						<label for="Comments__c">Message:</label>
+						<textarea id="Comments__c" name="Comments__c" placeholder="Message" rows="2" title="" maxlength="32768"></textarea>				
+				
+				
+				<button type="submit" class="btn btn-vungle">Send</button>
+				
+				
+				
+				<input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1082">
+
+				<input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="184-FKZ-935">
+
+
+			</form>
+
+
+				
+				<!--<form id="mktoForm_1082"></form>
+				<script>MktoForms2.loadForm("//app-ab04.marketo.com", "184-FKZ-935", 1082);</script>-->
 				
 			</div>
 			
