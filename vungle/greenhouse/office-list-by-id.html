@@ -21,6 +21,11 @@
 			margin: 10px;
 			padding: 20px;
 		}
+		.bldg {
+			
+			margin: 10px;
+			
+		}
 		</style>
 	</head>
 	
@@ -68,7 +73,7 @@
 				
 
 				
-
+			  	// http://jsfiddle.net/xsM5s/16/
 				
 				var theOffices = data.offices;
 				
@@ -77,9 +82,7 @@
 					return a.id - b.id;
 				});
 				
-				
-				// console.log(byID[1]);
-				
+
 				for (i = 0; i < byID.length; i++) {
 					//console.log(byID[i].name);
 					var id = byID[i].id;
@@ -89,7 +92,7 @@
 						var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
 						var locationquery = 'singleoffice.html?office='+locationurl;
 						
-						$('#offices').append('<a href="'+locationquery+'"><li class="col-xs-4 col-md-2 location"><div class="icon"><img class="img-responsive" src="img/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
+						$('#offices').append('<a href="'+locationquery+'"><li class="col-xs-4 col-md-2 location"><div class="bldg"><img class="img-responsive" src="img/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
 						
 					};
 					
