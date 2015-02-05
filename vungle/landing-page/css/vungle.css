@@ -34,6 +34,8 @@ ul {
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
 	 background-size: cover;
+	 
+	 min-height: 380px;
 }
 .header {
 	margin-top: 10px;
@@ -61,7 +63,7 @@ color: white;
 .img-book{
 	/*margin-bottom: -255px;
 	margin-top: -200px;*/
-	margin-bottom: -405px;
+	margin-bottom: -405zpx;
 	margin-top: -100px;
 }
 
