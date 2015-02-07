@@ -3,6 +3,9 @@
 	<head>
 		<title>Greenhouse</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<style type="text/css">
 		html, body {
 			background-color: #000;
@@ -71,31 +74,55 @@
 		    data: {content: true, questions: true}, //loads job content & questions into new objectS
 		    context: document.body,
 		    success: function (data, status, error) {
-		      console.log('success', data);
+		      //console.log('success', data);
+		      
+		      //grabs the name of the office from the first listing and creates h1 title
+		     // $('#location').append(data.jobs[0].offices[0].name);
 
+			  
+			 /* if (queryid === jobLocationUrl) {
+				  	console.log(data.jobs.location.name + 'hi');
+				  };
+			  */
+			  
+			  
+			
+			  
+			  
+			  
+			  
 			  for(i = 0; i < data.jobs.length; i++){
-				  var jobLocation = data.jobs[i].offices[0].name;
+				  var jobLocation = data.jobs[i].offices[0].name; // office location eg SF
+				  
+				  //console.log(jobLocation);
+				  
 				  var jobLocationUrl = jobLocation.toLowerCase().replace(/\s+/g, '');
 				  //console.log(jobLocation);
 				  
+				
+				  
 				  if (queryid === jobLocationUrl) {
-					  console.log(data.jobs[i]);
+					  //console.log(data.jobs);
+					  
+					  
 					  
 					  var jobstitle = data.jobs[i].title;
 					  var vungleurl = 'singlejob.html?id=';
 					  var jobsurl = vungleurl+data.jobs[i].id;
 					  var jobslocation = data.jobs[i].location.name;
+					  
 					  var jobsid = data.jobs[i].id;
 					  
 					  
 					  $('#office').append('<h2><a href="'+jobsurl+'" alt="'+jobstitle+'">'+jobstitle+'</a></h2><p>'+jobslocation+' '+jobsid+'</p>');
 					  
 				  }
-				  
+				 
 				  
 			  }
-
-
+			  	
+			  	//adds location to header
+			   $('#location').append(jobslocation);
 
 		      
 		    },
@@ -111,9 +138,16 @@
 		
 	</script>
 	
+	
+	<div class="container"><div class="row"><div class="col-sm-12">
+	
+	
+	<h1 id="location" class="text-center"><!-- location --></h1>
+	<hr />
+		
 	<div id="office"></div>
 	
-	
+	</div></div></div>
 	
 
 </body>

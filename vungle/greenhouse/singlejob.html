@@ -75,12 +75,15 @@
 		    success: function (data, status, error) {
 		      console.log('success', data);
 			  
-			// console.log(data.questions);
+			
+			//add job title h1
+			$('#jobtitle').append(data.title);
 			 
 			 // Job Application
 			// console.log(data.questions[0].fields[0]);
-			 
-			$('#apply').append('<input type="hidden" name="id" value="'+jobid+'" />')
+			$('#apply').append('<input type="hidden" name="id" value="'+jobid+'" />');
+			
+			
 			 
 			 for (i = 0; i < data.questions.length; i++){
 				 
@@ -161,9 +164,14 @@
 	
 	
 	
+	<div class="container"><div class="row"><div class="col-sm-12">
 	
-	<div id="job"></div>
+	<h1 id="jobtitle" class="text-center"><!-- job title --></h1>
+	<hr />
 	
+	<div id="job"><!-- job description --></div>
+	
+	</div>
 	<hr /><hr />
 
 	<div class="container"><div class="row"><div class="col-sm-6 col-sm-push-3">

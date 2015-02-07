@@ -88,26 +88,40 @@
 				
 				for(i = 0; i < depts.length; i++){
 					
-					//console.log(depts[i].id + 'wtf');
+					
 					
 					if (depts[i].id == query) {
 						$('#dept').append(depts[i].name);
-						//console.log(depts[i].jobs[0].title);
+						console.log(depts[i].jobs[0].title);
 						
 						for(j = 0; j < depts[i].jobs.length; j++){
+							
+							
+							console.log(depts[i].jobs[j].id);
+							
 							var title = depts[i].jobs[j].title;
+							
+							var jobsid = depts[i].jobs[j].id;
+							
+							// creates lowercase string for url href
 							var location = depts[i].jobs[j].location.name;
+							var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
+							console.log(locationurl);
+							var locationquery = 'singleoffice.html?office='+locationurl;
 							
 							//console.log(title);
 							//console.log(location);
 							
+							 var vungleurl = 'singlejob.html?id=';
+							 var jobsurl = vungleurl+jobsid;
+							
 							var jobapp = '#';
-							var locationurl = '#';
+							
 							
 							$('#joblisting').append(
 								'<tr>'+
-						          '<td><a href="'+jobapp+'" alt="">'+title+'</a></td>'+
-						          '<td><a href="'+locationurl+'" alt="">'+location+'</a></td>'+
+						          '<td><a href="'+jobsurl+'" alt="">'+title+'</a></td>'+
+						          '<td><a href="'+locationquery+'" alt="">'+location+'</a></td>'+
 						        '</tr>'
 							);
 							
