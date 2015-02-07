@@ -133,18 +133,24 @@
 			      	//console.log(locationurl);
 			      	//console.log(location);
 			      	
-			      	$('#departments').append('<a href="'+depturl+'"><li style="min-height: 100px" class="col-xs-6 col-md-4 location"><div class="icon">'+dept+'</div></li></a>')
+			      	$('#departments').append('<a href="job-list-by-department.html?id='+id+'"><li style="min-height: 100px" class="col-xs-6 col-md-4 location"><div class="icon">'+dept+'</div></li></a>')
 			      	
 			      	//console.log(location);
 			      }
 		      }
+		      
+		      
+
+			
+			
+			
 				
-				
-				
+			
 		    },
 		    error: function (data, status, error) {
 		      console.log('error', data, status, error);
 		    }
+		    // ajax	
 		});
 		
 	</script>
@@ -157,6 +163,15 @@
 			<ul id="departments" class="row list-inline text-center">
 				<!-- from greenhuse api -->
 			</ul><!-- /row -->
+			
+			
+			<hr />
+			
+			<ul id="joblist">
+				
+			</ul>
+			
+			
 	</div><!-- /container -->
 	
 	
