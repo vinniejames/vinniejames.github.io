@@ -125,13 +125,17 @@
 		      
 		      for (i = 0; i < data.departments.length; i++){
 			  	
-			  	 var id = data.departments[i].id;
+			  	 var id = data.departments[i].id; // gabs id of department to filter out "no department" jobs id 0
 			      
-			      if (id != 0) { // if office has a name
+			      var numjobs = data.departments[i].jobs.length; //number of jobs in department
+			      
+			      if ((id != 0) && (numjobs > 0) ) { // if department has a job
 			      	var dept = data.departments[i].name;
-			      	var depturl = dept.toLowerCase().replace(/\s+/g, ''); //office name url for href
+			      	//var depturl = dept.toLowerCase().replace(/\s+/g, ''); //office name url for href
 			      	//console.log(locationurl);
 			      	//console.log(location);
+			      	
+			      	
 			      	
 			      	$('#departments').append('<a href="job-list-by-department.html?id='+id+'"><li style="min-height: 100px" class="col-xs-6 col-md-4 location"><div class="icon">'+dept+'</div></li></a>')
 			      	

@@ -41,13 +41,7 @@
 		}
 		var query = getQueryVariable('id');
 		console.log(query);
-		
-		
-		
-		
-		
-		
-		
+
 		
 		
 		var greenuri = 'https://api.greenhouse.io/v1/boards/vungle/embed/'
@@ -70,7 +64,7 @@
 		      	//var jobid = 830;
 		      	
 		      	//console.log(query+' query')
-		      //	console.log(jobid+' jobid')
+		        //console.log(jobid+' jobid')
 		      	//console.log(typeof jobid);
 		      	//console.log(typeof query);
 		      	
@@ -97,7 +91,7 @@
 						for(j = 0; j < depts[i].jobs.length; j++){
 							
 							
-							console.log(depts[i].jobs[j].id);
+							//console.log(depts[i].jobs[j].id);
 							
 							var title = depts[i].jobs[j].title;
 							
@@ -106,7 +100,7 @@
 							// creates lowercase string for url href
 							var location = depts[i].jobs[j].location.name;
 							var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
-							console.log(locationurl);
+							//console.log(locationurl);
 							var locationquery = 'singleoffice.html?office='+locationurl;
 							
 							//console.log(title);
