@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>VUNGLE - Off Canvas Menu</title>
+  <title>VUNGLE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   
   <!-- Styles -->
@@ -199,6 +199,11 @@
 	<div class="page-header">
         <h1>Our Leadership Team</h1>
     </div>
+    
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#bioModal" data-bio="zain">Zain</button>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#bioModal" data-bio="colin">Colin</button>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#bioModal" data-bio="andrea">Andrea</button>
+    <a href="" class="" data-toggle="modal" data-target="#bioModal" data-bio="colin">COLIN</a>
 	
 	<div class="row">
 		<div class="col-md-3 col-md-push-1 col-sm-6">
@@ -439,6 +444,56 @@
       </footer>
     
     
+    
+    
+    <!-- Modal box for bios -->
+    
+    <div class="modal fade" id="bioModal" tabindex="-1" role="dialog" aria-labelledby="bioModelLabel" aria-hidden="true">
+	    
+	    <div class="modal-dialog">
+		    
+		    <div class="modal-content">
+			    
+			    <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close"<span aria-hidden="true">&times;</span></button>				    
+			    </div><!-- / modal header -->
+			    
+			    <div class="modal-body">
+				    
+					    <div class="row">
+						    <div id="bio-img" class="col-xs-4">
+							    <img class="img-circle img-responsive" src="img/about/andrea-sharfin-vungle.jpg" alt="Andrea Sharfin">
+							</div>
+						    <div class="col-xs-8">
+							    <h3 id="bio-name" class="modal-title text-center">Andrea Sharfin</h3>
+							    <h4 id="bio-title" class="modal-title text-center">VP of Marketing</h4>
+						    </div>
+					    </div><!-- /row -->
+					    <div class="row">
+						    <div id="bio-bio" class="modal-body">
+							    <p>Andrea Friedenson is the VP of Marketing at Vungle. She specializes in the intersection between media and technology. Andrea has held marketing roles at Disney, Facebook, Microsoft and Time Warner, and a product management role at Flixster. She holds an A.B. from Cornell University and an M.B.A from MIT Sloan.</p>
+							</div>
+					    </div><!-- /row -->
+				    
+			    </div><!-- / modal header -->
+			    
+			    <div class="modal-footer">
+				    
+			    </div><!-- / modal header -->
+			    
+		    </div><!-- / modal content
+		    
+	    </div><!-- modal-dialog -->
+	    
+    </div><!-- / modal -->
+    
+    
+
+    
+    <!-- / Modal box for bios -->    
+    
+    
+    
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -454,6 +509,73 @@
     <script src="js/jquery.navgoco.js"></script>
     
     <script src="js/video-hero.js"></script>
+    
+    
+    
+    
+    
+        
+    <script>// modal dialog content
+	    
+	    function Exec(name, title, img, bio) {
+			this.name = name;
+			this.title = title;
+			this.img = img;
+			this.bio = bio;
+			}
+			
+		var zain = new Exec(
+			"Zain Jaffer",
+			"CEO & Founder",
+			"img/about/zain-jaffer-vungle.jpg",
+			"ZAIN bio"
+		);
+		var colin = new Exec(
+			"Colin Behr",
+			"Business Development & International",
+			"img/about/colin-behr-vungle.jpg",
+			"COLIN bio"
+		);
+		var andrea = new Exec(
+			"Andrea Sharfin",
+			"VP of Marketing",
+			"img/about/andrea-sharfin-vungle.jpg",
+			"ANDREA bio"
+		);
+
+	var execs = {
+		'zain': zain,
+		'colin': colin,
+		'andrea': andrea
+	}
+	
+
+	
+	$('#bioModal').on('show.bs.modal', function (event) {
+		
+		var button = $(event.relatedTarget);
+		var vp = execs[button.data('bio')]; 
+		
+		console.log(vp);
+		console.log(vp.name);
+		
+		console.log(vp.title);
+		
+
+		//console.log( $(this).attr("id") );
+		
+		
+		var modal = $(this);
+		modal.find('#bio-name').text(vp.name);
+		modal.find('#bio-title').text(vp.title);
+		modal.find('#bio-bio').text(vp.bio);
+		modal.find('img').attr('src', vp.img);
+			
+	});
+	 
+   
+	</script>
+    
     
     <script src="js/wow.js"></script>
 		<script>
