@@ -2,6 +2,7 @@ body {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
 	color: #333;
 	font-size: 21px;
+	font-weight: 300;
 	}
 h1,
 h2,
@@ -107,7 +108,7 @@ body.nav-expanded {
 }
 
 .main-menu {
-  padding-top: 60px; /* padding-top: 12px; */
+  padding-top: 58px; /* padding-top: 12px; */
 }
 
 .main-menu > li:first-child {
@@ -211,7 +212,7 @@ body.nav-expanded {
 
 
 .navbar {
-	min-height: 60px;
+	height: 58px;
 }
 
 
@@ -226,7 +227,7 @@ body.nav-expanded {
 .fade-background {
 	
 	  background-color: #3591cc;
-	  background-color: rgba(53,145,204,0.75);
+	  background-color: rgba(53,145,204,1); /* BACGROUND COLOR AFTER SCROLL of x px */
 	  
 	  -webkit-transition: background-color 3s;
     transition: background-color 3s;
@@ -248,8 +249,8 @@ body.nav-expanded {
 
 
 .vungle-logo {
-	width: 110px;
-	margin: 0.25em 0.75em;
+	width: 66px;
+	margin: 12px;
 }
 
 .navbar-brand {
@@ -274,6 +275,10 @@ border-color: transparent;
 
 .plus-sign {line-height: 1.6;}
 
+/* WOW.js fix */
+  .wow {
+	   visibility: hidden;
+	}
 
 /* BUTTON STYLES */
 .btn {text-transform: uppercase;}

@@ -104,6 +104,7 @@
 		  margin-top: 45vh; 
 	  }
 	  
+	
 
   </style>
   
@@ -113,7 +114,7 @@
   <link rel="stylesheet" href="css/mediaqueries.css">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -190,7 +191,7 @@
         
         <div class="navbar-header"><!-- pull-right -->
           <a id="nav-expander" class="nav-expander fixed">
-            <i class="fa fa-bars fa-lg white"></i></a>
+            <i class="fa fa-bars white"></i></a>
           <!--</a>-->
         </div>
         
@@ -202,7 +203,7 @@
 <div class="container-fluid hero-image">
 	
 	
-	<h1 class="hero-heading">Vungle’s mission is to engage the world with in-app video experiences.</h1>
+	<h1 class="hero-heading wow zoomIn">Vungle’s mission is to engage the world with in-app video experiences.</h1>
 	<i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i>
 </div>
 
@@ -223,7 +224,7 @@
 	
 	
 	<div class="row">
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
 				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
@@ -235,7 +236,7 @@
 				<figcaption class="text-center">Zain Jaffer, CEO &amp; Founder</figcaption> 
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInLeft">
 			<figure>
 				<div class="exec">
 				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
@@ -246,7 +247,7 @@
 				<figcaption class="text-center">Colin Behr, VP of Business &amp; International Relations</figcaption>
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInRight">
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
@@ -257,7 +258,7 @@
 				<figcaption class="text-center">Andrea Sharfin, VP of Marketing</figcaption>
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="wayne">
@@ -271,7 +272,7 @@
 
 	</div><!-- /row -->
 	<div class="row">
-		<div class="col-md-3 col-sm-6">	
+		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">	
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="ben">
@@ -282,7 +283,7 @@
 				<figcaption class="text-center">Ben Bear, VP of Sales</figcaption> 
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInLeft">
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="erik">
@@ -293,7 +294,7 @@
 				<figcaption class="text-center">Erik Juhl, VP of Talent Operations</figcaption>
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInRight">
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="mike">
@@ -304,7 +305,7 @@
 				<figcaption class="text-center">Michal Pilawski, VP of Product</figcaption>
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInRight"  data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="si">
@@ -552,7 +553,7 @@
 		<script>
 		 $(document).ready(function(){
 		 
-		 //new WOW().init(); made wow fire twice
+		 	new WOW().init(); //made wow fire twice, BUT now it doesnt...weird
 		 
 		 });
 		 
