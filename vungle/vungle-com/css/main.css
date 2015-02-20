@@ -1,7 +1,12 @@
+/*adds responsive viewport fix for ie10*/
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
 body { 
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
 	color: #333;
-	font-size: 21px;
+	font-size: 21px; /* RETHINK BODY FONT SIZE, MAY NOT BE THE MOST EFFICIENT PLACE FOR IT manual style on sub-nav li's */
 	font-weight: 300;
 	}
 h1,

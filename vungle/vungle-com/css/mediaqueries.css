@@ -9,12 +9,12 @@
  
 	/* Custom, iPhone Retina */
 	@media only screen and (min-width : 320px){
- 
+		
 	}
  
 	/* Extra Small Devices, Phones */
 	@media only screen and (min-width : 480px){
- 
+		
 	}
  
 	/* Small Devices, Tablets */
@@ -48,14 +48,20 @@
  
 	/* Small Devices, Tablets */
 	@media only screen and (max-width : 768px){
-		/*.carousel.slide img {
-		width: 75%;
-		height: auto;
-		}*/
-		
+		.navbar-sub {
+			/*background-color: blue;*/
+		}
+		.navbar-sub li {
+			
+			display:none;
+			padding: 0 20px;
+			text-transform: uppercase;
+			font-size: 14px;
+			/*padding: 20px;*/
+		}
 				
 		/* MAKE IMAGE BACK GROUND WIDTH 100% and BOTH container els height AUTO instead of 70vh */
-		
+		/* CHECK IF THIS CLASS IS STILL RELEVANT */
 		.video-container .title-container {
 			top: 20%;
 		}
@@ -67,18 +73,7 @@
 	/* Extra Small Devices, Phones */
 	@media only screen and (max-width : 480px){
 		
-		/*.carousel-inner {
-		position: relative;
-		width: 100%;
-		overflow: hidden;
-		margin: 0px 0%;
-		}*/
 		
-		/* not needed in new slider
-		.carousel.slide img {
-		width: 80%;
-		height: auto;
-		}*/
 	}
  
 	/* Custom, iPhone Retina */

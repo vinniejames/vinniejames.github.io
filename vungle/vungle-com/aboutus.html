@@ -21,92 +21,10 @@
   
   <link rel="stylesheet" href="css/background-section.css">
   
+  <link rel="stylesheet" href="css/aboutus.css">
   
-  <style>
-	  
-	  .modal-header {
-		  position: absolute;
-		  border-bottom: none;
-		  z-index: 1000;
-	  }
-	  .modal-body {
-		padding: 30px;
-		font-size: 16px; 
-	  }
-	  .close {
-		
-		float: left;
-		font-size: 28px;
-		font-weight: 400;
-		color: #2f90ce;
-		text-shadow: none;
-		filter: alpha(opacity=100);
-		opacity: 1;
-	  }
-	  
-	  .hero-image {
-		  height: 100vh;
-		  background: url('img/about/about.jpg');
-		  background-position: center center;
-		  background-size: cover;
-		  position: relative;
-	  }
-	  .hero-image h1 {
-		  position: absolute;
-		  top: 40vh;
-		  margin: 0 20vw;
-		  text-align: center;
-		  color: #fff;
-	  }
-	  .hero-image i {
-		  position: absolute;
-		  bottom: 0;
-		  margin: 10px 50vw;
-		  
-	  }
-	  
-	  figcaption {
-		  font-size: 14px;
-	  }
-	  figure img {
-		  /*padding: 20px;*/
-		  transition: opacity 300ms;
-	  }
-	  figure img:hover {
-		  opacity: 0.6;
-		  transition: opacity 300ms;
-	  }
-	  
-	  figure span.bio {
-		  color: #fff;
-		  
-		  margin: auto;
-		  position: absolute;
-		  top: 40%; left: 0; bottom: 0; right: 0;
-		  text-transform: uppercase;
-		  opacity: 0;
-		  pointer-events: none;
-		  transition: opacity 300ms;
-	  }
-	  a:hover + span.bio {
-		  opacity: 1;
-		  transition: opacity 300ms;
-	  }
-	  
-	  .exec {
-		  background: rgba(47,144,206,1);
-		  border-radius: 50%;
-		  margin: 20px 45px;
-	  }
-	  
-	  .background-section h1.white {
-		  color: #fff;
-		  margin-top: 45vh; 
-	  }
-	  
-	
+  
 
-  </style>
   
 
   
@@ -309,7 +227,7 @@
 			<figure>
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="si">
-					<img class="img-circle img-responsive" src="img/about/si-crowhurst.jpg" alt="Si Crowhurst, Head of Creative & Optimization Group ">
+					<img class="img-circle img-responsive full" src="img/about/si-crowhurst.jpg" alt="Si Crowhurst, Head of Creative & Optimization Group ">
 				</a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
@@ -326,7 +244,7 @@
     
     <div class="row team-section">
 		<div class="col-sm-12">
-			<h1 class="text-center white">Join a team of 100+ hustlers!</h1>
+			<h1 class="text-center white wow zoomIn">Join a team of 100+ hustlers!</h1>
 		</div>
 	</div>
 	
@@ -361,7 +279,7 @@
     
     <div class="row">
 	    
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer">
@@ -370,7 +288,7 @@
 				<figcaption class="text-center">Zain Jaffer, CEO &amp; Founder</figcaption> 
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInLeft">
 			<figure>
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/montgomery-kersten.jpg" alt="Montgomery Kersten">
@@ -379,7 +297,7 @@
 				<figcaption class="text-center">Montgomery Kersten</figcaption> 
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6"><!-- SHOWS HIDES WAYNE ON xs -->
+		<div class="col-md-3 col-sm-6 wow fadeInRight">
 			<figure>
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/david-silverman.jpg" alt="David Silverman">
@@ -388,7 +306,7 @@
 				<figcaption class="text-center">David Silverman</figcaption> 
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6 wow fadeInRight"  data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/don-butler.jpg" alt="Don Butler">
