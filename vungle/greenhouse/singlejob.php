@@ -1,3 +1,45 @@
+<?php
+	if(!empty($_POST)) {
+	 	$ch = curl_init(); 
+		$url = "";
+		$i = 0;
+		$postfields = $_POST;
+		foreach($_FILES as $name => $file_info) {
+		if($file_info['name']){
+		  $postfields[$name] = new CurlFile($file_info['tmp_name'], $file_info['type'], $file_info['name']);
+		  $i++;
+		  }
+		}
+		
+		if ($i != 0) {
+			//prevent the rest from happening if there are no file attachments
+			$options = array(
+		            CURLOPT_URL => $url,
+		            CURLOPT_POST => 1,
+		            CURLOPT_POSTFIELDS => $postfields,
+		            CURLOPT_RETURNTRANSFER => true
+		        ); // cURL options
+		   
+		   
+		    curl_setopt_array($ch, $options);
+		    $result = json_decode(curl_exec($ch), true);
+		   
+			if(!curl_errno($ch))
+		    {
+		        $info = curl_getinfo($ch);
+		        if ($info['http_code'] == 200 && !empty($result['success']))
+		            $msg = $result['success'];
+		    } else {
+		        $msg = curl_error($ch);
+		    }
+		    
+		    curl_close($ch);
+		}else {
+			$msg = "Please complete the required form fields";
+		}
+		
+	}
+?>
 <!doctype html>
 <html>
 	<head>
@@ -110,7 +152,7 @@
 					 $('#apply').append(
 					 '<div class="form-group">'+
 					    '<label for="'+name+'">'+label+'</label>'+
-					    '<input type="'+type+'" class="form-control '+type+'" name="'+name+'" placeholder="'+label+'" data-required="'+required+'">'+
+					    '<input id="'+name+'" type="'+type+'" class="form-control '+type+'" name="'+name+'" placeholder="'+label+'" data-required="'+required+'">'+
 					  '</div>'
 					 );
 					 
@@ -174,11 +216,53 @@
 	<hr /><hr />
 
 	<div class="container"><div class="row"><div class="col-sm-6 col-sm-push-3">
-		<form  action="https://api.greenhouse.io/v1/applications/" enctype="multipart/form-data" method="POST" id="apply">
+		<?php if(!empty($msg)) { ?>
+			<h5><?= $msg ?></h5>
+		<?php } ?>
+		<form action=""  enctype="multipart/form-data" method="POST" id="apply">
 		<!-- pulls from data.questions -->
 			
 		</form>
 	</div></div></div>
+	
+	
+	<script>
+		
+	/*
+	$(function(){
+		$('#apply').submit(function(event) {
+			event.preventDefault();
+			console.log('start of function');
+			var data = $(this).serialize();
+			//var apikey = "JFuyX4zSY7+txyyJjZdZ5R2DRIcYG4dzY5YtwlKek+5v0gNad8ifEB4d8AHmtWIeoirXhOwV2o2KRYJpu6wwii0j6zCgLOlW1NC9yYaWFwg=" //$(this).attr('action').val();
+			//console.log(apikey);
+
+			
+			$.ajax({
+				type: "POST",
+				url: "https://16c7366a3f525bf30232066ddeb99477@api.greenhouse.io/v1/applications/",
+				data: data,
+				dataType: "text",
+				//contentType: false,
+				// http://stackoverflow.com/questions/18522173/how-to-parse-multipart-form-data-sent-through-ajax-request
+				//dataType: "json",
+				success: function(html) {
+					alert(html);
+					console.log('Hide form and display thank you note');
+				},
+				error: function(res) {
+					console.log(res);
+				}
+			}); // ajax
+			
+			//return false;
+			
+		});
+		
+	});
+	*/
+		
+	</script>
 
 
 </body>

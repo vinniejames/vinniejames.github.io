@@ -1,0 +1,48 @@
+.navbar-sub {
+	margin-top: 58px; 
+	overflow: hidden; /* hides extra becuase weird bottom margin ~8px */
+	position: fixed;
+	top: 0;
+	margin-bottom: 0;
+	border: none;
+	z-index: 500;
+	background-color: #ccc;
+	border-radius: 0;
+	width: 100%;
+	display: block;
+	height: 58px;
+}
+.navbar-sub ul {
+	margin-bottom: 0;
+	list-style: none;
+}	
+
+.navbar-sub li {
+	display: inline-block;
+	float: left;
+	padding: 0 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+	/*padding: 20px;*/
+}
+.navbar-sub li:hover {
+	background-color: #2f90ce;
+	color: #fff;
+	
+}
+.navbar-sub li a {
+	display: block;
+	color: #666;
+	height: 58px;
+	padding: 20px 0;
+}
+.navbar-sub li:hover a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-sub a.active {
+	border-bottom: 4px solid #2f90ce;
+	color: #2f90ce;
+	pointer-events: none;
+}	

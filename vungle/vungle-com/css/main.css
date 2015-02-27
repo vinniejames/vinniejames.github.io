@@ -301,7 +301,7 @@ border-color: transparent;
 }
 	
 .btn-secondary {
-	background: transparent;
+	background: #ffffff;
 	border: 1px solid #2f90ce;
 	color: #2f90ce;
 	text-transform: uppercase;
