@@ -41,13 +41,13 @@
 	
 	<div class="row">
 		<div class="col-sm-12">
-			<h2 class="subline">Vungle provides tools that make it easy for people to bring great video content into the world. Whether you’re experimenting with creating an app for the first time, or you’re looking for sophisticated help managing and monetizing an existing app with video, Vungle’s technology lets you focus on being creative.</h2>
+			<h2 class="subline">Work alongside wonderful, brilliant people to revolutionize mobile advertising. Get 401k, health and dental, as well as reimbursement for lunches at the restaurants of your choice, cellphone plans, and gym memberships.</h2>
 		</div>		
 	</div>
 	
 	
 	<div class="page-header">
-        <h1>Our Leadership Team</h1>
+        <h1>Vungle is About...</h1>
     </div>
     
 	
@@ -62,7 +62,13 @@
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
 				
-				<figcaption class="text-center">Zain Jaffer, CEO &amp; Founder</figcaption> 
+				<figcaption>
+					<h3 class="text-center">Hustle</h3>
+					<ul>
+						<li>Be the best</li>
+						<li>Transcend barriers</li>
+					</ul>
+				</figcaption> 
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
@@ -73,7 +79,14 @@
 				 </a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Colin Behr, VP of Business &amp; International Relations</figcaption>
+				<figcaption>
+					<h3 class="text-center">Owning It</h3>
+					<ul>
+						<li>Demand excellence</li>
+						<li>Take initiative</li>
+						<li>Enable new ideas to grow</li>
+					</ul>
+				</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
@@ -84,7 +97,14 @@
 				</a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Andrea Sharfin, VP of Marketing</figcaption>
+				<figcaption>
+					<h3 class="text-center">Transparency</h3>
+					<ul>
+						<li>Share the right information with the right people in a timely manner</li>
+						<li>Be honest</li>
+						<li>Be open</li>
+					</ul>
+				</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
@@ -95,54 +115,107 @@
 				</a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Wayne Chan, VP of Engineering</figcaption> 
+				<figcaption>
+					<h3 class="text-center">Users First</h3>
+					<ul>
+						<li>Team over self</li>
+						<li>Focus on our partner's goals</li>
+						<li>Optimize for the end user</li>
+					</ul>
+				</figcaption>
 			</figure>
 		</div>
 
 	</div><!-- /row -->
+	
+		<div class="page-header">
+        <h1>Perks</h1>
+    </div>
+    
+	
+	
 	<div class="row">
-		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">	
+		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="ben">
-					<img class="img-circle img-responsive" src="img/about/ben-bear.jpg" alt="Ben Bear, VP of Sales">
-				</a>
+				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
+					 <img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer, CEO & Founder">
+				 </a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Ben Bear, VP of Sales</figcaption> 
+				
+				<figcaption class="text-center">Great healthcare and 401k plan</figcaption> 
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
 			<figure>
 				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="erik">
-					<img class="img-circle img-responsive" src="img/about/erik-juhl.jpg" alt="Erik Juhl, VP of Talent Operations">
-				</a>
+				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
+				 	<img class="img-circle img-responsive" src="img/about/colin-behr.jpg" alt="Colin Behr, VP of Business & International Relations">
+				 </a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Erik Juhl, VP of Talent Operations</figcaption>
+				<figcaption class="text-center">Reimbursable gym membership</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
 			<figure>
 				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="mike">
-					<img class="img-circle img-responsive" src="img/about/michal-pilawski.jpg" alt="Michal Pilawski, VP of Product">
+				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
+					<img class="img-circle img-responsive" src="img/about/andrea-sharfin.jpg" alt="Andrea Sharfin, VP of Marketing">
 				</a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Michal Pilawski, VP of Product</figcaption>
+				<figcaption class="text-center">Covered food costs</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
 			<figure>
 				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="mike">
-					<img class="img-circle img-responsive full" src="img/about/si-crowhurst.jpg" alt="Si Crowhurst, Head of Creative & Optimization Group">
+				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="wayne">
+					<img class="img-circle img-responsive" src="img/about/wayne-chan.jpg" alt="Wayne Chan, VP of Engineering">
 				</a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Si Crowhurst, Head of Creative & Optimization Group</figcaption>
+				<figcaption class="text-center">Bring your dog to work</figcaption>
+			</figure>
+		</div>
+
+	</div><!-- /row -->
+
+	<div class="row">
+		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
+			<figure>
+				<div class="exec">
+				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
+					 <img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer, CEO & Founder">
+				 </a>
+				<span class="bio"><p class="text-center">View Bio</span>
+				</div>
+				
+				<figcaption class="text-center">Meaningful &amp; transparent equity</figcaption> 
+			</figure>
+		</div>
+		<div class="col-md-3 col-sm-6 wow fadeInLeft">
+			<figure>
+				<div class="exec">
+				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
+				 	<img class="img-circle img-responsive" src="img/about/colin-behr.jpg" alt="Colin Behr, VP of Business & International Relations">
+				 </a>
+				<span class="bio"><p class="text-center">View Bio</span>
+				</div>
+				<figcaption class="text-center">Covered transportation costs</figcaption>
+			</figure>
+		</div>
+		<div class="col-md-3 col-sm-6 wow fadeInRight">
+			<figure>
+				<div class="exec">
+				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
+					<img class="img-circle img-responsive" src="img/about/andrea-sharfin.jpg" alt="Andrea Sharfin, VP of Marketing">
+				</a>
+				<span class="bio"><p class="text-center">View Bio</span>
+				</div>
+				<figcaption class="text-center">Work around the globe with our Exchange program</figcaption>
 			</figure>
 		</div>
 
@@ -150,84 +223,25 @@
 	</div><!-- /row -->
 	
 	
+	
 	<div class="page-header">
-        <h1>Team Members</h1>
+        <h1>Joining Vungle</h1>
     </div>
-    
-    <div class="row team-section">
+	
+	<div class="row">
 		<div class="col-sm-12">
-			<h1 class="text-center white">Join a team of 100+ hustlers!</h1>
-		</div>
-	</div>
-	
-	<div class="page-header">
-        <h1>Proudly Backed By</h1>
-    </div>
-    
-    <div class="row">
-		<div class="col-md-2 col-sm-4">
-			<img class="img-responsife full" src="img/about/google-ventures-logo.png">
-		</div>
-		<div class="col-md-2 col-sm-4">
-			<img class="img-responsife full" src="img/about/aol-ventures-logo.png">
-		</div>
-		<div class="col-md-2 col-sm-4">
-			<img class="img-responsife full" src="img/about/crosslink-capital-logo.png">
-		</div>
-		<div class="col-md-2 col-sm-4">
-			<img class="img-responsife full" src="img/about/angelpad-logo.png">
-		</div>
-		<div class="col-md-2 col-sm-4">
-			<img class="img-responsife full" src="img/about/500-startups-logo.png">
-		</div>
-		<div class="col-md-2 col-sm-4">
-			<img class="img-responsife full" src="img/about/thomas-ventures-logo.png">
-		</div>
-	</div>
-	
-	<div class="page-header">
-        <h1>Board Members</h1>
-    </div>
-    
-    <div class="row">
-	    
-		<div class="col-md-3 col-sm-6">
-			<figure>
-				<div class="exec">
-				<img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer">
-				<span class="bio"><p class="text-center">View Bio</span> 
-				</div>
-				<figcaption class="text-center">Zain Jaffer, CEO &amp; Founder</figcaption> 
-			</figure>
-		</div>
-		<div class="col-md-3 col-sm-6">
-			<figure>
-				<div class="exec">
-				<img class="img-circle img-responsive" src="img/about/montgomery-kersten.jpg" alt="Montgomery Kersten">
-				<span class="bio"><p class="text-center">View Bio</span>
-				</div>
-				<figcaption class="text-center">Montgomery Kersten</figcaption> 
-			</figure>
-		</div>
-		<div class="col-md-3 col-sm-6"><!-- SHOWS HIDES WAYNE ON xs -->
-			<figure>
-				<div class="exec">
-				<img class="img-circle img-responsive" src="img/about/david-silverman.jpg" alt="David Silverman">
-				<span class="bio"><p class="text-center">View Bio</span>
-				</div>
-				<figcaption class="text-center">David Silverman</figcaption> 
-			</figure>
-		</div>
-		<div class="col-md-3 col-sm-6">
-			<figure>
-				<div class="exec">
-				<img class="img-circle img-responsive" src="img/about/don-butler.jpg" alt="Don Butler">
-				<span class="bio"><p class="text-center">View Bio</span>
-				</div>
-				<figcaption class="text-center">Don Butler</figcaption> 
-			</figure>
-		</div>
-		
+			<p class="lead">The Vungle hustle is no more apparent than in the way we’re hiring and growing Vungle. We set high standards and we go after the very best, and we’re quick and transparent about it.</p>
+			<p class="lead">If you’re not an exact fit for one of our roles, but we like your hustle, we’ll work with you to find a home for you at Vungle. Check out our available positions <a href="">here.</a></p>
+			<ol>
+				<li>Submit your application - our talent team and your future teammates will review your application to see if there’s a potential opportunity for you at Vungle.</li>
+				<li>Phone call - have a short 15-30 min chat with a few members of the team, and potentially answer some technical questions.</li>
+				<li>Initial on-site interview - 1-2 hours on-site to meet your immediate team members and get to know us.</li>
+				<li>Full on-site interview - we’ll invite you to meet the rest of the team in person, and chat with our CEO, Zain Jaffer.</li>
+				<li>Official Offer - If the team thinks you’re a great fit for the company, we’ll send out an offer within 3-5 days.</li>
+			</ol>
+		</div>	
+		<p>&nbsp;</p>
+		<p class="text-center"><a href="departments" class="btn btn-lg btn-secondary">Apply Now</a></p>	
 	</div>
 	
 	
@@ -240,122 +254,6 @@
 </div><!-- container -->
 
 
-
-
-    
-    
-    <footer>
-         <div class="footer">
-			 <div class="container">
-			 
-			 	<div class="row">
-				 	<div class="col-sm-4">
-					 	<h3>Subscribe to Our Newsletter</h3>
-					 	<!-- <label for="Email">Email address:</label> -->
-					 	<form action="">
-					 		<div class="form-group">
-					 			<input  class="form-control input-lg" type="text" type="email" name="Email" placeholder="Email Address *MARKETO*">
-					 		</div>
-					 		<input type="submit" class="btn btn-primary btn-lg">
-					 	</form>
-				 	</div>
-				 	
-				 	<div class="col-sm-4">
-					 	<div class="row">
-						 	<div class="col-xs-6">
-							 	
-							 	
-								 	<h3>Main Nav</h3>
-								 		<ul>
-										 	<li>Advertise</li>
-										 	<li>Monetize</li>
-										 	<li>Products</li>								 	
-										 	<li>Resource Center</li>
-									 	</ul>
-								
-							 	
-						 	</div>
-						 	
-						 	<div class="col-xs-6">
-							 	
-								 	<h3>Company</h3>
-								 		<ul>
-										 	<li>About Us</li>
-										 	<li>Contact Us</li>
-										 	<li>Careers</li>
-										 	<li>Blog</li>
-									 	</ul>
-								
-						 	</div>
-					 	</div> 	
-				 	</div>
-				 	
-				 	<div class="col-sm-4">
-					 	
-						 	<h3 class="">Socialize with Us</h3>
-						 	
-						 	<div class="text-center">
-						 	<div class="btn-group">
-							 	<i class="fa fa-facebook-square fa-3x"></i>
-							 	<i class="fa fa-twitter-square fa-3x"></i>
-							 	<i class="fa fa-linkedin-square fa-3x"></i>
-					 		</div>
-						 	</div>
-						 	
-					 	
-				 	</div>
-				 	
-			 	</div>
-			 
-			 </div>
-		 </div><!-- /footer --> 
-      </footer>
-    
-    
-    
-    
-    <!-- Modal box for bios -->
-    
-    <div class="modal fade" id="bioModal" tabindex="-1" role="dialog" aria-labelledby="bioModelLabel" aria-hidden="true">
-	    
-	    <div class="modal-dialog">
-		    
-		    <div class="modal-content">
-			    
-			    <div class="modal-header">
-				    <button type="button" class="close" data-dismiss="modal" aria-label="Close"<span aria-hidden="true">&times;</span></button>				    
-			    </div><!-- / modal header -->
-			    
-			    <div class="modal-body">
-				    
-					    <div class="row">
-						    <div id="bio-img" class="col-xs-4">
-							    <img class="img-circle img-responsive" src="" alt=""><!-- from js -->
-							</div>
-						    <div class="col-xs-8">
-							    <h3 id="bio-name" class="modal-title text-center"><!-- from js --></h3>
-							    <h4 id="bio-title" class="modal-title text-center"><!-- from js --></h4>
-						    </div>
-					    </div><!-- /row -->
-					    <div class="row">
-						    <div id="bio-bio" class="modal-body">
-							    <!-- from js -->
-							</div>
-					    </div><!-- /row -->
-				    
-			    </div><!-- / modal body -->
-
-			    
-		    </div><!-- / modal content
-		    
-	    </div><!-- modal-dialog -->
-	    
-    </div><!-- / modal -->
-    
-    
-
-    
-    <!-- / Modal box for bios -->    
     
     
     

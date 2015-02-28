@@ -79,18 +79,18 @@
           </li>
           <li><a href="#">About Us</a>
             <ul class="list-unstyled">
-                <li class="sub-nav"><a href="#">Who We Are <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="aboutus.php">Who We Are <span class="icon"></span></a></li>
                 <li class="sub-nav"><a href="#">Newsroom <span class="icon"></span></a></li>
                 <li class="sub-nav"><a href="#">Events <span class="icon"></span></a></li>
             </ul>
           </li>
-          <li><a href="#">Blog <span class="icon"></span></a></li>
-          <li><a href="#">Careers <span class="icon"></span></a></li>
-          <li><a href="#">Contact Us <span class="icon contact"></span></a></li>
+          <li><a href="blog.php">Blog <span class="icon"></span></a></li>
+          <li><a href="careers.php">Careers <span class="icon"></span></a></li>
+          <li><a href="contact.php">Contact Us <span class="icon contact"></span></a></li>
 
 <!-- sign up and login -->
-          <li><a href="#">Login <span class="icon login"></span></a></li>
-          <li><a href="#">Sign Up <span class="icon sign-up"></span></a></li>
+          <li><a href="http://v.vungle.com">Login <span class="icon login"></span></a></li>
+          <li><a href="https://v.vungle.com/dashboard/signup">Sign Up <span class="icon sign-up"></span></a></li>
           
           
          </ul>

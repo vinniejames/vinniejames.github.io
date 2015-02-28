@@ -1,6 +1,4 @@
-    
-    
-    <footer>
+      <footer>
          <div class="footer">
 			 <div class="container">
 			 
@@ -50,11 +48,11 @@
 					 	
 						 	<h3 class="">Socialize with Us</h3>
 						 	
-						 	<div class="text-center">
+						 	<div class="">
 						 	<div class="btn-group">
-							 	<i class="fa fa-facebook-square fa-3x"></i>
-							 	<i class="fa fa-twitter-square fa-3x"></i>
-							 	<i class="fa fa-linkedin-square fa-3x"></i>
+							 	<a href="<?=$in?>"><i class="fa fa-facebook-square fa-2x"></i></a>
+							 	<i class="fa fa-twitter-square fa-2x"></i>
+							 	<i class="fa fa-linkedin-square fa-2x"></i>
 					 		</div>
 						 	</div>
 						 	

@@ -43,30 +43,39 @@
 		
 	}
 ?>
-<!doctype html>
-<html>
-	<head>
-		<title>Greenhouse</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		
-		<style type="text/css">
-		html, body {
-			background-color: #000;
-			color: #ccc;
-			}	
-		a {
-			color:#2f90ce;
-		}
-		</style>
-	</head>
-	
-<body>
+<?php
+	include('header.php');
+	include('nav.php');
+	include('nav-sub.php'); 
+?>
 
-	
-	
+<style>.bluemenu {background-color: #2f90ce; } 
+
+.padded{ padding-top:116px;}
+</style>    
+<script>
+	var d = document.getElementById("navigator");
+	d.className = d.className + " bluemenu";
+</script> 
+ 
+
+<div class="container padded">
+	<h1 id="jobtitle"></h1>
+	<hr />
+	<div class="row">
+		
+		<div class="col-sm-8">
+			<div  id="job"></div>
+		</div>
+		<div class="col-sm-4">
+			<div id="apply"></div>
+		</div>
+		
+	</div>
+</div><!--container-->
+
+<?php include('footer.php'); ?>
+
 	<script>
 		
 		// pulls id from query string parameter using regEx
@@ -168,7 +177,7 @@
 			 
 			$("#apply").append(
 			'<div class="form-group">'+
-				'<button type="submit" class="btn btn-default">Apply</button>'+
+				'<button type="submit" class="btn btn-lg btn-primary">Apply</button>'+
 			'</div>'
 			 );
 			 
@@ -205,68 +214,3 @@
 
 		
 	</script>
-	
-	
-	
-	
-	<div class="container"><div class="row"><div class="col-sm-12">
-	<h1 id="jobtitle" class="text-center"><!-- job title --></h1>
-	<hr />
-	
-	<div id="job"><!-- job description --></div>
-	
-	</div>
-	<hr /><hr />
-
-	<div class="container"><div class="row"><div class="col-sm-6 col-sm-push-3">
-		<?php if(!empty($msg)) { ?>
-			<h5><?= $msg ?></h5>
-		<?php } ?>
-		<form action=""  enctype="multipart/form-data" method="POST" id="apply">
-		<!-- pulls from data.questions -->
-			
-		</form>
-	</div></div></div>
-	
-	
-	<script>
-		
-	/*
-	$(function(){
-		$('#apply').submit(function(event) {
-			event.preventDefault();
-			console.log('start of function');
-			var data = $(this).serialize();
-			//var apikey = "JFuyX4zSY7+txyyJjZdZ5R2DRIcYG4dzY5YtwlKek+5v0gNad8ifEB4d8AHmtWIeoirXhOwV2o2KRYJpu6wwii0j6zCgLOlW1NC9yYaWFwg=" //$(this).attr('action').val();
-			//console.log(apikey);
-
-			
-			$.ajax({
-				type: "POST",
-				url: "https://16c7366a3f525bf30232066ddeb99477@api.greenhouse.io/v1/applications/",
-				data: data,
-				dataType: "text",
-				//contentType: false,
-				// http://stackoverflow.com/questions/18522173/how-to-parse-multipart-form-data-sent-through-ajax-request
-				//dataType: "json",
-				success: function(html) {
-					alert(html);
-					console.log('Hide form and display thank you note');
-				},
-				error: function(res) {
-					console.log(res);
-				}
-			}); // ajax
-			
-			//return false;
-			
-		});
-		
-	});
-	*/
-		
-	</script>
-
-
-</body>
-</html>
