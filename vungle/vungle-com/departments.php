@@ -47,7 +47,7 @@
 			left: 0;
 			right: 0;
 			width: 100%;
-			height: 100%;
+			height: auto;
 		}
 		.bldg {
 			text-transform: uppercase;
@@ -73,41 +73,7 @@
 	<ul id="departments" class="row list-inline text-center">
 		<!-- from greenhuse api -->
 	</ul><!-- /row -->
-	
-	<!--
-	<div class="row">
 		
-		<ul class="row list-inline">
-			<li class="col-xs-4 list-item" style="overflow: hidden; height: 220px">
-				<h2 style="position: absolute;" class="heading2">NEAT JOB</h2>
-				<img style="position: absolute;" class="back-img" src="img/dept/engineering.jpg">
-			</li>
-			<li class="col-xs-4 list-item">
-				<h2 class="heading2">NEAT JOB</h2>
-				<img class="back-img" src="img/dept/engineering.jpg">
-			</li>
-			<li class="col-xs-4 list-item">
-				<h2 class="heading2">NEAT JOB</h2>
-				<img class="back-img" src="img/dept/engineering.jpg">
-			</li>
-			<li class="col-xs-4 list-item">
-				<h2 class="heading2">NEAT JOB</h2>
-				<img class="back-img" src="img/dept/engineering.jpg">
-			</li>
-			<li class="col-xs-4 list-item">
-				<h2 class="heading2">NEAT JOB</h2>
-				<img class="back-img" src="img/dept/engineering.jpg">
-			</li>
-			<li class="col-xs-4 list-item">
-				<h2 class="heading2">NEAT JOB</h2>
-				<img class="back-img" src="img/dept/engineering.jpg">
-			</li>
-		</ul>
-		
-		
-	</div>
-	-->
-	
 </div><!-- container -->
 
 
@@ -147,17 +113,14 @@
 			      
 			      if ((id != 0) && (numjobs > 0) ) { // if department has a job
 			      	var dept = data.departments[i].name;
-			      	//var depturl = dept.toLowerCase().replace(/\s+/g, ''); //office name url for href
+			      	var depturl = dept.toLowerCase().replace(/[\s+\&+]/g, ''); //office name url for href, replaces \s+ all spaces (\s replaces first space); and all \&
 			      	//console.log(locationurl);
-			      	//console.log(location);
-			      	
-			      	
-			      	
+			      	//console.log(location);      	
 			      	$('#departments').append(
-			      		'<a href="dept?id='+id+'">'+
-			      			'<li class="col-xs-6 col-md-4 location">'+
+			      		'<a href="dept.php?id='+id+'">'+
+			      			'<li class="col-xs-12 col-sm-6 col-md-4 location">'+
 			      				'<div class="icon-dep">'+
-			      					'<img src="img/dept/engineering.jpg" alt="" >'+
+			      					'<img src="img/dept/'+depturl+'.jpg" alt="" >'+
 			      					'<div class="heads"><h2>'+dept+'</h2></div>'+
 			      				'</div></li></a>');
 			      	

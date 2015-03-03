@@ -1,6 +1,5 @@
 <?php include('header.php'); ?>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
 
 <div class="container-fluid hero-image">
 	
@@ -27,7 +26,7 @@
 	
 	<div class="row">
 		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
 					 <img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer, CEO & Founder">
@@ -39,7 +38,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
 				 	<img class="img-circle img-responsive" src="img/about/colin-behr.jpg" alt="Colin Behr, VP of Business & International Relations">
@@ -50,7 +49,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
 					<img class="img-circle img-responsive" src="img/about/andrea-sharfin.jpg" alt="Andrea Sharfin, VP of Marketing">
@@ -61,7 +60,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="wayne">
 					<img class="img-circle img-responsive" src="img/about/wayne-chan.jpg" alt="Wayne Chan, VP of Engineering">
@@ -75,7 +74,7 @@
 	</div><!-- /row -->
 	<div class="row">
 		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">	
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="ben">
 					<img class="img-circle img-responsive" src="img/about/ben-bear.jpg" alt="Ben Bear, VP of Sales">
@@ -86,7 +85,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="erik">
 					<img class="img-circle img-responsive" src="img/about/erik-juhl.jpg" alt="Erik Juhl, VP of Talent Operations">
@@ -97,7 +96,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="mike">
 					<img class="img-circle img-responsive" src="img/about/michal-pilawski.jpg" alt="Michal Pilawski, VP of Product">
@@ -108,15 +107,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight"  data-wow-delay="250ms">
-			<figure>
-				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="si">
-					<img class="img-circle img-responsive full" src="img/about/si-crowhurst.jpg" alt="Si Crowhurst, Head of Creative & Optimization Group ">
-				</a>
-				<span class="bio"><p class="text-center">View Bio</span>
-				</div>
-				<figcaption class="text-center">Si Crowhurst, Head of Creative &amp; Optimization Group</figcaption>
-			</figure>
+			
 		</div>
 
 	</div><!-- /row -->
@@ -164,7 +155,7 @@
     <div class="row">
 	    
 		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer">
 				<span class="bio"><p class="text-center">View Bio</span> 
@@ -173,7 +164,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/montgomery-kersten.jpg" alt="Montgomery Kersten">
 				<span class="bio"><p class="text-center">View Bio</span>
@@ -182,7 +173,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/david-silverman.jpg" alt="David Silverman">
 				<span class="bio"><p class="text-center">View Bio</span>
@@ -191,7 +182,7 @@
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight"  data-wow-delay="250ms">
-			<figure>
+			<figure class="execs">
 				<div class="exec">
 				<img class="img-circle img-responsive" src="img/about/don-butler.jpg" alt="Don Butler">
 				<span class="bio"><p class="text-center">View Bio</span>
@@ -246,7 +237,7 @@
 			    </div><!-- / modal body -->
 
 			    
-		    </div><!-- / modal content
+		    </div><!-- / modal content -->
 		    
 	    </div><!-- modal-dialog -->
 	    

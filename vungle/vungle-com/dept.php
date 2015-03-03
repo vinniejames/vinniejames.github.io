@@ -68,7 +68,7 @@
 -->
 <div class="hero-small" style="margin-top: 116px;">
 	<div id="bg">
-		<img id="" src="img/dept/engineering.jpg" alt="">
+		
 	</div>
 	
 	<h1 id="dept" class=""><!-- location --></h1>
@@ -148,32 +148,20 @@
 		    success: function (data, status, error) {
 		      console.log('success', data);
 		      
-		      	
-		      	//var jobid = 830;
-		      	
-		      	//console.log(query+' query')
-		        //console.log(jobid+' jobid')
-		      	//console.log(typeof jobid);
-		      	//console.log(typeof query);
-		      	
-		      	//if(query == jobid){console.log('twinsies')};
-		      		      	
-		      	//if (urlid === )
-			  	//console.log(data.departments);
+
 			  	var depts = data.departments;
-			  	//console.log(depts[1].name); // name = bus dev
-			  	//console.log(data.departments[3].id); //department id
-			  	
-				//console.log(depts[1].jobs[0]); // job object
-				//console.log(depts[1].jobs[0].title);	//job title
-				//console.log(depts[1].jobs[0].location.name); //location of job	
 				
 				for(i = 0; i < depts.length; i++){
 					
 					
 					
 					if (depts[i].id == query) {
-						$('#dept').append(depts[i].name);
+						
+						var deptname = depts[i].name;
+						var depturl = deptname.toLowerCase().replace(/[\s+\&+]/g, '');
+				
+						$('#bg').append('<img id="thedepartment" src="img/dept/'+depturl+'-vungle.jpg" alt="'+deptname+'">')
+						$('#dept').append(deptname);
 						console.log(depts[i].jobs[0].title);
 						
 						for(j = 0; j < depts[i].jobs.length; j++){
@@ -189,12 +177,12 @@
 							var location = depts[i].jobs[j].location.name;
 							var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
 							//console.log(locationurl);
-							var locationquery = 'office?office='+locationurl;
+							var locationquery = 'office.php?office='+locationurl;
 							
 							//console.log(title);
 							//console.log(location);
 							
-							 var vungleurl = 'singlejob.html?id=';
+							 var vungleurl = 'apply.php?id=';
 							 var jobsurl = vungleurl+jobsid;
 							
 							var jobapp = '#';

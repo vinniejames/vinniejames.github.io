@@ -87,7 +87,7 @@
 					if (id != 0){
 						var location = byID[i].name;
 						var locationurl = location.toLowerCase().replace(/\s+/g, ''); //office name url for href
-						var locationquery = 'office?office='+locationurl;
+						var locationquery = 'office.php?office='+locationurl;
 						
 						$('#offices').append('<a href="'+locationquery+'"><li class="col-sm-4 col-xs-6 location"><div class="bldg"><img class="img-responsive" src="img/office-locations/'+locationurl+'.svg"><br />'+location+'</div></li></a>')
 						

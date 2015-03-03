@@ -49,14 +49,7 @@
 			imgpath+"michal-pilawski.jpg",
 			"Michal Pilawski is Vice President of Product at Vungle, the leading mobile video advertising platform. Prior to joining Vungle, Michal led development of multiple mobile entertainment, location and advertising platforms at Nokia and at NativeX. He has extensive experience in monetization of music, video and games. Michal has an MBA from University of Pennsylvania's Wharton School of Business."
 		);
-		var si = new Exec(
-			"Si Crowhurst",
-			"Head of Creative & Optimization Group",
-			imgpath+"si-crowhurst.jpg",
-			"Si Crowhurst has been Head of Creative and Optimization Group at Vungle, Inc. since August 2014. Prior to Vungle, Crowhurst fo-founded We Love Mobile Ltd. and served as its Business Development Director. He served as Global Head of Innovation at Amobee and led Amobee’s global product innovation efforts. He also served as the Head of Programmes for Orange, the world leaders in providing telecommunication services."
-		);
-		
-
+			
 	var execs = {
 		'zain': zain,
 		'colin': colin,
@@ -65,11 +58,10 @@
 		'ben': ben,
 		'erik': erik,
 		'mike': mike,
-		'si': si
 		
 	}
 	
-	console.log(execs.typeof);
+	//console.log(execs.typeof);
 
 	
 	$('#bioModal').on('show.bs.modal', function (event) {

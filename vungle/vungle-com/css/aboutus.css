@@ -20,7 +20,7 @@
 	  }
 	  
 	  .hero-image {
-		  height: 100vh;
+		  min-height: 100vh;
 		  background: url('../img/about/about.jpg');
 		  background-position: center center;
 		  background-size: cover;
@@ -43,16 +43,16 @@
 	  figcaption {
 		  font-size: 14px;
 	  }
-	  figure img {
+	  figure.execs img {
 		  /*padding: 20px;*/
 		  transition: opacity 300ms;
 	  }
-	  figure img:hover {
+	  figure.execs img:hover {
 		  opacity: 0.6;
 		  transition: opacity 300ms;
 	  }
 	  
-	  figure span.bio {
+	  figure.execs span.bio {
 		  color: #fff;
 		  
 		  margin: auto;

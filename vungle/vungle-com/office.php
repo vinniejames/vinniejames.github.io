@@ -11,12 +11,12 @@
 </script> 
 
 <style>
-			.icon {
+		/*	.icon {
 			background: #ccc;
 			display: block;
 			margin: 10px;
 			padding: 20px;
-		}
+		}*/
 		.bldg {
 			text-transform: uppercase;
 			color: #666666;
@@ -174,8 +174,8 @@
 				  if (queryid == jobLocationUrl) {
 	
 					  var jobstitle = data.jobs[i].title;
-					  var vungleurl = 'dept?id=';
-					  var joburl = 'job?id=';
+					  var vungleurl = 'dept.php?id=';
+					  var joburl = 'apply.php?id=';
 					  //url with job id
 					  var jobsurl = joburl+data.jobs[i].id;
 					  
@@ -203,7 +203,7 @@
 			  	
 			  	//adds location to header
 			   $('#location').append(jobslocation);
-			   $('#bg img').attr('src', "img/office-locations/"+jobLocationUrl+"-pic.jpg").attr('alt', jobslocation);
+			   $('#bg img').attr('src', "img/office-locations/"+queryid+"-pic.jpg").attr('alt', jobslocation);
 
 		      
 		    },

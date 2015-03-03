@@ -4,6 +4,13 @@
 	include('nav-sub.php'); 
 ?>
 
+<style>
+.icons { 
+	padding: 0 50px 15px;
+}	
+	
+</style>
+
 <style>.bluemenu {background-color: #2f90ce; } </style>    
 <script>
 	var d = document.getElementById("navigator");
@@ -55,11 +62,10 @@
 	<div class="row">
 		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
 			<figure>
-				<div class="exec">
-				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
-					 <img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer, CEO & Founder">
-				 </a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+
+					 <img class="img-responsive" src="img/careers/hustle.svg" alt="Zain Jaffer, CEO & Founder">
+
 				</div>
 				
 				<figcaption>
@@ -73,11 +79,10 @@
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
 			<figure>
-				<div class="exec">
-				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
-				 	<img class="img-circle img-responsive" src="img/about/colin-behr.jpg" alt="Colin Behr, VP of Business & International Relations">
-				 </a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				 
+				 	<img class="img-responsive" src="img/careers/own.svg" alt="Colin Behr, VP of Business & International Relations">
+
 				</div>
 				<figcaption>
 					<h3 class="text-center">Owning It</h3>
@@ -91,11 +96,10 @@
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
 			<figure>
-				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
-					<img class="img-circle img-responsive" src="img/about/andrea-sharfin.jpg" alt="Andrea Sharfin, VP of Marketing">
-				</a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				
+					<img class="img-responsive" src="img/careers/transparency.svg" alt="Andrea Sharfin, VP of Marketing">
+
 				</div>
 				<figcaption>
 					<h3 class="text-center">Transparency</h3>
@@ -109,11 +113,10 @@
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
 			<figure>
-				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="wayne">
-					<img class="img-circle img-responsive" src="img/about/wayne-chan.jpg" alt="Wayne Chan, VP of Engineering">
-				</a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+
+					<img class="img-responsive" src="img/careers/users.svg" alt="Wayne Chan, VP of Engineering">
+
 				</div>
 				<figcaption>
 					<h3 class="text-center">Users First</h3>
@@ -137,11 +140,8 @@
 	<div class="row">
 		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
 			<figure>
-				<div class="exec">
-				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
-					 <img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer, CEO & Founder">
-				 </a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+					<img class="img-responsive" src="img/careers/health.svg" alt="Zain Jaffer, CEO & Founder">
 				</div>
 				
 				<figcaption class="text-center">Great healthcare and 401k plan</figcaption> 
@@ -149,33 +149,31 @@
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInLeft">
 			<figure>
-				<div class="exec">
-				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
-				 	<img class="img-circle img-responsive" src="img/about/colin-behr.jpg" alt="Colin Behr, VP of Business & International Relations">
-				 </a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				
+				 	<img class="img-responsive" src="img/careers/gym.svg" alt="Colin Behr, VP of Business & International Relations">
+				 
 				</div>
 				<figcaption class="text-center">Reimbursable gym membership</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight">
 			<figure>
-				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
-					<img class="img-circle img-responsive" src="img/about/andrea-sharfin.jpg" alt="Andrea Sharfin, VP of Marketing">
-				</a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				
+					<img class="img-responsive" src="img/careers/meals.svg" alt="Andrea Sharfin, VP of Marketing">
+				
 				</div>
 				<figcaption class="text-center">Covered food costs</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
 			<figure>
-				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="wayne">
-					<img class="img-circle img-responsive" src="img/about/wayne-chan.jpg" alt="Wayne Chan, VP of Engineering">
-				</a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				
+					<img class="img-responsive" src="img/careers/dog.svg" alt="Wayne Chan, VP of Engineering">
+				
+				
 				</div>
 				<figcaption class="text-center">Bring your dog to work</figcaption>
 			</figure>
@@ -183,43 +181,48 @@
 
 	</div><!-- /row -->
 
+<br>
+
 	<div class="row">
-		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
+		<div class="col-sm-12 col-md-10 col-md-push-1">
+		
+		
+		<div class="col-md-4 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">
 			<figure>
-				<div class="exec">
-				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="zain">
-					 <img class="img-circle img-responsive" src="img/about/zain-jaffer.jpg" alt="Zain Jaffer, CEO & Founder">
-				 </a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				 
+					 <img class="img-responsive" src="img/careers/stock-options.svg" alt="Zain Jaffer, CEO & Founder">
+				 
+				
 				</div>
 				
 				<figcaption class="text-center">Meaningful &amp; transparent equity</figcaption> 
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6 wow fadeInLeft">
+		<div class="col-md-4 col-sm-6 wow fadeInLeft">
 			<figure>
-				<div class="exec">
-				 <a href="" data-toggle="modal" data-target="#bioModal" data-bio="colin">
-				 	<img class="img-circle img-responsive" src="img/about/colin-behr.jpg" alt="Colin Behr, VP of Business & International Relations">
-				 </a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				 
+				 	<img class="img-responsive" src="img/careers/transport.svg" alt="Colin Behr, VP of Business & International Relations">
+				
+				
 				</div>
 				<figcaption class="text-center">Covered transportation costs</figcaption>
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6 wow fadeInRight">
+		<div class="col-md-4 col-sm-6 wow fadeInRight">
 			<figure>
-				<div class="exec">
-				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="andrea">
-					<img class="img-circle img-responsive" src="img/about/andrea-sharfin.jpg" alt="Andrea Sharfin, VP of Marketing">
-				</a>
-				<span class="bio"><p class="text-center">View Bio</span>
+				<div class="icons">
+				
+					<img class="img-responsive" src="img/careers/vungle-exchange-program.svg" alt="Andrea Sharfin, VP of Marketing">
+				
 				</div>
 				<figcaption class="text-center">Work around the globe with our Exchange program</figcaption>
 			</figure>
 		</div>
 
-
+		
+		</div>
 	</div><!-- /row -->
 	
 	
@@ -241,7 +244,7 @@
 			</ol>
 		</div>	
 		<p>&nbsp;</p>
-		<p class="text-center"><a href="departments" class="btn btn-lg btn-secondary">Apply Now</a></p>	
+		<p class="text-center"><a href="departments.php" class="btn btn-lg btn-secondary">Apply Now</a></p>	
 	</div>
 	
 	
