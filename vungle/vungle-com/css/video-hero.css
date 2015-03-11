@@ -3,6 +3,7 @@
   border-right: none;
   border-left: none;
   position: relative;
+  /* 																z-index: 100000;*/
 }
 .hide {
 	display: none;
@@ -24,6 +25,9 @@
   width: 100%;
   overflow: hidden;
   background: #000;
+  
+  
+  /*																z-index: 1000000;*/
 }
 .video-container .poster img {
   width: 100%;

@@ -8,25 +8,25 @@
                 <h1>The way developers put video ads in their apps</h1>
             </div>
             <div class="description">
-                <p class="text-center"><a class="btn btn-primary btn-lg">Get Started With Our SDK</a></p>
+                <p class="text-center"><a href="<?=$signup?>" class="btn btn-primary btn-lg">Get Started With Our SDK</a></p>
             </div>
         </div><!--title-container-->
         
         <div class="button-container container-fluid">
 	        <div class="row jumbo-row">
-		         	<a class="jumbo-btn" href="#">
-			        <div class="col-sm-4 jumbo-col">
+		         	<a class="jumbo-btn" href="<?=$monetize?>">
+			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
 			          <h2 class="text-center">Monetize</h2>
 			        </div>
 			        </a>
-			        <a class="jumbo-btn" href="#">
-			        <div class="col-sm-4 jumbo-col">
+			        <a class="jumbo-btn" href="<?=$advertise?>">
+			        <div class="col-sm-4 jumbo-col jumbo-col-middle">
 			          <h2 class="text-center">Advertise</h2>
 			        </div>
 			        </a>
-			        <a class="jumbo-btn" href="#">
-			        <div class="col-sm-4 jumbo-col">
-			          <h2 class="text-center">Programmatic</h2>
+			        <a class="jumbo-btn" href="<?=$products?>">
+			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
+			          <h2 class="text-center">Products</h2>
 			        </div>
 			        </a>
 	        </div>
@@ -34,9 +34,9 @@
         
         <div class="filter"></div>
         <video autoplay loop class="fillWidth" poster="vid/vungle.png">
+             <source src="vid/vungle.webm" type="video/webm" />
              <source src="vid/vungle.mp4" type="video/mp4" />
 			 <source src="vid/vungle.ogg" type="video/ogg" />
-			 <source src="vid/vungle.webm" type="video/webm" />
 			 <img src="vid/vungle.gif" title="Your browser does not support the <video> tag">
         </video>
         <div class="poster hide">
@@ -59,7 +59,22 @@
 </div><!--container-->
 
 
-    
+<!-- full viewheight background section-->      
+<div class="container-fluid">
+	<div class="row background-section product">
+		<div class="col-sm-5 col-sm-push-6 col-xs-6 col-xs-push-5">
+			<h1>Our Products</h1>
+			<p class="lead">Our technology delivers engaging ads and a seamless user experience to generate higher ad revenues.</p>
+			<button class="btn btn-secondary">Learn More <i class="fa fa-caret-right fa-2x"></i></button>
+		</div>
+	</div>
+</div>
+<!-- full viewheight background section--> 
+
+
+
+
+<!-- 
 <div class="container our-customers">
 
      
@@ -87,10 +102,6 @@
 			
 			<div class="customer">
 			<img class="img-responsive full"  src="img/customer-sgn.jpg">
-			<!--<blockquote>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-			  <footer>Ian Marsh, <cite title="Source Title">Co-Founder, Nimblebit</cite></footer>
-			</blockquote>-->
 			<div class="customer-name"><h3>SGN</h3></div>
 			</div>
 			
@@ -99,7 +110,8 @@
 
       
 
-</div> <!-- /container -->
+</div>
+-->
 
 
 
@@ -360,17 +372,7 @@
 	<button class="btn btn-secondary">View Blog <i class="fa fa-caret-right fa-2x"></i></button>
 </div>
 
-<!-- full viewheight background section-->      
-<div class="container-fluid">
-	<div class="row background-section">
-		<div class="col-sm-5 col-sm-push-6 col-xs-6 col-xs-push-5">
-			<h1>Our Products</h1>
-			<p class="lead">Our technology delivers engaging ads and a seamless user experience to generate higher ad revenues.</p>
-			<button class="btn btn-secondary">Learn More <i class="fa fa-caret-right fa-2x"></i></button>
-		</div>
-	</div>
-</div>
-<!-- full viewheight background section--> 
+
 
       
       

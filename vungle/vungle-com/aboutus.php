@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 
-<div class="container-fluid hero-image">
+<div class="container-fluid hero-image aboutus">
 	
 	
 	<h1 class="hero-heading wow zoomIn">Vungle’s mission is to engage the world with in-app video experiences.</h1>

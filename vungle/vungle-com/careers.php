@@ -1,6 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 	include('nav-sub.php'); 
 ?>
 
@@ -8,7 +8,27 @@
 .icons { 
 	padding: 0 50px 15px;
 }	
-	
+
+ 
+/* LIST #2 */
+#list2 { position: relative; }
+#list2 ol { font-size:24px; color:#000;  }
+#list2 ol li { color: #ffffff; }
+#list2 ol li p { padding:8px;  /*border-left: 1px solid #999;*/ color: #333;	 }
+#list2 ol li p em { display:block; }
+
+#list2 ol li span.disc { 
+	  display: block;
+	  background: #3591cc;
+	  border-radius: 50%;
+	  height: 35px;
+	  width: 35px;
+	  position: relative;
+	  top: 44px;
+	  left: -45px;
+	  z-index: -100;
+   }
+#list2 ol li span.left-border {border-left: 1px solid #999; display: block}	
 </style>
 
 <style>.bluemenu {background-color: #2f90ce; } </style>    
@@ -22,14 +42,14 @@
 
 
 
-<div class="homepage-hero-module" style="padding-top: 116px;">
+<div class="homepage-hero-module padded">
     <div class="video-container">
         
        
         
         
         <div class="filter"></div>
-        <video autoplay class="fillWidth" poster="vid/vungle.png">
+        <video controls class="fillWidth" poster="vid/XXXvungle.png">
              <source src="vid/vungle-talent.mp4" type="video/mp4" />
 			 <source src="vid/vungle-talent.ogg" type="video/ogg" />
 			 <source src="vid/vungle-talent.webm" type="video/webm" />
@@ -48,6 +68,9 @@
 	
 	<div class="row">
 		<div class="col-sm-12">
+			
+			
+			
 			<h2 class="subline">Work alongside wonderful, brilliant people to revolutionize mobile advertising. Get 401k, health and dental, as well as reimbursement for lunches at the restaurants of your choice, cellphone plans, and gym memberships.</h2>
 		</div>		
 	</div>
@@ -242,9 +265,22 @@
 				<li>Full on-site interview - we’ll invite you to meet the rest of the team in person, and chat with our CEO, Zain Jaffer.</li>
 				<li>Official Offer - If the team thinks you’re a great fit for the company, we’ll send out an offer within 3-5 days.</li>
 			</ol>
+			
+			<div id="list2">
+			   <ol>
+			   
+			    <li><span class="left-border"></span><span class="disc"></span><p>Submit your application - our talent team and your future teammates will review your application to see if there’s a potential opportunity for you at Vungle.</p></li>
+				<li><span class="left-border"></span><span class="disc"></span><p>Phone call - have a short 15-30 min chat with a few members of the team, and potentially answer some technical questions.</p></li>
+				<li><span class="left-border"></span><span class="disc"></span><p>Initial on-site interview - 1-2 hours on-site to meet your immediate team members and get to know us.</p></li>
+				<li><span class="left-border"></span><span class="disc"></span><p>Full on-site interview - we’ll invite you to meet the rest of the team in person, and chat with our CEO, Zain Jaffer.</p></li>
+				<li><span class="left-border"></span><span class="disc"></span><p>Official Offer - If the team thinks you’re a great fit for the company, we’ll send out an offer within 3-5 days.</p></li>
+			   </ol>
+			   
+			</div>
+
 		</div>	
 		<p>&nbsp;</p>
-		<p class="text-center"><a href="departments.php" class="btn btn-lg btn-secondary">Apply Now</a></p>	
+		<p class="text-center"><a href="<?=$departments?>" class="btn btn-lg btn-secondary">Apply Now</a></p>	
 	</div>
 	
 	

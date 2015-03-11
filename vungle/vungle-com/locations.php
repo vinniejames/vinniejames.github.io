@@ -1,6 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 	include('nav-sub.php'); 
 ?>
 
@@ -11,12 +11,12 @@
 </script> 
 
 <style>
-			.icon {
+		/*	.icon {
 			background: #ccc;
 			display: block;
 			margin: 10px;
 			padding: 20px;
-		}
+		}*/
 		.bldg {
 			text-transform: uppercase;
 			color: #666666;
@@ -31,7 +31,7 @@
 
 
 
-<div class="container"  style="padding-top: 116px;">
+<div class="container padded">
 	
 	<div class="page-header">
         <h1>Where Do You Want to Be?</h1>

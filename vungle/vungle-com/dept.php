@@ -1,6 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 	include('nav-sub.php'); 
 ?>
 
@@ -27,7 +27,7 @@
 		}
 		
 		.hero-small {
-			height: 50vh;
+			height: 75vh;
 			position: relative;
 			overflow: hidden;
 		}
@@ -66,7 +66,7 @@
 
 </div>
 -->
-<div class="hero-small" style="margin-top: 116px;">
+<div class="hero-small padded">
 	<div id="bg">
 		
 	</div>
@@ -160,7 +160,7 @@
 						var deptname = depts[i].name;
 						var depturl = deptname.toLowerCase().replace(/[\s+\&+]/g, '');
 				
-						$('#bg').append('<img id="thedepartment" src="img/dept/'+depturl+'-vungle.jpg" alt="'+deptname+'">')
+						$('#bg').append('<img id="thedepartment" src="img/dept/'+depturl+'-dept.jpg" alt="'+deptname+'">')
 						$('#dept').append(deptname);
 						console.log(depts[i].jobs[0].title);
 						

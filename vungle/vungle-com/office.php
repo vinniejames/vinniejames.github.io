@@ -1,6 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 	include('nav-sub.php'); 
 ?>
 
@@ -51,10 +51,17 @@
 		
 		#bg {
 		  position: absolute; 
-		  top: -50%; 
+		 
+		 /* top: -50%; 
 		  left: -50%; 
 		  width: 200%; 
-		  height: 200%;
+		  height: 200%;*/
+		  
+		  
+		    position: absolute;
+			  top: 0;
+			  width: 100%;
+			  height: 100%;
 		}
 		#bg img {
 		  position: absolute; 
@@ -75,7 +82,7 @@
 
 </div>
 -->
-<div class="hero-small" style="margin-top: 116px;">
+<div class="hero-small padded">
 	<div id="bg">
 		<img id="" src="" alt="">
 	</div>

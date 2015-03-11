@@ -1,12 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
-
-	
-	$fb = "http://facebook.com";
-	$tw = "http://twitter.com";
-	$in = "http://linkedin.com"; 
-	$rss = "http://vungle.com/rss";
+	//include('nav.php');
 ?>
 <style>
 
@@ -117,7 +111,7 @@ article .article {
 </script>   
 
 
-<div style="margin-top: 116px;" class="container">
+<div class="container padded">
 	
 	
 	<div class="row">

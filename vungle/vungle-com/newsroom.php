@@ -1,6 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 ?>
 
 <style>.bluemenu {background-color: #2f90ce; } </style>    
@@ -21,7 +21,7 @@
 
 
 
-<div class="container"  style="padding-top: 116px;">	
+<div class="container padded">	
 <div class="col-sm-10 col-sm-push-1">
 	
 	<div class="row">

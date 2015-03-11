@@ -1,6 +1,6 @@
 <?php
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 	include('nav-sub.php'); 
 ?>
 
@@ -63,7 +63,7 @@
 
 
 
-<div class="container"  style="padding-top: 116px;">
+<div class="container padded">
 	
 	<div class="page-header">
         <h1>What Do You Want to Do?</h1>

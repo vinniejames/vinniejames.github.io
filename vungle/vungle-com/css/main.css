@@ -9,7 +9,10 @@ body {
 	font-size: 21px; /* RETHINK BODY FONT SIZE, MAY NOT BE THE MOST EFFICIENT PLACE FOR IT manual style on sub-nav li's */
 	font-weight: 300;
 	}
-h1,
+h1, .h1
+ {
+  font-family: 'Arvo', 'Rockwell', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+}
 h2,
 h3,
 h4,
@@ -20,14 +23,19 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
-  font-family: 'Arvo', 'Rockwell', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+.h6 
+ {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
 }
 
 .page-header {
 	border: none;
 }
+.padded{ margin-top:109px;} /* CHANGED FROM PADDING */
 
+a:hover, a:focus {
+	color: #2f90ce;
+}
 
 /* ==========================================================================
    Navigation Styles
@@ -85,7 +93,7 @@ nav {
   font-size: 15px;
   top: 0;
   width: 20em;
-  z-index: 1000; /* z-index: 2000;
+  z-index: 10000000; /* z-index: 2000;
   
  /*                                    */  transition: left 0.3s ease-in-out 0s;
   /*                                    */ -webkit-transition: left 0.3s ease-in-out 0s;
@@ -211,13 +219,14 @@ body.nav-expanded {
 
 .main-menu li > a:hover > span.icon {
 /*                                    */   float: right;
-  margin: 0.1em 0.8em -0.1em 0;
+  margin: 0.1em 0em -0.1em 0; 
   opacity: 1;
 }
 
 
 .navbar {
 	height: 58px;
+	z-index: 1000000000;
 }
 
 
@@ -327,7 +336,24 @@ border-color: transparent;
 	width: 100%;
 }
 
+.footer a, footer a:active, .subscribe a, .subscribe a:active {
+	color: #ffffff;
+	transition: color 500ms;
+}
 
+footer a:hover {
+	color: #2f90ce;
+	transition: color 500ms;
+	text-decoration: none;
+}
+
+.footer .flags h1 {
+	display: inline;
+	padding: 0 20px 0 0;
+}
+.footer .flags span {
+	 border-radius: 4px;
+}
 
 .footer {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
@@ -338,7 +364,7 @@ border-color: transparent;
 }
 
 .footer i {
-	margin: 0 20px;
+	margin: 0 20px 0 0;
 }
 .footer h3, .footer h4 {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;

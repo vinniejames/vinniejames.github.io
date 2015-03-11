@@ -1,11 +1,45 @@
+			  
+	  .hero-image {
+		  min-height: 100vh;
+		  position: relative;
+	  }
+	  .hero-image .title-container {
+		  position: absolute;
+		  top: 40vh;
+		  margin: 0 20vw;
+		  text-align: center;
+		  color: #fff;
+	  }
+	  .hero-image i {
+		  position: absolute;
+		  bottom: 0;
+		  margin: 10px 50vw;
+		  
+	  }
+	  .hero-image.aboutus {
+	  	background: url('../img/about/about.jpg');
+		  background-position: center center;
+		  background-size: cover;
+		}
+		.hero-image.programmatic {
+	  	  background: url('../img/programmatic/programmatic.jpg');
+		  background-position: center center;
+		  background-size: cover;
+		}
+		.hero-image.contactus {
+	  	  background: url('../img/contact/vungle-office-address.jpg');
+		  background-position: center center;
+		  background-size: cover;
+		}
+
+		
 		.background-section{
-			height: 100vh;
-			background: url('../img/product.jpg');
-			background-position: center center;
-			background-size: cover;
+			min-height: 100vh;
+			
+			
 			color: #666;
 		}
-		.background-section h1, .background-section h2, .background-section h3 {
+		.background-section.product h1, .background-section.product h2 {
 			margin-top: 20vh;
 			color: #666;
 		}
@@ -19,4 +53,48 @@
 		}
 		.team-section h1, .background-section h2, .background-section h3 {
 			margin-top: 35vh;
+		}
+		
+		.background-section.product {
+			background: url('../img/product.jpg');
+			background-position: center center;
+			background-size: cover;
+		}
+		.background-section.measurable {
+			background: url('../img/programmatic/measurable-roi.jpg');
+			background-position: center center;
+			background-size: cover;
+			color: #ffffff;
+			  padding: 5% 0;
+		}
+		.background-section.globe {
+			background: url('../img/advertize/world.jpg');
+			background-position: top center;
+			background-size: cover;
+			color: #ffffff;
+			  padding: 5% 0;
+		}
+		.background-section.sdk {
+			background: url('../img/monetize/sdk-background.jpg');
+			background-position: center center;
+			background-size: cover;
+			color: #ffffff;
+			  padding: 5% 0;
+		}
+		.background-section.globe a {
+			color: #ffffff;
+			text-decoration: underline;
+		}
+		
+		.background-section.globe a.btn {
+			color: #3591cc;
+			text-decoration: none;
+		}
+		.background-section.globe a.btn:hover {
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		.background-section.measurable img {
+			margin: 0 10% 20%;
 		}

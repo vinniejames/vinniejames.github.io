@@ -1,10 +1,5 @@
 <?php include('header.php'); ?>
 
-<STYLE>
-
-	</STYLE>
-  
-
 <div class="container-fluid hero-image contactus">
 	
 	
@@ -69,7 +64,7 @@
 			
 		</div>
 	</div>
-	
+	<i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i>
 </div>
 
 

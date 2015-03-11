@@ -1,9 +1,9 @@
       <footer>
          <div class="footer">
-			 <div class="container">
+			 <div class="container-fluid">
 			 
 			 	<div class="row">
-				 	<div class="col-sm-4">
+				 	<div class="col-sm-3">
 					 	<h3>Subscribe to Our Newsletter</h3>
 					 	<!-- <label for="Email">Email address:</label> -->
 					 	<form action="">
@@ -21,10 +21,10 @@
 							 	
 								 	<h3>Main Nav</h3>
 								 		<ul>
-										 	<li>Advertise</li>
-										 	<li>Monetize</li>
-										 	<li>Products</li>								 	
-										 	<li>Resource Center</li>
+										 	<li><a href="<?=$advertise?>">Advertise</a></li>
+										 	<li><a href="<?=$monetize?>">Monetize</a></li>
+										 	<li><a href="<?=$products?>">Products</a></li>								 	
+										 	<li><a href="<?=$resources?>">Resource Center</a></li>
 									 	</ul>
 								
 							 	
@@ -34,27 +34,42 @@
 							 	
 								 	<h3>Company</h3>
 								 		<ul>
-										 	<li>About Us</li>
-										 	<li>Contact Us</li>
-										 	<li>Careers</li>
-										 	<li>Blog</li>
+										 	<li><a href="<?=$aboutus?>">About Us</a></li>
+										 	<li><a href="<?=$contactus?>">Contact Us</a></li>
+										 	<li><a href="<?=$careers?>">Careers</a></li>
+										 	<li><a href="<?=$blog?>">Blog</a></li>
 									 	</ul>
 								
 						 	</div>
 					 	</div> 	
 				 	</div>
 				 	
-				 	<div class="col-sm-4">
+				 	<div class="col-sm-5">
 					 	
 						 	<h3 class="">Socialize with Us</h3>
-						 	
-						 	<div class="">
+
 						 	<div class="btn-group">
-							 	<a href="<?=$in?>"><i class="fa fa-facebook-square fa-2x"></i></a>
-							 	<i class="fa fa-twitter-square fa-2x"></i>
-							 	<i class="fa fa-linkedin-square fa-2x"></i>
+							 	<a href="<?=$fb?>"><i class="fa fa-facebook-square fa-2x"></i></a>
+							 	<a href="<?=$tw?>"><i class="fa fa-twitter-square fa-2x"></i></a>
+							 	<a href="<?=$in?>"><i class="fa fa-linkedin-square fa-2x"></i></a>
+							 	<a href="<?=$git?>"><i class="fa fa-github-square fa-2x"></i></a>
 					 		</div>
-						 	</div>
+					 		<h3 class="">Global</h3>
+
+						 	<div class="btn-group flags">
+							 	<a href="<?=$us?>"><h1><span class="flag-icon flag-icon-squared flag-icon-us"></span></h1></a>
+							 	<a href="<?=$gb?>"><h1><span class="flag-icon flag-icon-squared flag-icon-gb"></span></h1></a>
+							 	<a href="<?=$de?>"><h1><span class="flag-icon flag-icon-squared flag-icon-de"></span></h1></a>
+							 	<a href="<?=$cn?>"><h1><span class="flag-icon flag-icon-squared flag-icon-cn"></span></h1></a>
+							 	<a href="<?=$kr?>"><h1><span class="flag-icon flag-icon-squared flag-icon-kr"></span></h1></a>
+							 	<a href="<?=$jp?>"><h1><span class="flag-icon flag-icon-squared flag-icon-jp"></span></h1></a>
+							 	<a href="<?=$br?>"><h1><span class="flag-icon flag-icon-squared flag-icon-br"></span></h1></a>
+							 	<!--<span class="fa-stack fa-lg">
+							 		<i class="fa fa-square fa-stack-2x"></i>
+							 		<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+							 	</span>-->
+					 		</div>
+						 	
 						 	
 					 	
 				 	</div>
@@ -181,6 +196,26 @@
 		$(this).css("background", "#ccc");
 		$("a.active").css("color", "#2f90ce");
 	});
+	
+	
+	
+	
+</script>
+
+<script>
+$(function(){
+	
+	// toggle for sub-nav menu items
+	$('.subnav-item').click(function(){
+		$('.subnav-item').toggleClass('subnav-open');
+		$('.fa-plus').toggleClass('fa-minus');
+		
+	});
+	// adds active class to subnav, aria-selected data-attribute would not work??
+	var activeurl = window.location.href;
+	//console.log(activeurl);
+	$('a[href="'+activeurl+'"]').addClass('active').prepend('<i class="fa fa-plus"></i>').removeAttr('href') //.attr('href', '#');
+});
 </script>
 
    

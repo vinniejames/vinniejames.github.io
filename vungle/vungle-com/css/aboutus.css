@@ -19,27 +19,6 @@
 		opacity: 1;
 	  }
 	  
-	  .hero-image {
-		  min-height: 100vh;
-		  background: url('../img/about/about.jpg');
-		  background-position: center center;
-		  background-size: cover;
-		  position: relative;
-	  }
-	  .hero-image h1 {
-		  position: absolute;
-		  top: 40vh;
-		  margin: 0 20vw;
-		  text-align: center;
-		  color: #fff;
-	  }
-	  .hero-image i {
-		  position: absolute;
-		  bottom: 0;
-		  margin: 10px 50vw;
-		  
-	  }
-	  
 	  figcaption {
 		  font-size: 14px;
 	  }

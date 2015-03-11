@@ -46,13 +46,12 @@
 
 
 	include('header.php');
-	include('nav.php');
+	//include('nav.php');
 	include('nav-sub.php'); 
 ?>
 
 <style>.bluemenu {background-color: #2f90ce; } 
 
-.padded{ padding-top:116px;}
 </style>    
 <script>
 	var d = document.getElementById("navigator");

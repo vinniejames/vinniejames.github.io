@@ -1,6 +1,21 @@
+.button-container {
+	  bottom: 0;
+  position: absolute;
+  
+  width: 100%;
+  max-width: 100%;
+}
 .jumbo-col {
 	padding: 20px 0;
 }
+
+.jumbo-col-middle {
+	margin: 0 8px;
+}
+.jumbo-col-edge {
+	margin: 0 -4px;
+}
+
 .jumbo-btn h2 {
 	margin: 0;
 	text-transform: uppercase;
@@ -73,3 +88,39 @@ text-align: center;
 	color: #fff;
 	margin-bottom: 20px;
 }
+
+	    .dark-gray-box {
+		    background-color: #b8b8b8;
+		    color: #666666;
+		    padding: 20px;
+	    }    
+	    .dark-gray-box img {
+		    max-width: 33%;
+		    padding: 20px 40px;
+		    height: auto;
+	    }   
+	    
+	    .gray-box {
+		    background-color: #b8b8b8;
+		    color: #ffffff;
+		    padding: 20px;
+	    }    
+	    .gray-box img {
+		    max-width: 33%;
+		    height: auto;
+	    }    
+	    
+	    .premium img {
+		    padding: 10% 20%;
+	    }
+	    #engage li {
+		    list-style-type: none;
+	    }
+	    #engage li:before {
+		    content: "— ";
+		    
+	    }
+	    
+	    .partner-logos img {
+		    padding: 0 10px;
+	    }
