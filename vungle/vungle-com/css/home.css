@@ -1,12 +1,15 @@
 .button-container {
 	  bottom: 0;
   position: absolute;
-  
+ 
+ 
   width: 100%;
   max-width: 100%;
+  
 }
 .jumbo-col {
 	padding: 20px 0;
+	/*width: 100%;*/
 }
 
 .jumbo-col-middle {
@@ -116,8 +119,10 @@ text-align: center;
 	    #engage li {
 		    list-style-type: none;
 	    }
-	    #engage li:before {
+	    .dash li:before {
 		    content: "— ";
+		      margin-left: -27px;
+		      list-style-type: none;
 		    
 	    }
 	    

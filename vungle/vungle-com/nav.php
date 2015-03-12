@@ -5,7 +5,7 @@
           <li><a href="<?=$monetize?>">Monetize</a></li>
           <li><a href="<?=$programmatic?>">Programmatic</a></li>
           <li><a href="<?=$advertise?>">Advertise</a></li>
-          <li><a href="<?=$products?>">Products</a></li>
+          <li><a href="<?=$product?>">Product</a></li>
           <li><a href="#">About Us</a>
             <ul class="list-unstyled">
                 <li class="sub-nav"><a href="<?=$aboutus?>">Who We Are <span class="icon"></span></a></li>

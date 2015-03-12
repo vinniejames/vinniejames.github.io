@@ -3,7 +3,7 @@
 	$monetize = "monetize.php";
 	$advertise = "advertise.php";
 	$programmatic = "programmatic.php";
-	$products = "products.php";
+	$product = "product.php";
 	$aboutus = "aboutus.php";
 	$careers = "careers.php";
 	$blog = "blog.php";
@@ -11,6 +11,7 @@
 	$newsroom = "newsroom.php";
 	$events = "events.php";
 	$contact = "contact.php";
+	$privacy = "http://www.vungle.com/privacy/";
 	
 	$resources = "http://support.vungle.com";
 	
@@ -39,6 +40,65 @@
   <meta charset="utf-8">
   <title>VUNGLE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  
+    <script>
+	/*
+	  //WHAT IS v FOR ???	
+      var v = window.Vungle = {}
+
+    // Marketo from old site
+	(function() {
+	    var didInit = false;
+	
+	    function initMunchkin() {
+	      if(didInit === false) {
+	        didInit = true;
+	        Munchkin.init('184-FKZ-935');
+	      }
+	    }
+	
+	    var s = document.createElement('script');
+	    s.type = 'text/javascript';
+	    s.async = true;
+	    s.src = '//munchkin.marketo.net/munchkin.js';
+	
+	    s.onreadystatechange = function() {
+	      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+	        initMunchkin();
+	      }
+	    };
+	
+	    s.onload = initMunchkin;
+	    document.getElementsByTagName('head')[0].appendChild(s);
+	  })();
+        
+	 */   
+	 
+	 
+	    
+	/*
+	  // Google Analytics			
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  
+	  ga('create', 'UA-21145945-3', 'vungle.com');
+	  ga('create', 'UA-21145945-1', 'vungle.com', {'name': 'vungle'});
+	  ga('send', 'pageview');
+	  ga('vungle.send', 'pageview');
+	*/
+	
+	
+	
+	
+	</script>
+	
+	
+	<script src="//app-ab04.marketo.com/js/forms2/js/forms2.min.js"></script>
+
+  
   
   <!-- Styles -->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -81,6 +141,7 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	
 </head>
 
 <body>

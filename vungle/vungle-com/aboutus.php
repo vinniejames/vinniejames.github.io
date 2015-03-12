@@ -4,7 +4,14 @@
 <div class="container-fluid hero-image aboutus">
 	
 	
-	<h1 class="hero-heading wow zoomIn">Vungle’s mission is to engage the world with in-app video experiences.</h1>
+	<!--<h1 class="hero-heading wow zoomIn">Vungle’s mission is to engage the world with in-app video experiences.</h1>-->
+	
+		<div class="title-container wow zoomIn animated" style="visibility: visible;">
+		            <div class="description">
+			            <h1 class="hero-heading">Vungle’s mission is to engage the world with in-app video experiences.</h1>
+		               
+		            </div>
+		</div>
 	<i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i>
 </div>
 
@@ -242,6 +249,7 @@
 	    </div><!-- modal-dialog -->
 	    
     </div><!-- / modal -->
-    
 
+    
+<BR><BR>
 <?php include('footer.php'); ?>

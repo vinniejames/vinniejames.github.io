@@ -3,7 +3,7 @@
 			 <div class="container-fluid">
 			 
 			 	<div class="row">
-				 	<div class="col-sm-3">
+				 	<div class="col-sm-4">
 					 	<h3>Subscribe to Our Newsletter</h3>
 					 	<!-- <label for="Email">Email address:</label> -->
 					 	<form action="">
@@ -14,16 +14,19 @@
 					 	</form>
 				 	</div>
 				 	
-				 	<div class="col-sm-4">
+				 	<div class="col-sm-3">
+					 	<div class="row">
+						 	<div class="col-xs-12"><h3 class="text-center">Quick Links</h3></div>
+					 	</div>
 					 	<div class="row">
 						 	<div class="col-xs-6">
 							 	
 							 	
-								 	<h3>Main Nav</h3>
+								 	
 								 		<ul>
 										 	<li><a href="<?=$advertise?>">Advertise</a></li>
 										 	<li><a href="<?=$monetize?>">Monetize</a></li>
-										 	<li><a href="<?=$products?>">Products</a></li>								 	
+										 	<li><a href="<?=$product?>">Product</a></li>								 	
 										 	<li><a href="<?=$resources?>">Resource Center</a></li>
 									 	</ul>
 								
@@ -32,7 +35,7 @@
 						 	
 						 	<div class="col-xs-6">
 							 	
-								 	<h3>Company</h3>
+								 	
 								 		<ul>
 										 	<li><a href="<?=$aboutus?>">About Us</a></li>
 										 	<li><a href="<?=$contactus?>">Contact Us</a></li>
@@ -74,6 +77,12 @@
 					 	
 				 	</div>
 				 	
+			 	</div><!-- /row -->
+			 	
+			 	<div class="row">
+				 	<?php date_default_timezone_set('America/Los_Angeles'); ?>
+				 	<br>
+				 	<p class="text-center"><small>&copy; <?php echo(date('Y')); ?> Vungle. All rights reserved. | <a href="<?=$privacy?>">Our Privacy Policy</a></small></p>
 			 	</div>
 			 
 			 </div>
@@ -215,10 +224,78 @@ $(function(){
 	var activeurl = window.location.href;
 	//console.log(activeurl);
 	$('a[href="'+activeurl+'"]').addClass('active').prepend('<i class="fa fa-plus"></i>').removeAttr('href') //.attr('href', '#');
+	
 });
-</script>
 
-   
+
+	
+/// smooth scrolling to anchors	
+//http://stackoverflow.com/questions/9068587/accounting-for-a-fixed-header-with-animate-scrolltop-and-target-offset-top
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({scrollTop: target.offset().top - 58}, 1000);
+        return false;
+      }
+    }
+  });
+});	
+	
+	
+
+
+
+	//adds video play button
+	window.onload = function(){
+		var video = document.getElementById('video');
+		var playButton = document.getElementById('play-pause');	
+		//event listener for play/pause
+		playButton.addEventListener('click', function(){
+			if(video.paused == true){
+				video.play();
+				//change button to pause
+				playButton.innerHTML = '<i class="fa fa-pause"></i>';
+				
+				
+					// hide video controls on career when mouse still
+					/*
+					var i = null;
+					$(".video-container").mousemove(function() {
+					    clearTimeout(i);
+					    $("#video-controls").show();
+					    i = setTimeout('$("#video-controls").hide();', 2000);
+					}).mousemove(function() {
+					    clearTimeout(i);
+					    $("#video-controls").hide();
+					});
+					*/
+				
+			}else{
+				video.pause();
+				//change to play button
+				playButton.innerHTML = '<i class="fa fa-play"></i>';
+			}
+		});
+		
+	};
+	
+	// hide video controls on career when mouse still
+	$('#video-controls')[0].onmousemove = (function() {
+		    var onmousestop = function() {
+		       $('#video-controls').css('opacity', '0').css('transition', 'opacity 500ms');
+		    }, thread;
+		
+		    return function() {
+		       $('#video-controls').css('opacity', '1').css('transition', 'opacity 500ms');
+		        clearTimeout(thread);
+		        thread = setTimeout(onmousestop, 1000);
+		    };
+		})();
+
+</script>
 
 
    

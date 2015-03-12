@@ -5,7 +5,7 @@
 	    </style>
 
 <div class="container-fluid hero-image programmatic">
-	
+<span class="blue-overlay"></span>	
 	
 	<div class="title-container wow zoomIn">
             <div class="description">
@@ -17,7 +17,7 @@
 	
 	
 	<div class="button-container">
-	        <div class="row jumbo-row">
+	        <div class="row-fluid jumbo-row">
 		         	<a class="jumbo-btn" href="#engage">
 			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
 			          <h2 class="text-center">Engaging Inventory</h2>
@@ -118,7 +118,8 @@
 <br>
 
 <!-- full viewheight background section-->      
-<div id="highfill" class="container-fluid">
+<div id="measurable" class="container-fluid">
+	<span class="blue-overlay"></span>
 	<div class="row background-section measurable">
 		<div class="col-xs-10 col-xs-push-1">
 			<h1>Measurable ROI</h1>
@@ -161,7 +162,7 @@
 <!-- full viewheight background section-->
 
 
-<div id="engage" class="container page-header">
+<div id="accessible" class="container page-header">
         <h1>Access</h1>
         <p class="lead">Vungle is fortunate to work with the very best demand-side platforms, giving marketers a seamless buying experience.</p>
         <br>

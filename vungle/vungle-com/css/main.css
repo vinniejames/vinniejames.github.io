@@ -359,7 +359,7 @@ footer a:hover {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
 	background: #333;
 	color: #fff;
-	margin-top: 40px;
+																									/*margin-top: 40px;*/
 	padding-bottom: 24px;
 }
 

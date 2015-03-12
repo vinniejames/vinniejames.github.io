@@ -37,6 +37,9 @@
              <source src="vid/vungle.webm" type="video/webm" />
              <source src="vid/vungle.mp4" type="video/mp4" />
 			 <source src="vid/vungle.ogg" type="video/ogg" />
+			 <object>
+		       <embed src="vid/vungle.mp4" type= "application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always" />
+		     </object>
 			 <img src="vid/vungle.gif" title="Your browser does not support the <video> tag">
         </video>
         <div class="poster hide">

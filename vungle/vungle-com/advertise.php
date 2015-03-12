@@ -43,7 +43,7 @@
 </div><!--homepage-hero-module-->
 
 
-<div id="optimized" class="container page-header">
+<div id="highltv" class="container page-header">
         <h1>High LTV Users</h1>
         <p class="lead">We believe that users with true life time value are acquired through engaging content, and that means matching your content to the right user.</p>
 </div>
@@ -121,7 +121,7 @@
 
 
 <!-- full viewheight background section-->      
-<div id="highfill" class="container-fluid">
+<div id="global" class="container-fluid">
 	
 	<div class="row background-section globe">
 		<div class="container">
@@ -138,7 +138,7 @@
 <!-- full viewheight background section-->
 
 
-<div id="engage" class="container page-header">
+<div id="slick" class="container page-header">
         <h1>Slick Ad Experience</h1>
         <p>With the help of our Creative Optimization Group, which produces thoroughly tested and optimized app trailers, we serve 15-second, high-quality videos--videos that create an effective viewing experience for your target audience. The collaboration of our Creative Optimization Group and our Data Science team means that our creatives are completely optimized for each user.</p>
         <br>

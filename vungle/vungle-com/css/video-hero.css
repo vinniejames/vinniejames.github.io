@@ -5,6 +5,16 @@
   position: relative;
   /* 																z-index: 100000;*/
 }
+#video-controls {
+  z-index: 1000;
+  position: relative;
+  margin: 40vh auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+.video-controls {
+	z-index: 999 !important; /* navbar-sub 1000 */
+}
 .hide {
 	display: none;
 }

@@ -46,6 +46,10 @@
 		.background-section.measurable img {
 			margin: 0;
 		}
+			.blue-overlay.half {
+			left: 0;
+		}
+		
 	}
  
 	/* Small Devices, Tablets */
@@ -116,6 +120,8 @@
 		.background-section.measurable img {
 			margin: 40px 180px 20px;
 		}
+		
+		
 		
 		
 	}

@@ -2,28 +2,28 @@
 
 <div class="container-fluid hero-image contactus">
 	
+	<span class="blue-overlay"></span>
 	
 	
-	
-	<div class="row">
+	<div class="row-fluid">
 		
 		<div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-8 col-md-push-2">
 			
 			<h2 class="h1">Write Us</h2>
 			<p class="lead">Want to learn more? Don't be shy!</p>
 			
-			<form class="">
+			<form id="mktoForm_1082" method="POST" action="http://app-ab04.marketo.com/index.php/leadCapture/save2" class="">
 			
 			<div class="col-sm-6">
 			  <div class="form-group">
 			    <label class="sr-only" for="firstName">First Name</label>
-			    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+			    <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name">
 			  </div>
 			</div>
 			<div class="col-sm-6">
 			  <div class="form-group">
 			    <label class="sr-only" for="lastName">Last Name</label>
-			    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+			    <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name">
 			  </div>
 			</div>
 			
@@ -31,19 +31,19 @@
 			<div class="col-sm-6">
 			  <div class="form-group">
 			    <label class="sr-only" for="email">Email address</label>
-			    <input type="email" class="form-control" id="email" placeholder="Email">
+			    <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
 			  </div>
 			</div>
 			<div class="col-sm-6">
 			  <div class="form-group">
 			    <label class="sr-only" for="company">Company</label>
-			    <input type="text" class="form-control" id="company" placeholder="Company">
+			    <input type="text" class="form-control" id="Company" name="Company" placeholder="Company">
 			  </div>
 			</div>
 			<div class="col-sm-6">
 			  <div class="form-group">
 			    <label class="sr-only" for="partnerType">Partner Type</label>
-			    <select id="partnerType" name="partnerType" class="" style="">
+			    <select id="partnerType" name="Type__c" class="" style="">
 				    <option value="">I am a...</option><option value="Advertising">Advertiser</option>
 				    <option value="Publishing">Publisher</option><option value="Tech Partner">Programmatic Advertiser </option>
 				    <option value="Publishing">Developer</option>
@@ -57,18 +57,63 @@
 			  </div>
 			</div>
 			
+			  <input type="hidden" name="formid" class="" value="1082">
+			  <input type="hidden" name="munchkinId" class="" value="184-FKZ-935">
 			  
-			  
-			  <p class="text-center"><button type="submit" class="btn btn-primary btn-lg">Submit</button></p>
+			  <p class="text-center"><button id="marketoSubmit" type="submit" class="btn btn-primary btn-lg">Submit</button></p>
 			</form>
 			
 		</div>
 	</div>
-	<i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i>
+	<!--<i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i>-->
 </div>
 
 
 <div class="container">
+	
+	<!--
+	<div class="row">
+		<h1>Marketo</h1>
+		<div class="col-sm-12">
+			<form id="mktoForm_1082"></form>
+			
+			
+			<script>
+				
+				
+				//MktoForms2.loadForm("//app-ab04.marketo.com", "184-FKZ-935", 1082);
+						
+				
+				MktoForms2.loadForm("//app-ab04.marketo.com", "184-FKZ-935", 1082, function(form){
+	
+						console.log(form);
+						console.log(form.getFormElem());
+						console.log(form.getId());
+						console.log(form.getValues());
+						
+						
+						form.getFormElem().show();
+						
+											
+					});
+				/*
+					var btn = document.getElementById("marketoSubmit");
+						btn.onclick = function(){
+						  //When the button is clicked, get the form object and submit it.
+						  MktoForms2.whenReady(function (form){
+						    form.submit();
+						    
+						  });
+						};	
+	
+				*/
+			</script>
+			
+			
+			
+		</div>		
+	</div>
+	-->
 	
 	<div class="page-header">
         <h1>Need Support</h1>
@@ -88,7 +133,7 @@
 	
 	<div class="row maps">
 	
-		<div class="col-sm-3">
+		<div class="col-sm-6">
 			
 			
 			<a href=" https://maps.google.com/maps?q=185+Clara+Street%2C+San+Francisco%2C+CA+94107" target="blank">
@@ -99,7 +144,7 @@
 			<h2 class="text-center map">San Francisco</h2>
 			<p class="text-center">185 Clara Street, <br>San Francisco, CA 94107</p>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-6">
 			
 			<a href=" https://maps.google.com/maps?q=235+St+John+Street%2C+London%2C+EC1V+4NG" target="blank">
 			<img class="img-responsive img-full" src="http://maps.googleapis.com/maps/api/staticmap?center=235+St+John+Street%2C+London%2C+EC1V+4NG&amp;zoom=15&amp;size=400x250&amp;maptype=roadmap
@@ -109,7 +154,7 @@
 			<h2 class="text-center map">London</h2>
 			<p class="text-center">235 St John Street <br>London, EC1V 4NG</p>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-6">
 			
 			<a href=" https://maps.google.com/maps?q=Greifswalder+Strasse+212%2C+10404+Berlin" target="blank">
 			<img class="img-responsive img-full" src="http://maps.googleapis.com/maps/api/staticmap?center=Greifswalder+Strasse+212%2C+10404+Berlin&amp;zoom=15&amp;size=400x250&amp;maptype=roadmap
@@ -119,7 +164,7 @@
 			<h2 class="text-center map">Berlin</h2>
 			<p class="text-center">Greifswalder Strasse 212 <br>10404 Berlin</p>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-6">
 			
 			<a href=" https://maps.google.com/maps?q=Galaxy+SOHO+%EF%BC%88Block+B%EF%BC%89+Chaoyangmen%2C+Dongcheng%2C+Beijing+China+100020" target="blank">
 			<img class="img-responsive img-full" src="http://maps.googleapis.com/maps/api/staticmap?center=Galaxy+SOHO+%EF%BC%88Block+B%EF%BC%89+Chaoyangmen%2C+Dongcheng%2C+Beijing+China+100020&amp;zoom=15&amp;size=400x250&amp;maptype=roadmap
@@ -134,14 +179,14 @@
 	<br>
 	
 	<div class="row">
-		<div class="col-sm-3 col-sm-push-3 col-map">
+		<div class="col-sm-6 col-map">
 			<img class="img-responsive img-full" src="img/contact/vungle-seoul.jpg">
 			<div class="soon">
 				<h2 class="text-center">Seoul</h2>
 				<p class="text-center">Coming Soon!</p>
 			</div>
 		</div>
-		<div class="col-sm-3 col-sm-push-3 col-map">
+		<div class="col-sm-6 col-map">
 			<img class="img-responsive img-full" src="img/contact/vungle-seoul.jpg">
 			<div class="soon">
 				<h2 class="text-center">Tokyo</h2>

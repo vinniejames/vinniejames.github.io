@@ -35,6 +35,11 @@
 <script>
 	var d = document.getElementById("navigator");
 	d.className = d.className + " bluemenu";
+	
+	
+
+	
+	
 </script> 
 
  
@@ -45,16 +50,21 @@
 <div class="homepage-hero-module padded">
     <div class="video-container">
         
-       
+       <!-- Video Controls -->
+		  <div id="video-controls" style="">
+		    <p class="text-center"><button class="btn btn-secondary btn-lg" type="button" id="play-pause"><i class="fa fa-play"></i></button></p>
+		  </div>
         
         
         <div class="filter"></div>
-        <video controls class="fillWidth" poster="vid/XXXvungle.png">
+        <video id="video" class="video-controls fillWidth" poster="vid/XXXvungle.png">
              <source src="vid/vungle-talent.mp4" type="video/mp4" />
 			 <source src="vid/vungle-talent.ogg" type="video/ogg" />
 			 <source src="vid/vungle-talent.webm" type="video/webm" />
 			 <img src="vid/vungle.gif" title="Your browser does not support the <video> tag">
         </video>
+       
+		<!-- video fallback -->  
         <div class="poster hide">
             <img src="vid/vungle.gif" alt="The way devs put video ads in their apps">
         </div>
@@ -63,6 +73,7 @@
 
 <!-- Main jumbo -->
 
+ 
 
 <div class="container people">
 	
@@ -258,14 +269,8 @@
 		<div class="col-sm-12">
 			<p class="lead">The Vungle hustle is no more apparent than in the way we’re hiring and growing Vungle. We set high standards and we go after the very best, and we’re quick and transparent about it.</p>
 			<p class="lead">If you’re not an exact fit for one of our roles, but we like your hustle, we’ll work with you to find a home for you at Vungle. Check out our available positions <a href="">here.</a></p>
-			<ol>
-				<li>Submit your application - our talent team and your future teammates will review your application to see if there’s a potential opportunity for you at Vungle.</li>
-				<li>Phone call - have a short 15-30 min chat with a few members of the team, and potentially answer some technical questions.</li>
-				<li>Initial on-site interview - 1-2 hours on-site to meet your immediate team members and get to know us.</li>
-				<li>Full on-site interview - we’ll invite you to meet the rest of the team in person, and chat with our CEO, Zain Jaffer.</li>
-				<li>Official Offer - If the team thinks you’re a great fit for the company, we’ll send out an offer within 3-5 days.</li>
-			</ol>
 			
+			<div class="col-sm-10 col-sm-push-1">
 			<div id="list2">
 			   <ol>
 			   
@@ -277,10 +282,12 @@
 			   </ol>
 			   
 			</div>
+			</div><!-- /col -->
 
 		</div>	
 		<p>&nbsp;</p>
 		<p class="text-center"><a href="<?=$departments?>" class="btn btn-lg btn-secondary">Apply Now</a></p>	
+		<br>
 	</div>
 	
 	

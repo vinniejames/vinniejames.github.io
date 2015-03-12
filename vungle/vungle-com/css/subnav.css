@@ -13,6 +13,7 @@
 	display: block;
 	/*height: 51px;*/
 	/*box-shadow: 0 0 8px rgba(0,0,0,0.5);*/
+	z-index: 1001;
 }
 .navbar-sub ul {
 	margin-bottom: 0;
