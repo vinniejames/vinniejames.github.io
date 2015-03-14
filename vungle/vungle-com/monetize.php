@@ -29,15 +29,18 @@
 	        </div>
         </div>
         
-        <div class="filter"></div>
+        <div class=""></div>
         <video muted autoplay loop class="fillWidth" poster="vid/vungle.png">
-             <source src="vid/monetize.webm" type="video/webm" />
-             <source src="vid/monetize.mp4" type="video/mp4" />
-			 <source src="vid/monetize.ogg" type="video/ogg" />
-			 <img src="vid/vungle.gif" title="Your browser does not support the <video> tag">
+             <source src="vid/vungle-monetize.webm" type="video/webm" />
+             <source src="vid/vungle-monetize.mp4" type="video/mp4" />
+			 <source src="vid/vungle-monetize.ogg" type="video/ogg" />
+			 <object>
+		       <embed src="vid/vungle-monetize.mp4" type= "application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always" />
+		     </object>
+			 <img src="vid/vungle-monetize.jpg" title="Your browser does not support the <video> tag">
         </video>
         <div class="poster hide">
-            <img src="vid/vungle.gif" alt="The way devs put video ads in their apps">
+            <img src="vid/vungle-monetize.jpg" alt="The way devs put video ads in their apps">
         </div>
     </div><!--video-container-->
 </div><!--homepage-hero-module-->
@@ -118,7 +121,7 @@
 	      <div class="col-sm-3">
 			
 			<div class="customer">
-			<img class="img-responsive full"  src="img/customer-picstitch.jpg">
+			<img class="img-responsive full"  src="img/monetize/pic-stitch.jpg">
 			<div class="customer-name"><h3>Picstitch</h3></div>
 			</div>
 			
@@ -126,8 +129,8 @@
         <div class="col-sm-3">
 			
 			<div class="customer">
-			<img class="img-responsive full" src="img/monetize/traffic-racers.png">
-			<div class="customer-name"><h3>Traffic Racers</h3></div>
+			<img class="img-responsive full" src="img/monetize/traffic-racer.png">
+			<div class="customer-name"><h3>Traffic Racer</h3></div>
 			</div>
 			
         </div>
@@ -135,7 +138,7 @@
         <div class="col-sm-3">
 			
 			<div class="customer">
-			<img class="img-responsive full"  src="img/monetize/mino-monsters.jpeg">
+			<img class="img-responsive full"  src="img/monetize/mino-monsters.jpg">
 			<div class="customer-name"><h3>Mino Monsters</h3></div>
 			</div>
 			
@@ -153,20 +156,20 @@
     
     
      	<div class="row">
-	    	<div class="col-sm-12"><br><h3>We offer:</h3><br></div>
+	    	<div class="col-sm-12"><br><h2>We offer:</h2><br></div>
      	</div>
     
     <div class="row">
 	   
 	    <div class="col-sm-6">
-		       <div class="dark-gray-box">
+		       <div class="gray-box">
 			       <p class="text-center"><img src="img/monetize/speed.svg" class=""></p>
 			       <h5 class="h4 text-center">Speed</h5>
-			       <p class="text-center"><small>Want to ramp up quickly? Our easy-to-integrate, self-serve SDK has you up and running in less than five minutes, enjoying access to top performance and brand ads. If you need hands-on integration help, our globally dispersed team is always available.</small></p><br>
+			       <p class="text-center"><small>Want to ramp up quickly? Our easy-to-integrate, self-serve SDK has you up and running in less than five minutes, enjoying access to top performance and brand ads. If you need hands-on integration help, our globally dispersed team is always available.</small></p>
 		       </div>
 	        </div>
 	        <div class="col-sm-6">
-		        <div class="dark-gray-box">
+		        <div class="gray-box">
 			       <p class="text-center"><img src="img/monetize/support.svg" class=""></p>
 			       <h5 class="h4 text-center">Support</h5>
 			       <p class="text-center"><small>Need careful analysis of how to address your user base? Additional support is always available from our expert account managers. Our integration specialists provide customer assistance and help you brainstorm custom placements designed specifically for your app.</small></p>

@@ -457,7 +457,7 @@ hr.small {
 
 
 /* Footer */
-.linked {height:0px;}
+.linked {height:0px;  visibility: hidden;}
 footer {
     padding: 100px 0;
 }

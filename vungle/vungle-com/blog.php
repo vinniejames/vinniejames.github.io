@@ -109,17 +109,19 @@
 					<form action="#">
 				 		<div class="form-group text-center">
 					 		<input  class="form-control input-lg" type="text" name="FirstName" placeholder="First Name">
+				 		</div>
+				 		<div class="form-group text-center">
 				 			<input  class="form-control input-lg" type="email" name="Email" placeholder="Email Address *MARKETO*">
-				 			
+				 		</div>
+				 		<div class="form-group text-center">
 				 			<button class="btn btn-secondary">Subscribe</button>
 				 		</div>
-				 		
 					 </form>
 					 <br>
 					<p class="text-center">
-					  	<a href="<?=$rss?>"><i class="fa fa-2x fa-rss"></i></a>
-					  	<a href="<?=$fb?>"><i class="fa fa-2x fa-facebook"></i></a>
-					  	<a href="<?=$tw?>"><i class="fa fa-2x fa-twitter"></i></a>
+					  	<a href="<?=$rss?>"><i class="fa fa-rss"></i></a>
+					  	<a href="<?=$fb?>"><i class="fa fa-facebook"></i></a>
+					  	<a href="<?=$tw?>"><i class="fa fa-twitter"></i></a>
 					</p>
 				</div>
 				

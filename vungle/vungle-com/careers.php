@@ -29,6 +29,31 @@
 	  z-index: -100;
    }
 #list2 ol li span.left-border {border-left: 1px solid #999; display: block}	
+
+#list2 ol {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#list2 ol > li {
+  counter-increment: customlistcounter;
+}
+
+#list2 ol > li:before {
+  content: counter(customlistcounter) " ";
+  font-weight: bold;
+  float: left;
+  width: 3em;
+  
+  position: relative;
+	  top: 44px;
+	  left: -35px;
+}
+
+#list2 ol:first-child {
+  counter-reset: customlistcounter;
+}
+
 </style>
 
 <style>.bluemenu {background-color: #2f90ce; } </style>    

@@ -28,6 +28,11 @@ h6,
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
 }
 
+h2, .h2 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
 .page-header {
 	border: none;
 }

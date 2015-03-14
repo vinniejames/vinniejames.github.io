@@ -24,9 +24,9 @@
 			          <h2 class="text-center">Advertise</h2>
 			        </div>
 			        </a>
-			        <a class="jumbo-btn" href="<?=$products?>">
+			        <a class="jumbo-btn" href="<?=$programmatic?>">
 			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
-			          <h2 class="text-center">Products</h2>
+			          <h2 class="text-center">Programmatic</h2>
 			        </div>
 			        </a>
 	        </div>
@@ -68,7 +68,7 @@
 		<div class="col-sm-5 col-sm-push-6 col-xs-6 col-xs-push-5">
 			<h1>Our Products</h1>
 			<p class="lead">Our technology delivers engaging ads and a seamless user experience to generate higher ad revenues.</p>
-			<button class="btn btn-secondary">Learn More <i class="fa fa-caret-right fa-2x"></i></button>
+			<a href="<?=$product?>" class="btn btn-secondary">Learn More</a>
 		</div>
 	</div>
 </div>
@@ -372,7 +372,7 @@
 
 
 <div class="container page-header">
-	<button class="btn btn-secondary">View Blog <i class="fa fa-caret-right fa-2x"></i></button>
+	<a href="<?=$blog?>" class="btn btn-secondary">View Blog</a>
 </div>
 
 
@@ -393,7 +393,7 @@
 	      <div class="col-sm-6 col-sm-pull-6">
 		      <p>Work alongside wonderful, brilliant people to revolutionize mobile advertising. Get 401k, health and dental as well as reimbursement for lunches at the restaurants of your choice, and gym memberships.</p>
 		      <p>&nbsp;</p>
-		      <button class="btn btn-secondary">Apply Now <i class="fa fa-caret-right fa-2x"></i></button>
+		      <a href="<?=$careers?>" class="btn btn-secondary">Apply Now</a>
 	      </div>
 		  
       </div>
@@ -419,6 +419,7 @@
 		  </div>
       </div>
       
-      <button class="btn btn-secondary">Newsroom <i class="fa fa-caret-right fa-2x"></i></button>
+      <a href="<?=$newsroom?>" class="btn btn-secondary">Newsroom</a>
 </div>
+<br>
 <?php include('footer.php'); ?>

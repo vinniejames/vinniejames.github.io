@@ -29,15 +29,18 @@
 	        </div>
         </div>
         
-        <div class="filter"></div>
+        <div class=""></div>
         <video muted autoplay loop class="fillWidth" poster="vid/vungle.png">
-             <source src="vid/monetize.webm" type="video/webm" />
-             <source src="vid/monetize.mp4" type="video/mp4" />
-			 <source src="vid/monetize.ogg" type="video/ogg" />
-			 <img src="vid/vungle.gif" title="Your browser does not support the <video> tag">
+             <source src="vid/vungle-advertise.webm" type="video/webm" />
+             <source src="vid/vungle-advertise.mp4" type="video/mp4" />
+			 <source src="vid/vungle-advertise.ogg" type="video/ogg" />
+			 <object>
+		       <embed src="vid/vungle-advertise.mp4" type= "application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always" />
+		     </object>
+			 <img src="vid/vungle-advertise.jpg" title="Your browser does not support the <video> tag">
         </video>
         <div class="poster hide">
-            <img src="vid/vungle.gif" alt="The way devs put video ads in their apps">
+            <img src="vid/vungle-advertise.jpg" alt="The way devs put video ads in their apps">
         </div>
     </div><!--video-container-->
 </div><!--homepage-hero-module-->
@@ -108,10 +111,10 @@
 		<img src="img/advertize/kochava-logo.png" class="img-responsive">
 	</div>
 	<div class="col-xs-3">
-		<img src="img/advertize/partner-ad-x.jpg" class="img-responsive">
+		<img src="img/advertize/tune.png" class="img-responsive">
 	</div>
 	<div class="col-xs-3">
-		<img src="img/advertize/mobile-app-tracking.png" class="img-responsive">
+		<img src="img/advertize/adjust.png" class="img-responsive">
 	</div>
 </div>
 

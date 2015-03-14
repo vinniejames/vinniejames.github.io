@@ -98,6 +98,7 @@
 			</ul>
 		</div>
 	</div>
+<br><br>
 	<div class="row">
 		<div class="col-xs-12 col-sm-6  col-sm-push-6">
 			<img src="img/programmatic/play-video.svg" class="img-responsive">

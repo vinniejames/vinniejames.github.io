@@ -1,10 +1,20 @@
+    <style>
+	    ul.main-menu {
+
+	    }
+	    .main-menu li {
+		     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
+		    font-weight: 300 !important;
+	    }
+	    </style>
     <nav>
         <ul class="list-unstyled main-menu">
           
           <!--Include navigation here-->
           <li><a href="<?=$monetize?>">Monetize</a></li>
-          <li><a href="<?=$programmatic?>">Programmatic</a></li>
           <li><a href="<?=$advertise?>">Advertise</a></li>
+          <li><a href="<?=$programmatic?>">Programmatic</a></li>
+          
           <li><a href="<?=$product?>">Product</a></li>
           <li><a href="#">About Us</a>
             <ul class="list-unstyled">
@@ -15,7 +25,12 @@
                 <li class="sub-nav"><a href="<?=$events?>">Events <span class="icon"></span></a></li>
             </ul>
           </li>
-          <li><a href="<?=$contact?>">Contact Us <span class="icon contact"></span></a></li>
+          <li><a href="#">Contact Us</a>
+            <ul class="list-unstyled">
+                <li class="sub-nav"><a href="<?=$contactus?>">Sales &amp; Product Inquiries <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="<?=$resources?>">Help Center <span class="icon"></span></a></li>
+            </ul>
+          </li>
 
 <!-- sign up and login -->
           <li><a href="<?=$login?>">Login <span class="icon login"></span></a></li>

@@ -1,3 +1,5 @@
+
+
 .button-container {
 	  bottom: 0;
   position: absolute;
@@ -24,6 +26,7 @@
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
+	font-weight: 300;
 }
 
 .jumbo-btn, a:hover.jumbo-btn, a:active.jumbo-btn, a:visited.jumbo-btn, a:focus.jumbo-btn  {
@@ -104,13 +107,14 @@ text-align: center;
 	    }   
 	    
 	    .gray-box {
-		    background-color: #b8b8b8;
-		    color: #ffffff;
+		    background-color: #e6e7e8;
 		    padding: 20px;
+		      font-size: 80%;
 	    }    
 	    .gray-box img {
 		    max-width: 33%;
 		    height: auto;
+		    padding: 0 60px;
 	    }    
 	    
 	    .premium img {
