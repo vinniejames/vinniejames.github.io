@@ -2,7 +2,6 @@
 	//http://stackoverflow.com/questions/17032990/can-anyone-give-me-an-example-for-phps-curlfile-class
 	//http://www.php-guru.in/2013/upload-files-using-php-curl/
 	//http://www.58bits.com/blog/2014/06/14/how-upload-file-using-php-curl
-	
 	if(!empty($_POST)) {
 	 	$ch = curl_init(); 
 		$url = ""; //SET API URL
@@ -43,14 +42,12 @@
 		}
 		
 	}
-	
-
+?>
+<?php
 
 	include('header.php');
-	include('nav-sub.php'); 
+	//include('nav-sub.php'); 
 ?>
-
-
 <style>.bluemenu {background-color: #2f90ce; } 
 
 </style>    
@@ -81,6 +78,20 @@
 
 	<script>
 		
+		// pulls id from query string parameter using regEx
+		/*
+		function getParameterByName(name){
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]"+name+"=([^&#]*)"),
+				results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));	
+		};
+		
+		var jobid = getParameterByName('id');
+		
+		console.log(jobid);
+		*/
+		
 		// Grabs query string
 		function getQueryVariable(variable)
 		{
@@ -96,7 +107,7 @@
 		var jobid = getQueryVariable('id');
 		
 		
-		//console.log(jobid);
+		console.log(jobid);
 		
 		
 		
@@ -126,22 +137,20 @@
 			// console.log(data.questions[0].fields[0]);
 			$('#apply').append('<input type="hidden" name="id" value="'+jobid+'" />');
 			
-			 $('#apply').append('<h2>Apply</h2>');
+			
 			 
 			 for (i = 0; i < data.questions.length; i++){
 				 
 				//console.log(data.questions[i].label);
 				 var label = data.questions[i].label;
 				 
-				
+				 $('#apply').append('<h2>'+label+'</h2>');
 				 
-				//for (j = 0; j < data.questions[i].fields.length; j++) {
-				for (j = 0; j < 1; j++) { // only grabs first q in array so *_text does not display
-
+				 for (j = 0; j < data.questions[i].fields.length; j++) {
 					 //console.log(data.questions[i].fields[j].name);
-					 var name = data.questions[i].fields[0].name; //replace 0 w j to loop through all questions in array
+					 var name = data.questions[i].fields[j].name;
 					 //console.log(data.questions[i].fields[j].type);
-					 var type = data.questions[i].fields[0].type;
+					 var type = data.questions[i].fields[j].type;
 					 
 					 var required = data.questions[i].required;
 					 console.log(required);
@@ -151,7 +160,6 @@
 						var type = "file";
 					}
 					
-										
 					 
 					 $('#apply').append(
 					 '<div class="form-group">'+
@@ -169,7 +177,7 @@
 			 
 			$("#apply").append(
 			'<div class="form-group">'+
-				'<button type="submit" class="btn btn-lg btn-primary">Apply</button>'+
+				'<button type="submit" class="btn btn-default">Apply</button>'+
 			'</div>'
 			 );
 			 

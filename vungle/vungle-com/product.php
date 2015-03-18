@@ -22,16 +22,47 @@
 
 
 <div id="engage" class="container page-header">
-        <h1>Optimization</h1>
-        <h2>Data Science</h2>
-        <p class="lead">Vungle’s rapidly growing Data Science team is composed of data scientists, machine learning engineers, and data engineers with backgrounds in computer science, statistics, and business analytics.</p>
+        <div class="row">
+	        <h1>Optimization</h1>
+	        <h2>Data Science</h2>
+	        <p class="lead">Vungle’s rapidly growing Data Science team is composed of data scientists, machine learning engineers, and data engineers with backgrounds in computer science, statistics, and business analytics.</p>
+        </div>
+        <div class="row">
+	        <div class="col-xs-4 col-sm-2">
+				<img class="img-responsive" src="img/monetize/data_science.svg">
+			</div>
+			<div class="col-xs-8 col-sm-10">
+	        <p><strong>Meaningful impressions:</strong> Our scientists use various traits about the user, such as the user’s engagement history and behavior patterns, the device characteristics, and insights gained from the user’s geography and demographic data to serve your ads to the right people at the right time.</p>
+			</div>
+        </div>
+        <div class="row">
+			<div class="col-xs-4 col-sm-2">
+				<img class="img-responsive" src="img/monetize/data_science.svg">
+			</div>
+			<div class="col-xs-8 col-sm-10">
+				<p><strong>Constantly adjusting algorithms:</strong> As part of their ongoing experimentation, our scientists test our algorithms in various scenarios to see which does best, and then test the algorithms against each other. Thanks to our rigorous research, Vungle perfects the balance of performance and brand ads, resulting in the highest possible eRPMs.</p>
+			</div>
+		</div>
+        <div class="row">
+			<div class="col-xs-4 col-sm-2">
+				<img class="img-responsive" src="img/monetize/data_science.svg">
+			</div>
+			<div class="col-xs-8 col-sm-10">
+			<p><strong>Specially tuned for showing in-app video ads:</strong> Vungle is expert at predicting conversion rates specifically for in-app videos. Our data scientists work with our Creative Optimization Group to identify the best-performing creatives, and to identify the elements of a creative that are linked to higher conversion rates.</p>
+			</div>
+		</div>
+        <div class="row">
+			<div class="col-xs-4 col-sm-2">
+				<img class="img-responsive" src="img/monetize/data_science.svg">
+			</div>
+			<div class="col-xs-8 col-sm-10">
+			<p><strong>Customized user experience:</strong> Vungle data scientists can work with our providers to aid them in A/B testing initiatives. For example, if a client wants to see whether an ad is more or less effective with a voiceover component, our Data Science team can help them set up parameters and interpret the results.</p>
+			</div>
+        </div>
         
-        <p><strong>Meaningful impressions:</strong> Our scientists use various traits about the user, such as the user’s engagement history and behavior patterns, the device characteristics, and insights gained from the user’s geography and demographic data to serve your ads to the right people at the right time.</p>
-		<p><strong>Constantly adjusting algorithms:</strong> As part of their ongoing experimentation, our scientists test our algorithms in various scenarios to see which does best, and then test the algorithms against each other. Thanks to our rigorous research, Vungle perfects the balance of performance and brand ads, resulting in the highest possible eRPMs.</p>
-		<p><strong>Specially tuned for showing in-app video ads:</strong> Vungle is expert at predicting conversion rates specifically for in-app videos. Our data scientists work with our Creative Optimization Group to identify the best-performing creatives, and to identify the elements of a creative that are linked to higher conversion rates.</p>
-		<p><strong>Customized user experience:</strong> Vungle data scientists can work with our providers to aid them in A/B testing initiatives. For example, if a client wants to see whether an ad is more or less effective with a voiceover component, our Data Science team can help them set up parameters and interpret the results.</p>
-        
-        <p class="lead">Our unique knowledge of every publisher and every advertiser in our network</p>
+        <div class="row">
+        	<p class="lead">Our unique knowledge of every publisher and every advertiser in our network</p>
+        </div>
    
 </div>
 
@@ -44,10 +75,10 @@
 		
 		<div class="col-md-6 col-md-push-6">
 			
-			<h2>Creative Optimization Group</h2>
+			<h2 class="half">Creative Optimization Group</h2>
 			<p class="lead">Vungle’s internal creative production agency creates app trailers and tests efficacy against a number of variants to optimize user experience and ad performance.</p>
 			<p class="lead">How do we do this? We:</p>
-			<ul>
+			<ul class="dash">
 				<li>Categorize user interests to serve specific ads</li>
 				<li>Conduct experiments on user behavior (for example, reaction to visual effects, localization, audio, CTAs, etc.)</li>
 				<li>Perform A/B tests to determine which features align</li>
@@ -68,7 +99,7 @@
 	        <div class="col-sm-6 col-sm-pull-6">
 		    
 			<p class="lead">Install Vungle's latest SDK to meet your monetization goals while providing your users a satisfying experience. The SDK’s simple integration will have you maximizing your revenue in no time.</p>
-	        <ul>
+	        <ul class="dash">
 		        <li>Monetize your users with market-leading eCPMs in 196 countries</li>
 		        <li>Maximize your revenue faster with our easy-to-configure SDK</li>
 		        <li>Display engaging, opt-in placements that feel natural within the content flow</li>
@@ -92,7 +123,7 @@
 			<h1>Vungle Exchange</h1>
 			<p class="lead">The first-ever exchange for in-app video ads, Vungle Exchange enables marketers to programmatically buy and sell in-app video inventory at scale.</p>
 			<p class="lead">How do we do this? We:</p>
-			<ul>
+			<ul class="dash">
 				<li>Enjoy seamless access to premium in-app video inventory at scale</li>
 				<li>Feel confident about effective ad spend, knowing that Vungle works to preserve your brand image</li>
 				<li>Deliver a non-disruptive ad experience to your audience with Vungle’s opt-in placements</li>
@@ -115,7 +146,7 @@
 	        <div class="col-sm-6">
 		        <h1>Vungle Direct</h1>
         <p class="lead">Work with Vungle’s optimization experts to maximize eCPM, while maintaining an exceptional user experience. Monetize your app or game through customized or user-initiated interstitials, in-game integration and more</p>
-	        <ul>
+	        <ul class="dash">
 		        <li>Maximize your eCPM with Vungle’s stunning, high-quality HD videos</li>
 		        <li>Integrate Vungle’s lightweight SDK in minutes</li>
 	        </ul>

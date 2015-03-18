@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 
-<div class="container-fluid hero-image aboutus">
+<div class="hero-image aboutus"><!-- removed container-fluid -->
 	
 	
 	<!--<h1 class="hero-heading wow zoomIn">Vungle’s mission is to engage the world with in-app video experiences.</h1>-->
@@ -12,7 +12,7 @@
 		               
 		            </div>
 		</div>
-	<i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i>
+	<!--<p class="text-center"><i class="bounce fa fa-chevron-circle-down fa-2x fa-inverse"></i></p>-->
 </div>
 
 
@@ -63,7 +63,7 @@
 				</a>
 				<span class="bio"><p class="text-center">View Bio</span>
 				</div>
-				<figcaption class="text-center">Andrea Sharfin, VP of Marketing</figcaption>
+				<figcaption class="text-center">Andrea Friedenson, VP of Marketing</figcaption>
 			</figure>
 		</div>
 		<div class="col-md-3 col-sm-6 wow fadeInRight" data-wow-delay="250ms">
@@ -80,7 +80,7 @@
 
 	</div><!-- /row -->
 	<div class="row">
-		<div class="col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">	
+		<div class="col-3-center col-md-3 col-sm-6 wow fadeInLeft"  data-wow-delay="250ms">	
 			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="ben">
@@ -102,7 +102,7 @@
 				<figcaption class="text-center">Erik Juhl, VP of Talent Operations</figcaption>
 			</figure>
 		</div>
-		<div class="col-md-3 col-sm-6 wow fadeInRight">
+		<div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-3 wow fadeInRight">
 			<figure class="execs">
 				<div class="exec">
 				<a href="" data-toggle="modal" data-target="#bioModal" data-bio="mike">

@@ -1,17 +1,22 @@
 /*BLOG*/
-
+.img-article {
+min-width: 100%;
+  min-height: 100%;
+}
 .subscribe {
 	background: #2f90ce;
-	padding: 40px;
+	padding: 20px 40px;
 	border-radius: 4px;
 	margin-top: 10px;
 	color: #ffffff;
 }	
-	
+.subscribe .btn-secondary:hover {
+	border: 1px solid #ffffff;
+}
 .popular {
 	margin-top: 40px;
 	background: #f3f3f3;
-	padding: 40px;
+	padding: 20px 40px;
 	border: 2px solid #e4e4e4;
 	border-radius: 4px;
 	color: #333;

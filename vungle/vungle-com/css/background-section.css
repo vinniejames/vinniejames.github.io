@@ -17,7 +17,7 @@
 	  .hero-image i {
 		  position: absolute;
 		  bottom: 0;
-		  margin: 10px 50vw;
+		  margin: 20px 0;
 		  
 	  }
 	  .hero-image.aboutus {
@@ -42,7 +42,10 @@
 		  background-size: cover;
 		}
 		
-
+	.team-section h1, .background-section h2, .background-section h3 {
+			margin-top: 35vh;
+		}
+		
 
 	.blue-overlay {
 		position: absolute;
@@ -54,9 +57,15 @@
 		pointer-events: none;
 	}
 	.blue-overlay.half {
-		left: 50%;
+		left: 48%;
+	}
+	h2.half {
+	 margin-top: 10vh;
 	}
 	
+	#highfill .blue-overlay {
+		background: rgba(47,144,206,0.7);
+	}
 	
 		
 		.background-section{
@@ -77,10 +86,7 @@
 			background-size: cover;
 			color: #fff;
 		}
-		.team-section h1, .background-section h2, .background-section h3 {
-			margin-top: 35vh;
-		}
-		
+	
 		.background-section.product {
 			background: url('../img/product.jpg');
 			background-position: center center;

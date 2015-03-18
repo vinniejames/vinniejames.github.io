@@ -1,4 +1,5 @@
-	    
+$(function(){// doc ready, needed to load content into modal after document renders
+		    
 	    function Exec(name, title, img, bio) {
 			this.name = name;
 			this.title = title;
@@ -20,7 +21,7 @@
 			"Colin Behr is Vungle's VP of Business and International Relations. Colin built Vungle's publishing business from the beginning, and now leads strategy, partnerships and international expansion. He has been leading Vungle's efforts entering the Chinese market including opening up a new Vungle office in Beijing"
 		);
 		var andrea = new Exec(
-			"Andrea Sharfin",
+			"Andrea Friedenson",
 			"VP of Marketing",
 			imgpath+"andrea-sharfin.jpg",
 			"Andrea Friedenson is the VP of Marketing at Vungle. She specializes in the intersection between media and technology. Andrea has held marketing roles at Disney, Facebook, Microsoft and Time Warner, and a product management role at Flixster. She holds an A.B. from Cornell University and an M.B.A from MIT Sloan."
@@ -69,13 +70,13 @@
 		var button = $(event.relatedTarget);
 		var vp = execs[button.data('bio')]; 
 		
-		//console.log(vp);
-		//console.log(vp.name);
+		console.log(vp);
+		console.log(vp.name);
 		
-		//console.log(vp.title);
+		console.log(vp.title);
 		
 
-		//console.log( $(this).attr("id") );
+		console.log( $(this).attr("id") );
 		
 		
 		var modal = $(this);
@@ -85,4 +86,7 @@
 		modal.find('img').attr('src', vp.img);
 			
 	});
+	
+	
+}); // end doc ready
 	 

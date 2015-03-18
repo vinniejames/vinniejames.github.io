@@ -18,6 +18,8 @@
 	
 	<div class="button-container">
 	        <div class="row-fluid jumbo-row">
+		         	
+		         	
 		         	<a class="jumbo-btn" href="#engage">
 			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
 			          <h2 class="text-center">Engaging Inventory</h2>
@@ -33,6 +35,7 @@
 			          <h2 class="text-center">Accessible</h2>
 			        </div>
 			        </a>
+			        
 	        </div>
         </div>
 	
@@ -87,12 +90,12 @@
 	
 	<div class="col-sm-10 col-sm-push-1">
 	<div class="row">		
-		<div class="col-xs-12 col-sm-6 col-sm-push-6">
+		<div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-6">
 			<img src="img/programmatic/watch-video.svg" class="img-responsive">
 		</div>
 		<div class="col-xs-12 col-sm-6 col-sm-pull-6">
 			<h2>Empowering the user for a satisfying ad experience</h2>
-			<ul>
+			<ul class="dash">
 				<li>Natural user-initiated placements within the content flow - Non-disruptive, user-controlled ad viewing</li>
 				<li>A great experience that results in high completion rates</li>
 			</ul>
@@ -100,12 +103,12 @@
 	</div>
 <br><br>
 	<div class="row">
-		<div class="col-xs-12 col-sm-6  col-sm-push-6">
+		<div class="col-xs-10 col-xs-push-1 col-sm-6  col-sm-push-6">
 			<img src="img/programmatic/play-video.svg" class="img-responsive">
 		</div>
 		<div class="col-xs-12 col-sm-6 col-sm-pull-6">
 			<h2>Video deserves to be seen</h2>
-			<ul>
+			<ul class="dash">
 				<li>100% full-screen HD video ads</li>
 				<li>100% viewable</li>
 				<li>100% share of voice</li>

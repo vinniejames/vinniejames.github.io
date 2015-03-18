@@ -11,24 +11,23 @@
         <ul class="list-unstyled main-menu">
           
           <!--Include navigation here-->
-          <li><a href="<?=$monetize?>">Monetize</a></li>
-          <li><a href="<?=$advertise?>">Advertise</a></li>
-          <li><a href="<?=$programmatic?>">Programmatic</a></li>
-          
-          <li><a href="<?=$product?>">Product</a></li>
+          <li><a href="<?=$monetize?>">Monetize <span class="icon money"></span></a></li>
+          <li><a href="<?=$advertise?>">Advertise <span class="icon video-icon"></span></a></li>
+          <li><a href="<?=$programmatic?>">Programmatic <span class="icon chart"></span></a></li>
+          <li><a href="<?=$product?>">Product <span class="icon"></span></a></li>
           <li><a href="#">About Us</a>
             <ul class="list-unstyled">
-                <li class="sub-nav"><a href="<?=$aboutus?>">Who We Are <span class="icon"></span></a></li>
-                <li class="sub-nav"><a href="<?=$careers?>">Careers <span class="icon"></span></a></li>
-                <li class="sub-nav"><a href="<?=$blog?>">Blog <span class="icon"></span></a></li>
-                <li class="sub-nav"><a href="<?=$newsroom?>">Newsroom <span class="icon"></span></a></li>
-                <li class="sub-nav"><a href="<?=$events?>">Events <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="<?=$aboutus?>">Who We Are <span class="icon trophy"></span></a></li>
+                <li class="sub-nav"><a href="<?=$careers?>">Careers <span class="icon rebel"></span></a></li>
+                <li class="sub-nav"><a href="<?=$blog?>">Blog <span class="icon pencil"></span></a></li>
+                <li class="sub-nav"><a href="<?=$newsroom?>">Newsroom <span class="icon news"></span></a></li>
+                <li class="sub-nav"><a href="<?=$events?>">Events <span class="icon events"></span></a></li>
             </ul>
           </li>
-          <li><a href="#">Contact Us</a>
+          <li><a href="#">Get In Touch</a>
             <ul class="list-unstyled">
-                <li class="sub-nav"><a href="<?=$contactus?>">Sales &amp; Product Inquiries <span class="icon"></span></a></li>
-                <li class="sub-nav"><a href="<?=$resources?>">Help Center <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="<?=$contact?>">Contact Us <span class="icon contact"></span></a></li>
+                <li class="sub-nav"><a href="<?=$resources?>">Help Center <span class="icon help"></span></a></li>
             </ul>
           </li>
 

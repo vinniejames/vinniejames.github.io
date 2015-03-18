@@ -9,7 +9,7 @@
             </div>
         </div><!--title-container-->
         
-        <div class="button-container container-fluid">
+        <div class="button-container">
 	        <div class="row jumbo-row">
 		         	<a class="jumbo-btn" href="#highltv">
 			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
@@ -60,7 +60,7 @@
 			<img src="img/advertize/user.svg" class="img-responsive">
 		</div>
 		<div class="col-xs-8 col-sm-10">
-			<h2>The Right Users</h2>
+			<h2>The Most Valuable Users</h2>
 			<p>With Vungle, you acquire users from top-charting apps on iOS and Android. Our data scientists provide you with transparent insight on where your best users are coming from to help you optimize your campaigns. You can use granular targeting to pinpoint the users you want by country, city, device type, and operating system.</p>
 		</div>
 	</div>
@@ -70,7 +70,7 @@
 		</div>
 		<div class="col-xs-8 col-sm-10">
 			<h2>The Best Content</h2>
-			<p>Our in-house creative team helps you create engaging videos to tell your app story and acquire valuable users.</p>
+			<p>Our in-house creative team helps you create engaging videos to tell your app’s story and acquire the best users for you.</p>
 		</div>
 	</div>
 	<div class="row">
@@ -79,10 +79,10 @@
 		</div>
 		<div class="col-xs-8 col-sm-10">
 			<h2>The Top Apps</h2>
-			<p>Vungle Direct gives you access to the world’s best inventor. Learn more.</p>
+			<p>Vungle Direct gives you access to the world’s best inventor. <a href="">Learn more</a>.</p>
 		</div>
 	</div>
-	<div class="row">
+	<!--<div class="row">
 		<div class="col-xs-4 col-sm-2">
 			<img src="img/advertize/click.svg" class="img-responsive">
 		</div>
@@ -90,7 +90,7 @@
 			<h2>High Conversion Rates</h2>
 			<p>Our pricing for performance inventory is CPI-based; we’re fully aligned with your business interests, so we can guarantee high conversion rates.</p>
 		</div>
-	</div>
+	</div>-->
 	</div>
 	
 </div>
@@ -100,7 +100,7 @@
 
 <div class="container">
 
-<div class="row"><h4>Third party attribution partners:</h4></div>
+<div class="row"><h4>Third party attribution partners</h4></div>
 
 <div class="row">
 	

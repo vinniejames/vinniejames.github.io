@@ -1,4 +1,7 @@
 	  
+	 .modal-dialog {
+		 margin-top: 16vh;
+	 }
 	  .modal-header {
 		  position: absolute;
 		  border-bottom: none;
@@ -29,6 +32,7 @@
 	  figure.execs img:hover {
 		  opacity: 0.6;
 		  transition: opacity 300ms;
+		  
 	  }
 	  
 	  figure.execs span.bio {
@@ -41,6 +45,7 @@
 		  opacity: 0;
 		  pointer-events: none;
 		  transition: opacity 300ms;
+		  
 	  }
 	  a:hover + span.bio {
 		  opacity: 1;
@@ -48,6 +53,9 @@
 	  }
 	  
 	  .exec {
+		  
+		  border: 4px solid white;
+		  
 		  background: rgba(47,144,206,1);
 		  border-radius: 50%;
 		  margin: 20px 45px;

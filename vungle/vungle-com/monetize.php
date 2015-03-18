@@ -9,7 +9,7 @@
             </div>
         </div><!--title-container-->
         
-        <div class="button-container container-fluid">
+        <div class="button-container">
 	        <div class="row jumbo-row">
 		         	<a class="jumbo-btn" href="#optimized">
 			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
@@ -118,7 +118,7 @@
         <h2>Our Customers</h2>
     </div>
       <div class="row">
-	      <div class="col-sm-3">
+	      <div class="col-sm-3 col-xs-6">
 			
 			<div class="customer">
 			<img class="img-responsive full"  src="img/monetize/pic-stitch.jpg">
@@ -126,7 +126,7 @@
 			</div>
 			
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
 			
 			<div class="customer">
 			<img class="img-responsive full" src="img/monetize/traffic-racer.png">
@@ -135,7 +135,7 @@
 			
         </div>
         
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
 			
 			<div class="customer">
 			<img class="img-responsive full"  src="img/monetize/mino-monsters.jpg">
@@ -143,7 +143,7 @@
 			</div>
 			
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
 			
 			<div class="customer">
 			<img class="img-responsive full"  src="img/monetize/slots-tycoon.jpg">
@@ -156,7 +156,7 @@
     
     
      	<div class="row">
-	    	<div class="col-sm-12"><br><h2>We offer:</h2><br></div>
+	    	<div class="col-sm-12"><br><h2>We Offer</h2><br></div>
      	</div>
     
     <div class="row">
@@ -193,25 +193,26 @@
 		
 		<div class="row">
 		<div class="col-sm-12">
-			<h1>High Global Fill Rate</h1>
-			<p class="lead">We fill almost 100% of all ad requests with ads from top advertisers through Vungle Direct and Vungle Exchange.</p>
+			<h1>Flexible SDK</h1>
+			<p class="lead">Our versatile SDK enables you to design custom placements that provide the most meaningful ad views for your app. Create user-initiated placements to create non-intrusive involvement. Engage your user with beautiful, dynamic end cards.</p>
+			<p class="lead">We Support</p>
 		</div>
 		</div>
 		<div class="row partner-logos">
-		    <div class="col-xs-15">
-			   <img src="img/monetize/corona-labs-logo.png" class="img-responsive">
+		    <div class="col-sm-15 col-xs-6">
+			   <img src="img/monetize/corona-labs-logo.png" class="img-responsive full">
 		    </div>
-		    <div class="col-xs-15">
-			    <img src="img/monetize/unity-logo.png" class="img-responsive">
+		    <div class="col-sm-15 col-xs-6">
+			    <img src="img/monetize/unity-logo.png" class="img-responsive full">
 		    </div>
-		    <div class="col-xs-15">
-		     	<img src="img/monetize/blackberry-logo.png" class="img-responsive">
+		    <div class="col-sm-15 col-xs-6">
+		     	<img src="img/monetize/blackberry-logo.png" class="img-responsive full">
 		    </div>
-		    <div class="col-xs-15">
-		    	<img src="img/monetize/adobe-air-logo.png" class="img-responsive">
+		    <div class="col-sm-15 col-xs-6">
+		    	<img src="img/monetize/adobe-air-logo.png" class="img-responsive full">
 		    </div>
-		    <div class="col-xs-15">
-		    	<img src="img/monetize/cocos2d-logo.png" class="img-responsive">
+		    <div class="col-sm-15 col-xs-6">
+		    	<img src="img/monetize/cocos2d-logo.png" class="img-responsive full">
 		    </div>
 		</div>
 		<a href="" class="btn btn-secondary btn-lg">Vungle SDK</a>
@@ -231,7 +232,7 @@
         <div class="row">
 	        <div class="col-md-8 col-md-push-2">
 		        <div class="embed-responsive embed-responsive-16by9">
-		        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FyZFfsI05vg" frameborder="0" allowfullscreen></iframe>
+		        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gNZnlKuhAFg" frameborder="0" allowfullscreen></iframe>
 		        </div>
 		        <br>
 		        <p class="text-center"><a href="<?=$contact?>" class="btn btn-lg btn-primary">Contact Our Team</a></p>

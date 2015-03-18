@@ -12,43 +12,16 @@
 
 
 <div class="container padded">
-	
+
 	<div class="row">
 		
-		<div class="col-sm-12">
-			
-			<article>
-			  <header>
-				 <div class="article feature">
-					<img class="img-responsive full" src="img/customer-nimblebit.jpg">
-					<div class="article-title"><h1><a href="<?=$single?>" title="article">5 Stats That Will Change Your Perception of Mobile Gamers</a></h1></div>
-				</div>
-			  </header>
-			  <span class="pull-left"><small><time pubdate="pubdate">March 12, 2015</time> by <a href="#" rel="author">Kira Sparks</a>, Content Marketing Manager</small></span>
-			  <span class="pull-right">
-			  	<i class="fa fa-twitter"></i>
-			  	<i class="fa fa-facebook"></i>
-			  </span>
-			  <br class="clear">
-			  <br>
-			  <p>The global mobile gaming market is expected to generate $23.9 billion by 2016, yet misconceptions about mobile gamers abound. People tend to envision gamers as young males, armed with bags of chips, playing first-person shooters in their parent’s basements. But, the data tells a different story. These five stats will show you the changing face... <a href="<?=$single?>">Read More</a></p>
-			</article>
-			<article>
-			
-		</div>
-		
-	</div>
-	
-	
-	<div class="row">
-		
-		<div class="col-sm-8 col-sm-push-4"><!--- excerpt -->
+		<div class="col-sm-8"><!--- excerpt -->
 			
 			<!-- wp-posts loop-->
 			<article>
 			  <header>
 				 <div class="article">
-					<img class="img-responsive full" src="img/customer-nimblebit.jpg">
+					<img class="img-article" src="img/customer-nimblebit.jpg">
 					<div class="article-title"><h1><a href="<?=$single?>" title="article">5 Stats That Will Change Your Perception of Mobile Gamers</a></h1></div>
 				</div>
 			  </header>
@@ -64,7 +37,7 @@
 			<article>
 			  <header>
 				 <div class="article">
-					<img class="img-responsive full" src="img/customer-nimblebit.jpg">
+					<img class="img-article" src="img/customer-nimblebit.jpg">
 					<div class="article-title"><h1><a href="<?=$single?>" title="article">5 Stats That Will Change Your Perception of Mobile Gamers</a></h1></div>
 				</div>
 			  </header>
@@ -80,7 +53,7 @@
 			<article>
 			  <header>
 				 <div class="article">
-					<img class="img-responsive full" src="img/customer-nimblebit.jpg">
+					<img class="img-article" src="img/customer-nimblebit.jpg">
 					<div class="article-title"><h1><a href="<?=$single?>" title="article">5 Stats That Will Change Your Perception of Mobile Gamers</a></h1></div>
 				</div>
 			  </header>
@@ -98,7 +71,7 @@
 		
 		</div><!--- excerpt -->
 		
-		<div class="col-sm-4 col-sm-pull-8">
+		<div class="col-sm-4">
 			
 			<aside>
 				<div class="subscribe">
@@ -144,4 +117,5 @@
 		
 	</div>
 </div><!--container-->
+<br>
 <?php include('footer.php'); ?>
