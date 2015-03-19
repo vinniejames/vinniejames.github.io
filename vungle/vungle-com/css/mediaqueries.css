@@ -58,6 +58,11 @@
 	/* Small Devices, Tablets */
 	@media only screen and (max-width : 768px){
 		
+		
+		.buttonz h2 {
+		  font-size: 16px;
+		}
+		
 		.hero-image .title-container {
 		  top: 30vh;
 		  margin: 0;
@@ -73,7 +78,7 @@
 		
 		.modal-dialog {
 		 margin-top: 69px;;
-	 }
+	 	}
 		
 		
 		.exec   {margin: 20px 24%;}
@@ -170,6 +175,8 @@
 	/* Extra Small Devices, Phones */
 	@media only screen and (max-width : 480px){
 		
+		
+		
 		.hero-image .title-container {
 		top: 14vh;
   		}
@@ -210,11 +217,22 @@
 }
 
 
+
 /* Landscape only for iPad / Tablet ----------- */
 @media only screen 
 															/*and (min-device-width : 768px) */
 and (max-device-width : 1024px)
 and (orientation : landscape) {
+
+	.buttonz h2 {
+		  font-size: 14px;
+	}
+}
+/* Landscape only for iPad / Tablet ----------- */
+@media only screen 
+															/*and (min-device-width : 768px) */
+and (max-device-width : 1024px)
+and (orientation : portrait) {
 /* Your Styles here */
 	
 	
@@ -234,6 +252,11 @@ and (orientation : landscape) {
 
 	}
 	*/
+
+	.buttonz .col-xs-4 {
+		width: 100%;
+		margin: 1px 0;
+		}
 	
 	.touch h1.hero-heading {
 		font-size: 28px;

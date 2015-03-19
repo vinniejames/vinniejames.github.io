@@ -9,6 +9,22 @@
             </div>
         </div><!--title-container-->
         
+         <div class="buttonz">
+		 <div class="row-fluid">
+		 	<div class="col-xs-4">
+		 		<a href="#highltv"><h2 class="text-center">High LTV Users</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="#global"><h2 class="text-center">Global Reach &amp; Scale</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="#slick"><h2 class="text-center">Slick Ad Experience</h2></a>
+		 	</div>
+		 </div>
+		 </div>
+        
+        
+        <!--
         <div class="button-container">
 	        <div class="row jumbo-row">
 		         	<a class="jumbo-btn" href="#highltv">
@@ -28,6 +44,7 @@
 			        </a>
 	        </div>
         </div>
+        -->
         
         <div class=""></div>
         <video muted autoplay loop class="fillWidth" poster="vid/vungle.png">

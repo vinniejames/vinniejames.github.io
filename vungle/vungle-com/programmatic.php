@@ -4,7 +4,7 @@
 
 	    </style>
 
-<div class="container-fluid hero-image programmatic">
+<div class="hero-image programmatic"><!--container-fluid -->
 <span class="blue-overlay"></span>	
 	
 	<div class="title-container wow zoomIn">
@@ -14,9 +14,30 @@
             </div>
         </div><!--title-container-->
 	
+		
+		
+		<style>
+
+	    </style>
+		
+		 <div class="buttonz" style="">
+		 <div class="row-fluid">
+		 	<div class="col-xs-4">
+		 		<a href="#engage"><h2 class="text-center">Engaging Inventory</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="#measureable"><h2 class="text-center">Measurable ROI</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="#accessible"><h2 class="text-center">Accessible</h2></a>
+		 	</div>
+		 </div>
+		 </div>
+		
 	
 	
-	<div class="button-container">
+		<!--
+	    <div class="button-container">
 	        <div class="row-fluid jumbo-row">
 		         	
 		         	
@@ -38,7 +59,8 @@
 			        
 	        </div>
         </div>
-	
+		-->
+		
 </div>
 
 

@@ -1,5 +1,5 @@
 
-
+/*
 .button-container {
 	bottom: 0;
 	left: 0;
@@ -45,6 +45,45 @@
 .jumbo-btn > div:hover {
 	background: rgba(0,0,0,0.8);
 }
+
+*/
+
+.buttonz {
+				
+	position: absolute; 
+	bottom: 0; left: 0; right: 0;
+	
+	/*background: red;*/
+	z-index: 100000;	
+}	
+.buttonz .col-xs-4 {
+	padding: 0 1px;
+		
+}
+.buttonz h2 {
+	background: rgba(0,0,0,0.5);				
+	
+	font-size: 1em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+	
+	display: inline-block;
+	margin: 0;
+	padding: 20px 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.buttonz h2:hover {
+	background: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
 
 .video-container {
 	

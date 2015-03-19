@@ -13,7 +13,59 @@
             </div>
         </div><!--title-container-->
         
-        <div class="button-container"><!--  container-fluid -->
+        
+        
+        <style>
+			.buttonz {
+				
+				position: absolute; 
+				bottom: 0; left: 0; right: 0;
+				
+				/*background: red;*/
+				z-index: 100000;	
+			}	
+			.buttonz .col-xs-4 {
+				padding: 0 1px;
+					
+			}
+			.buttonz h2 {
+				background: rgba(0,0,0,0.5);				
+				
+				font-size: 18px;
+				color: white;
+				text-transform: uppercase;
+				font-weight: 300;
+				
+				display: inline-block;
+				margin: 0;
+				padding: 20px 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+			}
+			.buttonz h2:hover {
+				background: rgba(0,0,0,0.8);
+			}
+	    </style>
+	    
+	     <div class="buttonz">
+		 <div class="row-fluid">
+		 	<div class="col-xs-4">
+		 		<a href="<?=$monetize?>"><h2 class="text-center">Monetize</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="<?=$advertise?>"><h2 class="text-center">Advertise</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="<?=$programmatic?>"><h2 class="text-center">Programmatic</h2></a>
+		 	</div>
+		 </div>
+		 </div>
+        
+        
+        
+        <!--
+        <div class="button-container">
 	        <div class="row jumbo-row">
 		         	<a class="jumbo-btn" href="<?=$monetize?>">
 			        <div class="col-sm-4 jumbo-col jumbo-col-edge">
@@ -32,6 +84,8 @@
 			        </a>
 	        </div>
         </div>
+        -->
+        
         
         <div class="filter"></div>
         <video autoplay loop class="fillWidth" poster="vid/vungle.png">

@@ -9,6 +9,24 @@
             </div>
         </div><!--title-container-->
         
+        
+        
+         <div class="buttonz">
+		 <div class="row-fluid">
+		 	<div class="col-xs-4">
+		 		<a href="#optimized"><h2 class="text-center">Optimized eCPMs</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="#fillrate"><h2 class="text-center">High Global Fill Rate</h2></a>
+		 	</div>
+		 	<div class="col-xs-4">
+		 		<a href="#engage"><h2 class="text-center">Engaging Placements</h2></a>
+		 	</div>
+		 </div>
+		 </div>
+        
+        
+        <!--
         <div class="button-container">
 	        <div class="row jumbo-row">
 		         	<a class="jumbo-btn" href="#optimized">
@@ -28,6 +46,7 @@
 			        </a>
 	        </div>
         </div>
+        -->
         
         <div class=""></div>
         <video muted autoplay loop class="fillWidth" poster="vid/vungle.png">
