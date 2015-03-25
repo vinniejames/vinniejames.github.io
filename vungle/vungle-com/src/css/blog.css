@@ -1,0 +1,99 @@
+/*BLOG*/
+.img-article {
+min-width: 100%;
+  min-height: 100%;
+}
+.subscribe {
+	background: #2f90ce;
+	padding: 20px 40px;
+	border-radius: 4px;
+	margin-top: 10px;
+	color: #ffffff;
+}	
+.subscribe .btn-secondary:hover {
+	border: 1px solid #ffffff;
+}
+.popular {
+	margin-top: 40px;
+	background: #f3f3f3;
+	padding: 20px 40px;
+	border: 2px solid #e4e4e4;
+	border-radius: 4px;
+	color: #333;
+	
+}
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
+	margin-bottom: 40px;
+
+}
+aside .h1, aside .h2, aside .h3, aside .h4, aside .h5, aside .h6 {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Franklin Gothic', Arial, sans-serif;
+}
+.popular h4 {
+	text-transform: uppercase;
+}
+aside button {
+	margin: 10px auto;
+}
+aside .fa {
+	margin: 0 10px;
+}
+
+article {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.article {
+	position: relative;
+}
+
+.the-article blockquote {
+border-left: none;
+position: absolute;
+top: 0;
+color: #fff;
+background: rgba(47,144,206,0.5);
+height: 100%;
+opacity: 0;
+transition: opacity 1s;
+
+padding: 30px 20px;
+text-align: center;
+
+}
+.the-article blockquote:hover {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.the-article blockquote footer {
+	color: #fff;
+}
+
+
+.article-title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	padding:  0 20px 10px;
+}
+.article-title h1, .article-title a, .article-title a:visited, .article-title a:active, .article-title a:hover {
+	color: #fff;
+
+}
+article .article {
+	height: 400px;
+	overflow: hidden;
+}
+.article.feature {
+	height: 500px;
+}
+
+.author {
+	border: 1px solid #2f90ce;
+	border-radius: 4px;
+	display: flex;
+	padding: 20px;
+}

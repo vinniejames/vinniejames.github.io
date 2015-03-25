@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Disabling the default UI</title>
+    <style>
+      #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+  
+  var mapOptions = {
+    zoom: 4,
+    center: myLatlng,
+    disableDefaultUI: true,
+    scrollwheel: false //set to true to enable mouse scrolling while inside the map area
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+    });                            
+                                
+};
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+	  <div style="width: 300px; height: 200px; overflow: hidden;">
+	  	<div id="map-canvas"></div>
+	  </div>
+  </body>
+</html>
+
+<!--
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+
+	var myLatlng = new google.maps.LatLng(37.7798,-122.4018);
+	
+	var sf = new google.maps.LatLng(37.7798,-122.4018);
+	var london = new google.maps.LatLng(-25.363882,131.044922);
+	var berlin = new google.maps.LatLng(-25.363882,131.044922);
+	var beijing = new google.maps.LatLng(-25.363882,131.044922);
+	
+	function initialize() {
+	  var mapOptions = {
+	    zoom: 15,
+	    center: myLatlng,
+	    disableDefaultUI: true,
+	    scrollwheel: false
+	  }
+	  
+	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	  
+	  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'San Francisco'
+      });
+	}
+	
+	
+	
+	google.maps.event.addDomListener(window, 'load', initialize);
+	
+
+
+
+    </script>
+-->

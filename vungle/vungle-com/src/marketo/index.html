@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<form id="vungle-newsletter" method="POST" action="" class="">
+ 		<div class="form-group">
+ 			<input id="email"  class="form-control input-lg" type="text" type="email" name="Email" placeholder="Email Address" required>
+ 			
+ 			<input type="hidden" name="formid" class="" value="1102">
+ 			<input type="hidden" name="munchkinId" class="" value="184-FKZ-935">
+ 			
+ 		</div>
+ 		<input value="Get Updates" type="submit" class="btn btn-primary btn-lg">
+ 	</form>
+ 	<div id="form-messages">Thanks for subscribing, check your inbox for awesome content!</div>
+</body> 
+<script>
+$(function() {
+
+	// Get the form.
+	var form = $('#vungle-newsletter');
+
+	// Get the messages div.
+	var formMessages = $('#form-messages');
+	$(formMessages).hide();
+
+	// Set up an event listener for the contact form.
+	$(form).submit(function(e) {
+		// Stop the browser from submitting the form.
+		e.preventDefault();
+
+		// Serialize the form data.
+		var formData = $(form).serialize();
+
+		// Submit the form using AJAX.
+		$.ajax({
+			url: 'https://app-ab04.marketo.com/index.php/leadCapture/save/',
+			type: 'POST',
+			//dataType: 'jsonp',
+			//jsonp: false,
+			data: formData,
+			error: function(error){
+				console.log(error);
+				console.log('marketo error');
+				//$(form).hide(1000);
+				$(formMessages).show(1000);
+			},
+			success: function(response) {
+				console.log(response);
+				console.log('great success');
+				//$(form).hide(1000);
+				$(formMessages).show(1000);
+     		}
+		});
+
+	});
+
+});
+</script>
+</html>
