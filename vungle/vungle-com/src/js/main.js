@@ -58,17 +58,19 @@ $("a.active").parents('li').hover(function(){
 	$("a.active").css("color", "#2f90ce");
 });
 //subnavigation	
-$(function(){
-	// toggle for sub-nav menu items
-	$('.subnav-item').click(function(){
-		$('.subnav-item').toggleClass('subnav-open');
-		$('.fa-plus').toggleClass('fa-minus');	
-	});
-	// adds active class to subnav, aria-selected data-attribute would not work??
-	var activeurl = window.location.href;
-	//console.log(activeurl);
-	$('a[href="'+activeurl+'"]').addClass('active').prepend('<i class="fa fa-plus"></i>').removeAttr('href'); //.attr('href', '#');
-});
+									/*
+									$(function(){
+										// toggle for sub-nav menu items
+										$('.subnav-item').click(function(){
+											$('.subnav-item').toggleClass('subnav-open');
+											$('.fa-plus').toggleClass('fa-minus');	
+										});
+										// adds active class to subnav, aria-selected data-attribute would not work??
+										var activeurl = window.location.href;
+										//console.log(activeurl);
+										$('a[href="'+activeurl+'"]').addClass('active').prepend('<i class="fa fa-plus"></i>').removeAttr('href'); //.attr('href', '#');
+									});
+									*/
 /// smooth scrolling to anchors	
 //http://stackoverflow.com/questions/9068587/accounting-for-a-fixed-header-with-animate-scrolltop-and-target-offset-top
 $(function() {

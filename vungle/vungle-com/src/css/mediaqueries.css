@@ -49,15 +49,26 @@
 		.background-section.measurable img {
 			margin: 0;
 		}
-			.blue-overlay.half {
+		.blue-overlay.half {
 			left: 0;
 		}
-		
+		.blog-feature .col-sm-4 {
+		 	max-height: 50vh;
+	 	}
+		 
 	}
  
 	/* Small Devices, Tablets */
 	@media only screen and (max-width : 768px){
-		
+		.blog-feature .col-sm-4 {
+		 	max-height: 24vh;
+	 	}
+	 	bg img {
+			 min-width: 100%;
+			 min-height: 100%;
+			 margin-left: 0;
+			
+		 }  
 		
 		.buttonz h2 {
 		  font-size: 16px;
@@ -105,7 +116,7 @@
 			margin-top: 51px; /* fixes spacing due to absolute position of first li */
 		}	
 		.subnav-item {
-		  display: none;
+			display: none;
 		  float: none;
 		}
 		

@@ -16,36 +16,7 @@
         
         
         <style>
-			.buttonz {
-				
-				position: absolute; 
-				bottom: 0; left: 0; right: 0;
-				
-				/*background: red;*/
-				z-index: 100000;	
-			}	
-			.buttonz .col-xs-4 {
-				padding: 0 1px;
-					
-			}
-			.buttonz h2 {
-				background: rgba(0,0,0,0.5);				
-				
-				font-size: 18px;
-				color: white;
-				text-transform: uppercase;
-				font-weight: 300;
-				
-				display: inline-block;
-				margin: 0;
-				padding: 20px 0;
-				width: 100%;
-				height: 100%;
-				z-index: 2;
-			}
-			.buttonz h2:hover {
-				background: rgba(0,0,0,0.8);
-			}
+			
 	    </style>
 	    
 	     <div class="buttonz">
@@ -135,25 +106,42 @@
    
      
      <div class="container page-header">
-        <h1>What's New With Vungle</h1>
+        <div class="row">
+        <div class="col-md-10"><h1>What's New With Vungle</h1></div>
+        <div class="col-md-2"><a href="<?=$blog?>" class="btn btn-secondary">View Blog</a></div>
+        </div>
      </div>
+     
+     <style>
+
+
+	 </style>
          
          
      <div class="container-fluid">
 	     
-	     <div class="row-fluid">
+	     <div class="row-fluid blog-feature">
 		     
 		     <div class="col-sm-4">
-			     <h3>Blog</h3>
+			     <a href="<?=$blog?>">
+				 <span>
 			     <h4>AppsWorld, April 22-23, 2015, Berlin</h4>
+			     </span>
+			     </a>
 		     </div>
 		     <div class="col-sm-4">
-			     <h3>Events</h3>
+			     <a href="<?=$blog?>">
+				 <span>
 			     <h4>AppsWorld, April 22-23, 2015, Berlin</h4>
+			     </span>
+			     </a>
 		     </div>
 		     <div class="col-sm-4">
-			     <h3>News</h3>
+			     <a href="<?=$blog?>">
+				 <span>
 			     <h4>AppsWorld, April 22-23, 2015, Berlin</h4>
+			     </span>
+			     </a>
 		     </div>
 		     
 	     </div>
@@ -164,7 +152,7 @@
 
 
 <div class="container page-header">
-	<a href="<?=$blog?>" class="btn btn-secondary">View Blog</a>
+	
 </div>
 
 
