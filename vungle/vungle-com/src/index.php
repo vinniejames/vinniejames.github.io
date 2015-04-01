@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
  
-<div class="homepage-hero-module">
+<div class="snap homepage-hero-module">
     <div class="video-container">
         
         <div class="title-container wow zoomIn">
@@ -77,7 +77,7 @@
 
 
 
-<div class="container">
+<div class="snap container">
 	<div class="row">
 		
 		<div class="col-sm-12">
@@ -89,7 +89,7 @@
 
 
 <!-- full viewheight background section-->      
-<div class="container-fluid">
+<div class="snap container-fluid">
 	<div class="row background-section product">
 		<div class="col-sm-5 col-sm-push-6 col-xs-6 col-xs-push-5">
 			<h1>Our Products</h1>
@@ -105,7 +105,7 @@
 
    
      
-     <div class="container page-header">
+     <div class="snap container page-header">
         <div class="row">
         <div class="col-md-10"><h1>What's New With Vungle</h1></div>
         <div class="col-md-2"><a href="<?=$blog?>" class="btn btn-secondary">View Blog</a></div>
@@ -159,7 +159,7 @@
 
       
       
-<div class="container">
+<div class="snap container">
      
       <div class="page-header">
         <h1>We Are Hiring</h1>

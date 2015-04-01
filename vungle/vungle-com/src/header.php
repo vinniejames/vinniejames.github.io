@@ -5,7 +5,7 @@
 	$programmatic = "programmatic.php";
 	$product = "product.php";
 	$aboutus = "aboutus.php";
-	$careers = "careers.php";
+	$careers = "http://localhost/~vincentdepalma/vinniejames.github.io/vungle/vungle-com/src/careers.php";
 	$blog = "blog.php";
 	$single= "single.php";
 	$newsroom = "newsroom.php";
@@ -149,6 +149,22 @@
     <script src="js/wow.js"></script>
     <script src="js/main.js"></script>
     
+    
+    
+    <script src="js/jquery.scrollstop.min.js"></script>
+    <!-- BREAKS NAVIGATION TRANSPARENCY FADE
+    <script src="js/jquery.scrollsnap.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $(document).scrollsnap({
+	        snaps: '.snap',
+	        proximity: 50
+	    });
+	});
+	</script>
+	-->  
+	
+	
     <!--<script src="js/vungle.js"></script>-->
 
     

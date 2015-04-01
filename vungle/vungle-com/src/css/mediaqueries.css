@@ -116,7 +116,7 @@
 			margin-top: 51px; /* fixes spacing due to absolute position of first li */
 		}	
 		.subnav-item {
-			display: none;
+		  display: none;
 		  float: none;
 		}
 		
