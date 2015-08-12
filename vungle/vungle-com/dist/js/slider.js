@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#carousel-vungle-0").carousel({wrap:!0,interval:5e3,pause:"hover"}),$("#carousel-vungle-2").carousel({wrap:!0,interval:3e3}),$("#carousel-vungle-2").swiperight(function(){$(this).carousel("prev")}),$("#carousel-vungle-2").swipeleft(function(){$(this).carousel("next")})});
