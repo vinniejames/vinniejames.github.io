@@ -16,6 +16,21 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.bg-primary {
+  background-color: #222;
+}
+.bg-primary .fa-stack {
+  color: #222;
+}
+.fa.text-primary {
+  color: #eee;
+}
+#services {
+  color: #eee;
+}
+#service hr {
+    border-top: 1px solid #777;
+}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -179,20 +194,20 @@ hr.small {
 .about img {
 	margin: -20% auto 0 auto;
 }
-@-webkit-keyframes blinker {  
+@-webkit-keyframes blinker {
   from { opacity: 1.0; }
   to { opacity: 0.0; }
 }
 .css3-blink {
-  -webkit-animation-name: blinker;  
-  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-  -webkit-animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
   }
-.code {  
+.code {
 	font-family: monospace;
 	color: #0f0;
-	
+
 	margin: auto;
 	position: absolute;
 	left: 0;
