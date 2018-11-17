@@ -336,7 +336,7 @@ hr.small {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #fff;
 }
 
 .timeline>li .timeline-image h4 {
@@ -476,6 +476,6 @@ hr.small {
 footer {
     padding: 100px 0;
 }
-footer .fa {
+footer .fa, footer .fab {
 	color: #fff;
 }
