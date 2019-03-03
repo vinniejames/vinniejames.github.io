@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to install a Wildcard Certificate on Digital Ocean with Let's Encrypt</title>
+  </head>
+  <body>
+    <h1><a href="https://certbot.eff.org/lets-encrypt/ubuntuxenial-apache">
+    How to install a Wildcard Certificate on Digital Ocean with Let's Encrypt</a></h1>
+    
+    <h2>Add the Certbot repository</h2>
+    <pre>$ sudo add-apt-repository ppa:certbot/certbot</pre>
+    
+    <h2>Update packages</h2>
+    <pre>$ sudo apt-get update</pre>
+    
+    <h2>Install Certbot</h2>
+    <pre>$ sudo apt-get install python-certbot-apache</pre>
+    
+    <h2><a href="https://certbot.eff.org/docs/using.html#dns-plugins">
+    Install Digital Ocean Certbot DNS tool</a></h2>
+    <pre>$ sudo apt-get install certbot python3-certbot-dns-digitalocean</pre>
+    
+    <h2>Create Digital Ocean API token</h2>
+    <p>Obtain your DO API token, save to ~/.secrets/certbot/digitalocean.ini, eg</p>
+    <pre>
+    # DigitalOcean API credentials used by Certbot
+    dns_digitalocean_token = 0000111122223333444455556666777788889999aaaabbbbccccddddeeeeffff
+    </pre>
+    
+    <h2>Create Wildcard cert</h2>
+    <pre>
+    certbot certonly \
+         --dns-digitalocean \
+         --dns-digitalocean-credentials ~/.secrets/certbot/digitalocean.ini \
+         -d example.com -d *.example.com
+    </pre>
+    <p>Your certs will be saved to /etc/letsencrypt/live/example.com/</p>
+    
+    <h2>Auto configure Apache single name cert</h2>
+    <p>We will be replaceing this later, but the autoconfigure works well to configure Apache correctly</p>
+    <pre>$ sudo certbot --apache -d example.com</pre>
+    <p>Your certs will be saved to /etc/letsencrypt/live/example.com-0001/</p>
+    
+    <h2>Confirm ssl enabled</h2>
+    <p>You may need to symlink ssl.load and ssl.conf, into you /etc/apache2/mods-enabled/ folder</p>
+    
+    <h2>Update Apache to use Wildcard cert</h2>
+    <p>Open /etc/apache2/sites-available/000-default-le-ssl.conf, 
+    modify the path to SSLCertificateFile and SSLCertificateKeyFile.
+    These should point to your wildcard certs /etc/letsencrypt/live/example.com/</p>
+    <p>You can confirm which certs are your wildcard bby running:</p>
+    <pre>$ certbot certificates</pre>
+    
+    
+    <h2>Remove unused certificate<h2>
+    <p>You might also try deleting the unused cert `sudo certbot delete ...`</p>
+    
+    <h2>Auto renew certificate<h2>
+    <p>Certs expire evey 90 days so you will need to renew them automatically. Add a cronjob, for example every Sunday at 5:30</p>
+    <pre>crontab -e</pre>
+    <pre>3 5 * * 0 /usr/bin/certbot renew --quiet && /usr/sbin/service apache2 restart</pre>
+    
+  
+
+  </body>
+</html>
