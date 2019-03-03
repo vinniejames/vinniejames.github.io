@@ -56,7 +56,7 @@
     <h2>Remove unused certificate</h2>
     <p>You might also try deleting the unused cert `sudo certbot delete ...`</p>
     
-    <h2>Auto renew certificate<h2>
+    <h2>Auto renew certificate</h2>
     <p>Certs expire evey 90 days so you will need to renew them automatically. Add a cronjob, for example every Sunday at 5:30</p>
     <pre>crontab -e</pre>
     <pre>3 5 * * 0 /usr/bin/certbot renew --quiet && /usr/sbin/service apache2 restart</pre>
