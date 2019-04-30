@@ -47,7 +47,7 @@
 			console.log("Received a message from " + event.origin + ".");
 			// If the window that sent this message is not http://dev.iframe.com, then
 			// that message needs to be thrown out.
-			if (event.origin != "https://vinnejames.com") {
+			if (event.origin != "https://vinnejames.com" || event.origin != "http://vinnejames.com") {
 				console.log("The message came from some site we don't know. We're not processing it.");
 				return;
 			}
